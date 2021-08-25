@@ -761,11 +761,11 @@ body {
 }
 
 #reward-list-v2 .rewards .reward .content .title, #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #fff !important;
+    color: #c31010 !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title, #reward-list-v2 .rewards .reward .content a:focus .title, #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title, #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #c31010 !important;
+    color: #695539 !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
@@ -776,6 +776,12 @@ body {
 
 #reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
     background-color: #c31010 !important;
+}
+
+#reward-list-v2 .rewards .reward .content:hover .row p.points.ct-points-color, #reward-list-v2 .rewards .reward .content:focus .row p.points.ct-points-color, #reward-list-v2 .rewards .reward .content:focus-within .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n) .content:hover .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n) .content:focus .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n) .content:focus-within .row p.points.ct-points-color {
+    background: #fbefde !important;
+    box-shadow: 0 0 0 2px #695539 inset;
+    color: var(--color-shade-900) !important;
 }
 
 #account-overview-two-v2 {
