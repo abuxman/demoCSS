@@ -715,6 +715,10 @@ body {
     color: #c31010 !important;
 }
 
+#activity-history-v2 table tr:nth-child(n+8) {
+    display:none;
+  }
+
 #reward-history-v2 {
     color: #fff;
     background-color: #1a1a1a;
