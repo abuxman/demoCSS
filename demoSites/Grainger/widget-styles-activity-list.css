@@ -799,7 +799,7 @@ body {
 }
 
 #activity-list-v2 ul .activity button.title span {
-    color: #000 !important;
+    color: #c31010 !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,#activity-list-v2 ul .activity:focus button.title span {
