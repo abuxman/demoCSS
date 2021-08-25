@@ -669,10 +669,14 @@ body {
 }
 
 #reward-history-v2 {
-    color: #fff;
-    background-color: #1a1a1a;
+    color: #000;
+    background-color: #fff;
     padding: 20px;
     border-radius: 20px;
+}
+
+#activity-history-v2 .ct-points-color, #reward-history-v2 .ct-points-color, #purchase-history-v2 .ct-points-color {
+    color: #c31010 !important;
 }
 
 #account-settings {
