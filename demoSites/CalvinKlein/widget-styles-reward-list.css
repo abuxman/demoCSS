@@ -776,6 +776,7 @@ body {
 
 #reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
     background-color: #9c9c9c !important;
+    color: #000 !important;
 }
 
 #account-overview-two-v2 {
