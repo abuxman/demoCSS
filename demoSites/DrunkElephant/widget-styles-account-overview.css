@@ -1160,7 +1160,7 @@ body {
     color: #000;
 }
 
-#account-overview-two-v2 .user_info {
+#account-overview-two-v2 .user-info {
     width: 80px;
     background-image: url(https://s3-eu-west-1.amazonaws.com/tpd/logos/5a31e259b894c909d077758f/0x0.png);
     height: 80px;
