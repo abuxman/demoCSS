@@ -1116,15 +1116,15 @@ body {
 /* **************** Additional Styling **************** */
 
 .header.ct-header-color {
-    background-color: #d2d2d2 !important;
+    background-color: #fb48c4 !important;
 }
 
 .header.ct-header-color .ct-header-text-color {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 .ct-points-color {
-    color: #000 !important;
+    color: #fb48c4 !important;
 }
 
 #redeem-v2 .numeric-details .quantity-remaining>span,
@@ -1135,7 +1135,7 @@ body {
 #redeem-v2 #review .numeric-details .days-remaining>span,
 #redeem-v2 #confirmation .numeric-details .quantity-remaining>span,
 #redeem-v2 #confirmation .numeric-details .days-remaining>span {
-    background-color: #000 !important;
+    background-color: #fb48c4 !important;
     font-weight: 700;
 }
 
