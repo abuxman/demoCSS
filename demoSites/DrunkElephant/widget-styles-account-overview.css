@@ -1092,22 +1092,30 @@ body {
 
 /* Activity List */
 
+#activity-list-v2 {
+    font-family: "Brown", sans-serif;
+}
+
 #activity-list-v2 ul .activity button.title span {
-    color: #fff !important;
+    color: #fb48c4 !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,
 #activity-list-v2 ul .activity:focus button.title span {
-    color: #c31010 !important;
+    color: #6e6e6e !important;
 }
 
 #activity-list-v2 ul .activity .info-container .description {
-    color: #fff !important;
+    color: #4a4a4a !important;
 }
 
 #activity-list-v2 ul .point-value {
-    background: #c31010 !important;
+    background: #fb48c4 !important;
     box-shadow: none;
+    color: #fff !important;
+}
+
+#activity-list-v2 ul .activity.locked .points-container .ct-points-color {
     color: #fff !important;
 }
 
@@ -1116,19 +1124,19 @@ body {
 
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #fff !important;
+    color: #fb48c4 !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title,
 #reward-list-v2 .rewards .reward .content a:focus .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #c31010 !important;
+    color: #6e6e6e !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #c31010 !important;
+    background-color: #fb48c4 !important;
     color: #fff !important;
     box-shadow: none;
 }
@@ -1137,7 +1145,7 @@ body {
 #reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #c31010 !important;
+    background-color: #fb48c4 !important;
 }
 
 
@@ -1201,8 +1209,8 @@ body {
 /* Activity and Reward History */
 
 #activity-history-v2 {
-    color: #fff;
-    background-color: #1a1a1a;
+    color: #4a4a4a;
+    background-color: #fff;
     padding: 20px;
     border-radius: 20px;
 }
@@ -1219,7 +1227,7 @@ body {
 #purchase-history-v2 .activity-history th,
 #purchase-history-v2 .redemption-history th,
 #purchase-history-v2 .purchase-history-table th {
-    color: #fff !important;
+    color: #4a4a4a !important;
 }
 
 #activity-history-v2 table td,
@@ -1234,7 +1242,7 @@ body {
 #purchase-history-v2 .activity-history td,
 #purchase-history-v2 .redemption-history td,
 #purchase-history-v2 .purchase-history-table td {
-    color: #fff !important;
+    color: #4a4a4a !important;
 }
 
 #activity-history-v2 table td.points,
@@ -1249,11 +1257,11 @@ body {
 #purchase-history-v2 .activity-history td.points,
 #purchase-history-v2 .redemption-history td.points,
 #purchase-history-v2 .purchase-history-table td.points {
-    color: #c31010 !important;
+    color: #fb48c4 !important;
 }
 
 #activity-history-v2 .ct-points-color {
-    color: #c31010 !important;
+    color: #fb48c4 !important;
 }
 
 
