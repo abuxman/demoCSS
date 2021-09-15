@@ -1144,7 +1144,14 @@ body {
 /* Account Overview */
 
 #account-overview-two-v2 {
-    color: #000;
+    background-color: white;
+    font-family: "Brown", sans-serif;
+    font-size: 1.6rem;
+    color: #4a4a4a;
+    line-height: 1.4375;
+    letter-spacing: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
     padding: 20px;
     border-radius: 20px;
 }
@@ -1154,7 +1161,13 @@ body {
 }
 
 #account-overview-two-v2 .ct-points-color {
-    color: #000 !important;
+    font-size: 1.8rem;
+    color: #fb48c4;
+    margin-bottom: 2rem;
+    letter-spacing: -.011rem;
+    font-family: "Brown", sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 #account-overview-two-v2 .logout-link-container {
@@ -1274,6 +1287,16 @@ body {
     letter-spacing: 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #fb48c4;
+    margin-bottom: 2rem;
+    letter-spacing: -.011rem;
+    font-family: "Brown", sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 h3 {

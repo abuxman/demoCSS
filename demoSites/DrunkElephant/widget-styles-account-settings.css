@@ -1,0 +1,677 @@
+:root{
+    --color-shade-100: #FDFFFF;
+    --color-shade-200: #FAFBFB;
+    --color-shade-300: #F4F6F6;
+    --color-shade-400: #E4E5E6;
+    --color-shade-500: #97999A;
+    --color-shade-700: #5b5b5c;
+    --color-shade-900: #2D2D2E;
+    --color-orange-100: #FFF9F2;
+    --color-orange-200: #FFEDD4;
+    --color-orange-250: #ffce8a;
+    --color-orange-300: #FFC26F;
+    --color-orange-500: #eb9f42;
+    --color-orange-700: #c07825;
+    --color-orange-900: #ae6200;
+    --color-blue-100: #e0faff;
+    --color-blue-200: #cff6ff;
+    --color-blue-300: #a3e8f7;
+    --color-blue-400: #50c1e7;
+    --color-blue-500: #029ACB;
+    --color-blue-700: #007095;
+    --color-blue-900: #00445A;
+    --color-green-500: #D3F3AC;
+    --color-green-700: #466126;
+    --color-translucent-20: rgba(255,255,255,.2);
+    --color-transparent-07: rgba(0,0,0,.07);
+    --color-transparent-10: rgba(0,0,0,.1);
+    --color-transparent-20: rgba(0,0,0,.2);
+    --color-transparent-50: rgba(0,0,0,.5);
+    --color-translucent-nav: rgba(241,243,243,.86);
+    --color-translucent-subnav: rgba(249,250,250,.86);
+    --shadow-text: 0 1px 2px var(--color-transparent-20), 0 1px 3px var(--color-transparent-50);
+    --shadow-button: 0 1px 3px var(--color-transparent-20), 0 3px 8px var(--color-transparent-10);
+    --shadow-buttonlight: 0 1px 3px var(--color-transparent-20), 0 3px 8px var(--color-transparent-10), 0 6px 14px var(--color-transparent-07);
+    --shadow-text-transparent: 0 1px 2px transparent, 0 1px 4px transparent;
+    --shadow-subnav: 0 6px 8px 0 rgba(0,0,0,.15), 0 10px 14px rgba(0,0,0,.06);
+    --space-buttons: .375rem;
+    --space-a: .5rem;
+    --space-b: 1rem;
+    --space-c: 1.5rem;
+    --space-d: 2.75rem;
+    --space-e: 3.5rem;
+    --text-nav: 1rem;
+    --text-subnav: .875rem;
+    --text-title: 1.75rem;
+    --text-header: .875rem;
+    --text-widgetheader: 1.5rem;
+    --text-tiermain: 1.875rem;
+    --text-hero: 2.125rem;
+    --text-bigparagraph: 1.125rem;
+    --text-paragraph: 1.125rem;
+    --text-supporting: 1rem;
+    --text-minor: .875rem;
+    --text-button: 1rem;
+    --text-linkblock: 1.5rem;
+    --text-copyright: .5625rem;
+    --height-nav: 3.625rem;
+    --height-subnav: 2.5rem;
+    --width-max-width: 100rem;
+    --width-nav-icon: 1.875rem;
+    --ratio-angle: 17%;
+    --angle-height: 160;
+    --angle-max-width: 1500;
+    --afterangle-min-padding-top: calc((var(--angle-height) * 1px) - (var(--angle-height) / var(--angle-max-width) * 100%));
+    --afterangle-extra-padding-top: calc(var(--angle-height) / var(--angle-max-width) * 60%);
+    --angle-padding-bottom: calc(var(--angle-height) / var(--angle-max-width) * 60%);
+    --angle-padding-bottom-maximum: 5rem;
+    --angle-extra-padding-bottom: calc(var(--angle-height) / var(--angle-max-width) * 80%);
+    --timing-in: .15s;
+    --timing-out: .3s;
+    --z-nav: 90;
+    --z-subnav: 50;
+    --z-subnavmenu: 49;
+    --widget-offset: 20px;
+    --widget-bottom: 5px;
+    --hero-left-scrim: linear-gradient(to right, #eb9f42 0%, rgba(235, 159, 66, 0.98) 3%, rgba(235, 159, 66, 0.91) 5%, rgba(235, 159, 66, 0.82) 8%, rgba(235, 159, 66, 0.7) 11%, rgba(235, 159, 66, 0.57) 15%, rgba(235, 159, 66, 0.43) 21%, rgba(235, 159, 66, 0.3) 29%, rgba(235, 159, 66, 0.18) 41%, rgba(235, 159, 66, 0.09) 56%, rgba(235, 159, 66, 0.02) 75%, rgba(235, 159, 66, 0) 100%)
+}
+@media (min-width: 900px){
+    :root{
+        --space-buttons: .375rem;
+        --space-a: .625rem;
+        --space-b: 1.25rem;
+        --space-c: 2.5rem;
+        --space-d: 3.125rem;
+        --space-e: 3.75rem
+    }
+}
+@media (min-width: 900px){
+    :root{
+        --text-nav: 1.125rem;
+        --text-subnav: 1rem;
+        --text-title: 2.5rem;
+        --text-header: 1rem;
+        --text-widgetheader: 1.5rem;
+        --text-tiermain: 2.25rem;
+        --text-hero: 2.5rem;
+        --text-bigparagraph: 1.25rem;
+        --text-paragraph: 1.125rem;
+        --text-supporting: 1rem;
+        --text-minor: .875rem;
+        --text-button: 1.125rem;
+        --text-linkblock: 1.875rem;
+        --text-copyright: .75rem
+    }
+}
+@media (min-width: 680px){
+    :root{
+        --width-nav-icon: 1.5rem
+    }
+}
+@media (min-width: 900px){
+    :root{
+        --height-nav: 5rem;
+        --height-subnav: 2.5rem;
+        --width-nav-icon: 1.875rem
+    }
+}
+@media (min-width: 900px){
+    :root{
+        --hero-left-scrim: linear-gradient(to right, #eb9f42 0%, rgba(235, 159, 66, 0.98) 1.5%, rgba(235, 159, 66, 0.91) 2.5%, rgba(235, 159, 66, 0.82) 4%, rgba(235, 159, 66, 0.7) 5.5%, rgba(235, 159, 66, 0.57) 7.5%, rgba(235, 159, 66, 0.43) 10.5%, rgba(235, 159, 66, 0.3) 14.5%, rgba(235, 159, 66, 0.18) 20.5%, rgba(235, 159, 66, 0.09) 28%, rgba(235, 159, 66, 0.02) 37.5%, rgba(235, 159, 66, 0) 50%)
+    }
+}
+html,body{
+    -webkit-font-smoothing:subpixel-antialiased;
+    -webkit-text-size-adjust:100%;
+    box-sizing:border-box;
+    font-feature-settings:'pnum' 1, 'kern' 1, 'liga' 1;
+    font-size:16px
+}
+body>.ng-scope{
+    padding:20px
+}
+a,a:link,a:visited{
+    font-size:inherit;
+    font-weight:inherit
+}
+*,*::after,*::after{
+    box-sizing:inherit;
+    font-family:"InterUIWeb","Inter",BlinkMacSystemFont,system-ui,-apple-system,sans-serif
+}
+div[ui-view]{
+    position:relative
+}
+hr{
+    border:0;
+    border-top:1px solid currentColor;
+    height:0
+}
+.header.ct-header-color{
+    background-color:var(--color-orange-200) !important
+}
+.header.ct-header-color .ct-header-text-color{
+    color:var(--color-blue-900) !important
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:inherit
+}
+p,span{
+    font-size:1em
+}
+.ct-points-color{
+    color:var(--color-orange-900) !important;
+    text-transform:none !important
+}
+.ct-link-color{
+    color:var(--color-blue-700) !important;
+    text-decoration:none !important
+}
+.ct-link-color:hover,.ct-link-color:focus{
+    color:var(--color-blue-500) !important
+}
+.ct-link-color:active{
+    color:var(--color-blue-900) !important
+}
+a,a:link,a:visited{
+    color:var(--color-blue-700);
+    text-decoration:none;
+    transition:color .15s,box-shadow .15s,background .15s
+}
+a:hover,a:link:hover,a:visited:hover{
+    color:var(--color-blue-500);
+    text-decoration:underline
+}
+a:active,a:link:active,a:visited:active{
+    color:var(--color-blue-900);
+    text-decoration:underline;
+    transition:none
+}
+a[disabled],a:link[disabled],a:visited[disabled]{
+    pointer-events:none
+}
+a:focus,a:link:focus,a:visited:focus{
+    outline:2px solid var(--color-blue-700);
+    outline-offset:2px
+}
+a:focus:not(:focus-visible),a:link:focus:not(:focus-visible),a:visited:focus:not(:focus-visible){
+    outline:0
+}
+a:focus-visible,a:link:focus-visible,a:visited:focus-visible{
+    outline:2px solid var(--color-blue-700);
+    outline-offset:2px
+}
+button:focus{
+    outline:2px solid var(--color-blue-700);
+    outline-offset:2px
+}
+button:focus:not(:focus-visible){
+    outline:0
+}
+button:focus-visible{
+    outline:2px solid var(--color-blue-700);
+    outline-offset:2px
+}
+a.btn,button,.btn,.btn.btn-danger,a.btn.btn-danger,.btn.btn-secondary,a.btn.btn-secondary,#social-connect-widget button.connect,#survey .nav-btns .prev-btn,button.btn,.btn.btn-small,a.btn.btn-small,#survey .nav-btns .prev-btn,#registration-v2 .container .content .login button,#account-overview-v2 a.logout-link,#sign-up-v2 .sign-up-button,#sign-up-v2 .log-in-button,#sign-up-v2 .back-to-login-button,.btn.btn-email,a.btn.btn-email{
+    background-color:var(--color-shade-400) !important;
+    border:0;
+    border-radius:3px;
+    box-shadow:0 0 0 2px var(--color-shade-400) inset,var(--shadow-button);
+    color:var(--color-shade-900) !important;
+    cursor:pointer;
+    font-family:inherit;
+    font-size:1.125rem;
+    font-weight:400;
+    height:auto;
+    line-height:1.125rem;
+    margin:0;
+    outline:0 !important;
+    padding:.75rem 1.25rem;
+    text-decoration:none;
+    text-transform:none;
+    transition:all .15s,outline 0s,outline-offset 0s;
+    user-select:none;
+    width:auto
+}
+a.btn[disabled],button[disabled],.btn[disabled],.btn.btn-danger[disabled],a.btn.btn-danger[disabled],.btn.btn-secondary[disabled],a.btn.btn-secondary[disabled],#social-connect-widget button.connect[disabled],#survey .nav-btns .prev-btn[disabled],button.btn[disabled],.btn.btn-small[disabled],a.btn.btn-small[disabled],#survey .nav-btns .prev-btn[disabled],#registration-v2 .container .content .login button[disabled],#account-overview-v2 a.logout-link[disabled],#sign-up-v2 .sign-up-button[disabled],#sign-up-v2 .log-in-button[disabled],#sign-up-v2 .back-to-login-button[disabled],.btn.btn-email[disabled],a.btn.btn-email[disabled]{
+    pointer-events:none
+}
+a.btn:hover,a.btn:focus,button:hover,button:focus,.btn:hover,.btn:focus,.btn.btn-danger:hover,.btn.btn-danger:focus,a.btn.btn-danger:hover,a.btn.btn-danger:focus,.btn.btn-secondary:hover,.btn.btn-secondary:focus,a.btn.btn-secondary:hover,a.btn.btn-secondary:focus,#social-connect-widget button.connect:hover,#social-connect-widget button.connect:focus,#survey .nav-btns .prev-btn:hover,#survey .nav-btns .prev-btn:focus,button.btn:hover,button.btn:focus,.btn.btn-small:hover,.btn.btn-small:focus,a.btn.btn-small:hover,a.btn.btn-small:focus,#survey .nav-btns .prev-btn:hover,#survey .nav-btns .prev-btn:focus,#registration-v2 .container .content .login button:hover,#registration-v2 .container .content .login button:focus,#account-overview-v2 a.logout-link:hover,#account-overview-v2 a.logout-link:focus,#sign-up-v2 .sign-up-button:hover,#sign-up-v2 .sign-up-button:focus,#sign-up-v2 .log-in-button:hover,#sign-up-v2 .log-in-button:focus,#sign-up-v2 .back-to-login-button:hover,#sign-up-v2 .back-to-login-button:focus,.btn.btn-email:hover,.btn.btn-email:focus,a.btn.btn-email:hover,a.btn.btn-email:focus{
+    background-color:var(--color-blue-200) !important;
+    box-shadow:0 0 0 2px var(--color-blue-200) inset,var(--shadow-button);
+    color:var(--color-shade-900) !important;
+    text-decoration:none
+}
+a.btn:focus,button:focus,.btn:focus,.btn.btn-danger:focus,a.btn.btn-danger:focus,.btn.btn-secondary:focus,a.btn.btn-secondary:focus,#social-connect-widget button.connect:focus,#survey .nav-btns .prev-btn:focus,button.btn:focus,.btn.btn-small:focus,a.btn.btn-small:focus,#survey .nav-btns .prev-btn:focus,#registration-v2 .container .content .login button:focus,#account-overview-v2 a.logout-link:focus,#sign-up-v2 .sign-up-button:focus,#sign-up-v2 .log-in-button:focus,#sign-up-v2 .back-to-login-button:focus,.btn.btn-email:focus,a.btn.btn-email:focus{
+    box-shadow:0 0 0 2px var(--color-blue-500) inset,var(--shadow-button);
+    outline:0
+}
+a.btn:active,button:active,.btn:active,.btn.btn-danger:active,a.btn.btn-danger:active,.btn.btn-secondary:active,a.btn.btn-secondary:active,#social-connect-widget button.connect:active,#survey .nav-btns .prev-btn:active,button.btn:active,.btn.btn-small:active,a.btn.btn-small:active,#survey .nav-btns .prev-btn:active,#registration-v2 .container .content .login button:active,#account-overview-v2 a.logout-link:active,#sign-up-v2 .sign-up-button:active,#sign-up-v2 .log-in-button:active,#sign-up-v2 .back-to-login-button:active,.btn.btn-email:active,a.btn.btn-email:active{
+    background-color:var(--color-blue-500) !important;
+    box-shadow:0 0 0 2px var(--color-blue-500) inset,var(--shadow-button);
+    color:var(--color-shade-900) !important;
+    text-decoration:none;
+    transition:none
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button),#activity-history .btn.show-more,#survey .nav-btns .next-btn,#upload-receipt .receipt-preview label,#upload-receipt-v2 .receipt-preview label,button.btn.btn-secondary[ng-click="doVerification()"]{
+    background-color:var(--color-orange-300) !important;
+    box-shadow:0 0 0 2px var(--color-orange-300) inset,var(--shadow-button) !important;
+    color:var(--color-shade-900) !important;
+    font-size:1.125rem;
+    font-weight:600;
+    margin:0
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button)[disabled],#activity-history .btn.show-more[disabled],#survey .nav-btns .next-btn[disabled],#upload-receipt .receipt-preview label[disabled],#upload-receipt-v2 .receipt-preview label[disabled],button.btn.btn-secondary[ng-click="doVerification()"][disabled]{
+    box-shadow:0 0 0 2px var(--color-orange-300) inset,var(--shadow-text-transparent) !important
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):hover,.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):focus,#activity-history .btn.show-more:hover,#activity-history .btn.show-more:focus,#survey .nav-btns .next-btn:hover,#survey .nav-btns .next-btn:focus,#upload-receipt .receipt-preview label:hover,#upload-receipt .receipt-preview label:focus,#upload-receipt-v2 .receipt-preview label:hover,#upload-receipt-v2 .receipt-preview label:focus,button.btn.btn-secondary[ng-click="doVerification()"]:hover,button.btn.btn-secondary[ng-click="doVerification()"]:focus{
+    background-color:var(--color-orange-250) !important;
+    box-shadow:0 0 0 2px var(--color-orange-250) inset,var(--shadow-button) !important;
+    color:var(--color-shade-900) !important
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):focus,#activity-history .btn.show-more:focus,#survey .nav-btns .next-btn:focus,#upload-receipt .receipt-preview label:focus,#upload-receipt-v2 .receipt-preview label:focus,button.btn.btn-secondary[ng-click="doVerification()"]:focus{
+    box-shadow:0 0 0 2px var(--color-orange-700) inset,var(--shadow-button) !important
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):active,#activity-history .btn.show-more:active,#survey .nav-btns .next-btn:active,#upload-receipt .receipt-preview label:active,#upload-receipt-v2 .receipt-preview label:active,button.btn.btn-secondary[ng-click="doVerification()"]:active{
+    background-color:var(--color-orange-500) !important;
+    box-shadow:0 0 0 2px var(--color-orange-500) inset,var(--shadow-button) !important;
+    color:var(--color-shade-900) !important
+}
+#account-settings .edit,#account-settings .verify,#account-settings .button-container .btn.btn-secondary{
+    background:transparent !important;
+    border-radius:3px;
+    box-shadow:0 0 0 2px var(--color-orange-300) inset;
+    color:var(--color-shade-900) !important;
+    display:inline-block;
+    font-size:1.125rem;
+    font-weight:400;
+    padding:.75rem 1.25rem;
+    transition:all .15s,outline 0s,outline-offset 0s;
+    user-select:none
+}
+#account-settings .edit:hover,#account-settings .verify:hover,#account-settings .button-container .btn.btn-secondary:hover{
+    background:var(--color-orange-100) !important;
+    box-shadow:0 0 0 2px var(--color-orange-250) inset;
+    color:var(--color-shade-900) !important
+}
+#account-settings .edit:focus,#account-settings .verify:focus,#account-settings .button-container .btn.btn-secondary:focus{
+    background:var(--color-orange-100) !important;
+    box-shadow:0 0 0 2px var(--color-shade-700) inset;
+    color:var(--color-orange-900) !important
+}
+#account-settings .edit:active,#account-settings .verify:active,#account-settings .button-container .btn.btn-secondary:active{
+    background:var(--color-transparent-20) !important;
+    box-shadow:0 0 0 2px var(--color-shade-900) inset;
+    color:var(--color-shade-900) !important;
+    transition:none
+}
+#account-settings .edit:hover,#account-settings .verify:hover,#account-settings .button-container .btn.btn-secondary:hover{
+    background:var(--color-orange-100) !important;
+    box-shadow:0 0 0 2px var(--color-orange-250) inset;
+    color:var(--color-shade-900) !important
+}
+#account-settings .edit:focus,#account-settings .verify:focus,#account-settings .button-container .btn.btn-secondary:focus{
+    background:var(--color-orange-100) !important;
+    box-shadow:0 0 0 2px var(--color-shade-700) inset;
+    color:var(--color-orange-900) !important
+}
+#account-settings .edit:active,#account-settings .verify:active,#account-settings .button-container .btn.btn-secondary:active{
+    background:var(--color-transparent-20) !important;
+    box-shadow:0 0 0 2px var(--color-shade-900) inset;
+    color:var(--color-shade-900) !important;
+    transition:none
+}
+.notification{
+    flex:1 1 100%
+}
+.notification.error,.notification.notification-error{
+    background-color:transparent;
+    border:1px solid var(--color-orange-500);
+    color:var(--color-shade-900)
+}
+.notification.notification-warning,.notification.warning{
+    background-color:transparent;
+    border:1px solid var(--color-orange-300);
+    color:var(--color-shade-900)
+}
+.notification.notification-success,.notification.success{
+    background-color:transparent;
+    border:1px solid var(--color-green-500);
+    color:var(--color-shade-900)
+}
+.notification .fa,.notification .status{
+    display:none
+}
+.notification .msg,.notification .status{
+    font-size:var(--text-supporting)
+}
+#activity-history table,#reward-history table,.purchase-history-table{
+    font-feature-settings:'pnum' 0, 'tnum' 1, 'kern' 1, 'liga' 1
+}
+#activity-history table tr[ng-show='rewards.length == 0'] td,#activity-history table tr[ng-show='orders.length == 0'] td span,#activity-history table span[ng-if='activity.points() < 0'],#reward-history table tr[ng-show='rewards.length == 0'] td,#reward-history table tr[ng-show='orders.length == 0'] td span,#reward-history table span[ng-if='activity.points() < 0'],.purchase-history-table tr[ng-show='rewards.length == 0'] td,.purchase-history-table tr[ng-show='orders.length == 0'] td span,.purchase-history-table span[ng-if='activity.points() < 0']{
+    color:#999 !important
+}
+#activity-history table tbody:before,#reward-history table tbody:before,.purchase-history-table tbody:before{
+    content:''
+}
+#activity-history table td,#activity-history table th,#reward-history table td,#reward-history table th,.purchase-history-table td,.purchase-history-table th{
+    line-height:1.25rem;
+    padding:.25rem 1rem
+}
+#activity-history table td:nth-last-child(1),#activity-history table th:nth-last-child(1),#reward-history table td:nth-last-child(1),#reward-history table th:nth-last-child(1),.purchase-history-table td:nth-last-child(1),.purchase-history-table th:nth-last-child(1){
+    padding-right:0
+}
+input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],.account-settings .input-group input,#check-in .search-wrapper input.venue-search,dl.form dd input[type=email],dl.form dd input[type=number],dl.form dd input[type=password],dl.form dd input[type=tel],dl.form dd input[type=text],#survey-v3 .question-container input[type=text],#sign-up-v2 input[type=email],#sign-up-v2 input[type=password],#sign-up-v2 input[type=text],dl.form dd textarea,.claim-purchase input[type=number],.claim-purchase input[type=text],#redeem-v2 input[type=email],#redeem-v2 #review fieldset.form input[type=date],#redeem-v2 #review fieldset.form input[type=email],#redeem-v2 #review fieldset.form input[type=number],#redeem-v2 #review fieldset.form input[type=password],#redeem-v2 #review fieldset.form input[type=phone],#redeem-v2 #review fieldset.form input[type=tel],#redeem-v2 #review fieldset.form input[type=text],#redeem-v2 #review fieldset.form input[type=url],select,dl.form dd select,.account-settings .input-group select,#redeem #review dl.form.select dd select,#sign-up-v2 select,#redeem-v2 #review fieldset.form select{
+    -webkit-appearance:none;
+    background:unset;
+    background-color:var(--color-shade-100);
+    border:1px solid var(--color-shade-500);
+    border-radius:2px;
+    font-size:16px;
+    height:32px;
+    line-height:30px;
+    margin:0;
+    transition:all .15s
+}
+input[type=email]:focus,input[type=email]:active,input[type=number]:focus,input[type=number]:active,input[type=password]:focus,input[type=password]:active,input[type=tel]:focus,input[type=tel]:active,input[type=text]:focus,input[type=text]:active,.account-settings .input-group input:focus,.account-settings .input-group input:active,#check-in .search-wrapper input.venue-search:focus,#check-in .search-wrapper input.venue-search:active,dl.form dd input[type=email]:focus,dl.form dd input[type=email]:active,dl.form dd input[type=number]:focus,dl.form dd input[type=number]:active,dl.form dd input[type=password]:focus,dl.form dd input[type=password]:active,dl.form dd input[type=tel]:focus,dl.form dd input[type=tel]:active,dl.form dd input[type=text]:focus,dl.form dd input[type=text]:active,#survey-v3 .question-container input[type=text]:focus,#survey-v3 .question-container input[type=text]:active,#sign-up-v2 input[type=email]:focus,#sign-up-v2 input[type=email]:active,#sign-up-v2 input[type=password]:focus,#sign-up-v2 input[type=password]:active,#sign-up-v2 input[type=text]:focus,#sign-up-v2 input[type=text]:active,dl.form dd textarea:focus,dl.form dd textarea:active,.claim-purchase input[type=number]:focus,.claim-purchase input[type=number]:active,.claim-purchase input[type=text]:focus,.claim-purchase input[type=text]:active,#redeem-v2 input[type=email]:focus,#redeem-v2 input[type=email]:active,#redeem-v2 #review fieldset.form input[type=date]:focus,#redeem-v2 #review fieldset.form input[type=date]:active,#redeem-v2 #review fieldset.form input[type=email]:focus,#redeem-v2 #review fieldset.form input[type=email]:active,#redeem-v2 #review fieldset.form input[type=number]:focus,#redeem-v2 #review fieldset.form input[type=number]:active,#redeem-v2 #review fieldset.form input[type=password]:focus,#redeem-v2 #review fieldset.form input[type=password]:active,#redeem-v2 #review fieldset.form input[type=phone]:focus,#redeem-v2 #review fieldset.form input[type=phone]:active,#redeem-v2 #review fieldset.form input[type=tel]:focus,#redeem-v2 #review fieldset.form input[type=tel]:active,#redeem-v2 #review fieldset.form input[type=text]:focus,#redeem-v2 #review fieldset.form input[type=text]:active,#redeem-v2 #review fieldset.form input[type=url]:focus,#redeem-v2 #review fieldset.form input[type=url]:active,select:focus,select:active,dl.form dd select:focus,dl.form dd select:active,.account-settings .input-group select:focus,.account-settings .input-group select:active,#redeem #review dl.form.select dd select:focus,#redeem #review dl.form.select dd select:active,#sign-up-v2 select:focus,#sign-up-v2 select:active,#redeem-v2 #review fieldset.form select:focus,#redeem-v2 #review fieldset.form select:active{
+    background-color:var(--color-shade-100);
+    border:1px solid var(--color-blue-700);
+    box-shadow:0 0 0 1px var(--color-blue-700) inset;
+    outline:0;
+    transition:none
+}
+input[type=email][disabled],input[type=email][disabled]:focus,input[type=email][disabled]:active,input[type=number][disabled],input[type=number][disabled]:focus,input[type=number][disabled]:active,input[type=password][disabled],input[type=password][disabled]:focus,input[type=password][disabled]:active,input[type=tel][disabled],input[type=tel][disabled]:focus,input[type=tel][disabled]:active,input[type=text][disabled],input[type=text][disabled]:focus,input[type=text][disabled]:active,.account-settings .input-group input[disabled],.account-settings .input-group input[disabled]:focus,.account-settings .input-group input[disabled]:active,#check-in .search-wrapper input.venue-search[disabled],#check-in .search-wrapper input.venue-search[disabled]:focus,#check-in .search-wrapper input.venue-search[disabled]:active,dl.form dd input[type=email][disabled],dl.form dd input[type=email][disabled]:focus,dl.form dd input[type=email][disabled]:active,dl.form dd input[type=number][disabled],dl.form dd input[type=number][disabled]:focus,dl.form dd input[type=number][disabled]:active,dl.form dd input[type=password][disabled],dl.form dd input[type=password][disabled]:focus,dl.form dd input[type=password][disabled]:active,dl.form dd input[type=tel][disabled],dl.form dd input[type=tel][disabled]:focus,dl.form dd input[type=tel][disabled]:active,dl.form dd input[type=text][disabled],dl.form dd input[type=text][disabled]:focus,dl.form dd input[type=text][disabled]:active,#survey-v3 .question-container input[type=text][disabled],#survey-v3 .question-container input[type=text][disabled]:focus,#survey-v3 .question-container input[type=text][disabled]:active,#sign-up-v2 input[type=email][disabled],#sign-up-v2 input[type=email][disabled]:focus,#sign-up-v2 input[type=email][disabled]:active,#sign-up-v2 input[type=password][disabled],#sign-up-v2 input[type=password][disabled]:focus,#sign-up-v2 input[type=password][disabled]:active,#sign-up-v2 input[type=text][disabled],#sign-up-v2 input[type=text][disabled]:focus,#sign-up-v2 input[type=text][disabled]:active,dl.form dd textarea[disabled],dl.form dd textarea[disabled]:focus,dl.form dd textarea[disabled]:active,.claim-purchase input[type=number][disabled],.claim-purchase input[type=number][disabled]:focus,.claim-purchase input[type=number][disabled]:active,.claim-purchase input[type=text][disabled],.claim-purchase input[type=text][disabled]:focus,.claim-purchase input[type=text][disabled]:active,#redeem-v2 input[type=email][disabled],#redeem-v2 input[type=email][disabled]:focus,#redeem-v2 input[type=email][disabled]:active,#redeem-v2 #review fieldset.form input[type=date][disabled],#redeem-v2 #review fieldset.form input[type=date][disabled]:focus,#redeem-v2 #review fieldset.form input[type=date][disabled]:active,#redeem-v2 #review fieldset.form input[type=email][disabled],#redeem-v2 #review fieldset.form input[type=email][disabled]:focus,#redeem-v2 #review fieldset.form input[type=email][disabled]:active,#redeem-v2 #review fieldset.form input[type=number][disabled],#redeem-v2 #review fieldset.form input[type=number][disabled]:focus,#redeem-v2 #review fieldset.form input[type=number][disabled]:active,#redeem-v2 #review fieldset.form input[type=password][disabled],#redeem-v2 #review fieldset.form input[type=password][disabled]:focus,#redeem-v2 #review fieldset.form input[type=password][disabled]:active,#redeem-v2 #review fieldset.form input[type=phone][disabled],#redeem-v2 #review fieldset.form input[type=phone][disabled]:focus,#redeem-v2 #review fieldset.form input[type=phone][disabled]:active,#redeem-v2 #review fieldset.form input[type=tel][disabled],#redeem-v2 #review fieldset.form input[type=tel][disabled]:focus,#redeem-v2 #review fieldset.form input[type=tel][disabled]:active,#redeem-v2 #review fieldset.form input[type=text][disabled],#redeem-v2 #review fieldset.form input[type=text][disabled]:focus,#redeem-v2 #review fieldset.form input[type=text][disabled]:active,#redeem-v2 #review fieldset.form input[type=url][disabled],#redeem-v2 #review fieldset.form input[type=url][disabled]:focus,#redeem-v2 #review fieldset.form input[type=url][disabled]:active,select[disabled],select[disabled]:focus,select[disabled]:active,dl.form dd select[disabled],dl.form dd select[disabled]:focus,dl.form dd select[disabled]:active,.account-settings .input-group select[disabled],.account-settings .input-group select[disabled]:focus,.account-settings .input-group select[disabled]:active,#redeem #review dl.form.select dd select[disabled],#redeem #review dl.form.select dd select[disabled]:focus,#redeem #review dl.form.select dd select[disabled]:active,#sign-up-v2 select[disabled],#sign-up-v2 select[disabled]:focus,#sign-up-v2 select[disabled]:active,#redeem-v2 #review fieldset.form select[disabled],#redeem-v2 #review fieldset.form select[disabled]:focus,#redeem-v2 #review fieldset.form select[disabled]:active{
+    background-color:var(--color-shade-100);
+    border:1px solid var(--color-shade-500);
+    border-radius:2px;
+    opacity:.3
+}
+input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],.account-settings .input-group input,#check-in .search-wrapper input.venue-search,dl.form dd input[type=email],dl.form dd input[type=number],dl.form dd input[type=password],dl.form dd input[type=tel],dl.form dd input[type=text],#survey-v3 .question-container input[type=text],#sign-up-v2 input[type=email],#sign-up-v2 input[type=password],#sign-up-v2 input[type=text],dl.form dd textarea,.claim-purchase input[type=number],.claim-purchase input[type=text],#redeem-v2 input[type=email],#redeem-v2 #review fieldset.form input[type=date],#redeem-v2 #review fieldset.form input[type=email],#redeem-v2 #review fieldset.form input[type=number],#redeem-v2 #review fieldset.form input[type=password],#redeem-v2 #review fieldset.form input[type=phone],#redeem-v2 #review fieldset.form input[type=tel],#redeem-v2 #review fieldset.form input[type=text],#redeem-v2 #review fieldset.form input[type=url]{
+    color:var(--color-shade-900);
+    padding:.3125rem
+}
+dl.form dd textarea{
+    height:4rem;
+    min-height:4rem;
+    resize:vertical
+}
+select,dl.form dd select,.account-settings .input-group select,#redeem #review dl.form.select dd select,#sign-up-v2 select,#redeem-v2 #review fieldset.form select{
+    background-image:url("data:image/svg+xml,%3Csvg width='12' height='7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23029acb' fill='none' stroke-width='2' d='M1 1l5 4 5-4'/%3E%3C/svg%3E");
+    background-position:right 5px top 50%;
+    background-repeat:no-repeat;
+    padding:0 1.4375rem 0 .3125rem
+}
+select::-ms-expand,dl.form dd select::-ms-expand,.account-settings .input-group select::-ms-expand,#redeem #review dl.form.select dd select::-ms-expand,#sign-up-v2 select::-ms-expand,#redeem-v2 #review fieldset.form select::-ms-expand{
+    display:none
+}
+ui-view{
+    display:block
+}
+.widget .container{
+    padding:6.875rem 1.25rem 1.25rem
+}
+#dynamic-form .submit-container{
+    display:flex;
+    float:none;
+    justify-content:flex-end;
+    padding:var(--space-c) 0 0
+}
+@keyframes spin-step{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+html,body{
+    -ms-overflow-style:none;
+    background:rgba(0,0,0,0);
+    overflow:hidden;
+    overflow-x:hidden
+}
+.widget .header{
+    display:none
+}
+.widget .container{
+    padding:0
+}
+::-webkit-scrollbar{
+    display:none
+}
+#account-settings{
+    color:var(--color-shade-900);
+    padding-bottom:2rem
+}
+#account-settings .edit[disabled]{
+    display:none
+}
+#account-settings .account-settings .input-group{
+    flex:0 1 100%;
+    padding:var(--space-b);
+    width:auto
+}
+@media (min-width: 400px){
+    #account-settings .account-settings .input-group{
+        flex:0 1 50%
+    }
+}
+@media (min-width: 900px){
+    #account-settings .account-settings .input-group{
+        flex:0 1 33.33%
+    }
+}
+@media (min-width: 1500px){
+    #account-settings .account-settings .input-group{
+        flex:0 1 25%
+    }
+}
+#account-settings .account-settings .input-group p{
+    font-size:var(--text-paragraph)
+}
+#account-settings .account-settings .input-group p:empty::before{
+    color:var(--color-shade-500);
+    content:'—'
+}
+#account-settings .account-settings .input-group label{
+    font-size:var(--text-supporting)
+}
+#account-settings .account-settings .input-group input,#account-settings .account-settings .input-group select{
+    width:100%
+}
+#account-settings .account-settings .input-group .birthday-fields{
+    display:flex;
+    justify-content:space-between;
+    width:100%
+}
+#account-settings .account-settings .input-group .birthday-fields .month,#account-settings .account-settings .input-group .birthday-fields .day,#account-settings .account-settings .input-group .birthday-fields .year{
+    margin:0;
+    min-width:0;
+    width:100%
+}
+#account-settings .account-settings .input-group .birthday-fields .month{
+    flex:0 1 100%;
+    margin-right:var(--space-a)
+}
+#account-settings .account-settings .input-group .birthday-fields .day{
+    flex:0 0 calc(3ch + .75rem);
+    margin-right:var(--space-a)
+}
+#account-settings .account-settings .input-group .birthday-fields .year{
+    flex:0 0 calc(6ch + .75rem)
+}
+#account-settings .button-container button{
+    margin-right:.9375rem
+}
+#account-settings .primary-settings,#account-settings .secondary-settings{
+    display:flex;
+    flex-wrap:wrap;
+    margin:calc(var(--space-b) * -1);
+    position:relative
+}
+#account-settings .primary-settings .button-container,#account-settings .secondary-settings .button-container{
+    flex:1 1 100%;
+    padding-left:var(--space-b)
+}
+#account-settings .primary-settings .error,#account-settings .secondary-settings .error{
+    bottom:0;
+    font-size:11px;
+    font-weight:700;
+    left:1.25rem;
+    line-height:15px;
+    margin:0;
+    position:absolute;
+    top:auto
+}
+#account-settings .primary-settings{
+    padding-bottom:2.25rem
+}
+#account-settings .primary-settings button.edit{
+    bottom:var(--space-b);
+    left:var(--space-b);
+    right:unset;
+    position:absolute
+}
+#account-settings .primary-settings button.edit::after{
+    content:" Details"
+}
+#account-settings .secondary-settings button.edit{
+    left:var(--space-b);
+    right:unset;
+    margin-top:var(--space-a)
+}
+#account-settings .secondary-settings button.edit::after{
+    content:" Password"
+}
+#account-settings .input-group.password{
+    display:none
+}
+#account-settings .notification{
+    margin:var(--space-b) var(--space-b) var(--space-c)
+}
+#account-settings .notification.error,#account-settings .notification.notification-error{
+    color:var(--color-shade-900)
+}
+#account-settings .notification.notification-warning,#account-settings .notification.warning{
+    color:var(--color-shade-900)
+}
+#account-settings .notification.notification-success,#account-settings .notification.success{
+    color:var(--color-shade-900)
+}
+body {
+    color: #3f4f5c;
+    font-family: "Foco";
+}
+
+#activity-list-v2 ul .activity button.title span {
+    color: #fff !important;
+}
+
+#activity-list-v2 ul .activity:hover button.title span, #activity-list-v2 ul .activity:focus button.title span {
+    color: #c31010 !important;
+}
+
+#activity-list-v2 ul .activity .info-container .description {
+    color: #fff !important;
+}
+
+#activity-list-v2 ul .point-value {
+    background: #c31010 !important;
+    box-shadow: none;
+    color: #fff !important;
+}
+
+#reward-list-v2 .rewards .reward .content .title, #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
+    color: #fff !important;
+}
+
+#reward-list-v2 .rewards .reward .content a:hover .title, #reward-list-v2 .rewards .reward .content a:focus .title, #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title, #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
+    color: #c31010 !important;
+}
+
+#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
+    background-color: #c31010 !important;
+    color: #fff !important;
+    box-shadow: none;
+}
+
+#reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
+    background-color: #c31010 !important;
+}
+
+#account-overview-two-v2 {
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#account-overview-two-v2 .title {
+    color: #fff;
+}
+
+#account-overview-two-v2 .ct-points-color {
+    color: #c31010 !important;
+}
+
+#account-overview-two-v2 .logout-link-container {
+    display: none;
+}
+
+#account-overview-two-v2 .profile-info .tier .icon {
+    display: none;
+}
+
+#account-overview-two-v2 .info-toggle {
+    display: none;
+}
+
+#activity-history-v2 {
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#activity-history-v2 table th, #activity-history-v2 .activity-history th, #activity-history-v2 .redemption-history th, #activity-history-v2 .purchase-history-table th, #reward-history-v2 table th, #reward-history-v2 .activity-history th, #reward-history-v2 .redemption-history th, #reward-history-v2 .purchase-history-table th, #purchase-history-v2 table th, #purchase-history-v2 .activity-history th, #purchase-history-v2 .redemption-history th, #purchase-history-v2 .purchase-history-table th {
+    color: #fff !important;
+}
+
+#activity-history-v2 table td, #activity-history-v2 .activity-history td, #activity-history-v2 .redemption-history td, #activity-history-v2 .purchase-history-table td, #reward-history-v2 table td, #reward-history-v2 .activity-history td, #reward-history-v2 .redemption-history td, #reward-history-v2 .purchase-history-table td, #purchase-history-v2 table td, #purchase-history-v2 .activity-history td, #purchase-history-v2 .redemption-history td, #purchase-history-v2 .purchase-history-table td {
+    color: #fff !important;
+}
+
+#activity-history-v2 table td.points, #activity-history-v2 .activity-history td.points, #activity-history-v2 .redemption-history td.points, #activity-history-v2 .purchase-history-table td.points, #reward-history-v2 table td.points, #reward-history-v2 .activity-history td.points, #reward-history-v2 .redemption-history td.points, #reward-history-v2 .purchase-history-table td.points, #purchase-history-v2 table td.points, #purchase-history-v2 .activity-history td.points, #purchase-history-v2 .redemption-history td.points, #purchase-history-v2 .purchase-history-table td.points {
+    color: #c31010 !important;
+}
+
+#activity-history-v2 .ct-points-color {
+    color: #c31010 !important;
+}
+
+#reward-history-v2 {
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#account-settings {
+    color: #fff !important;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#account-settings .primary-settings button.edit {
+    color: #fff !important;
+    background-color: #c31010 !important;
+    box-shadow: none;
+}
+
+#account-settings .secondary-settings button.edit {
+    color: #fff !important;
+    background-color: #c31010 !important;
+    box-shadow: none;
+    left: 175px !important;
+    bottom: 37px;
+}
