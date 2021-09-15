@@ -1116,7 +1116,7 @@ body {
 /* **************** Additional Styling **************** */
 
 .header.ct-header-color {
-    background-color: #fb48c4 !important;
+    background-color: #ff7fd3 !important;
 }
 
 .header.ct-header-color .ct-header-text-color {
@@ -1135,7 +1135,7 @@ body {
 #redeem-v2 #review .numeric-details .days-remaining>span,
 #redeem-v2 #confirmation .numeric-details .quantity-remaining>span,
 #redeem-v2 #confirmation .numeric-details .days-remaining>span {
-    background-color: #fb48c4 !important;
+    background-color: #ff7fd3 !important;
     font-weight: 700;
 }
 
