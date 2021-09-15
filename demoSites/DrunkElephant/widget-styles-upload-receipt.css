@@ -1111,3 +1111,66 @@ body {
 #upload-receipt-v2 .receipt-queue .notification+.notification {
     margin: var-(--space-a) 0 0 0
 }
+
+
+/* **************** Additional Styling **************** */
+
+.header.ct-header-color {
+    background-color: #d2d2d2 !important;
+}
+
+.header.ct-header-color .ct-header-text-color {
+    color: #000 !important;
+}
+
+.ct-points-color {
+    color: #000 !important;
+}
+
+#redeem-v2 .numeric-details .quantity-remaining>span,
+#redeem-v2 .numeric-details .days-remaining>span,
+#redeem-v2 #details .numeric-details .quantity-remaining>span,
+#redeem-v2 #details .numeric-details .days-remaining>span,
+#redeem-v2 #review .numeric-details .quantity-remaining>span,
+#redeem-v2 #review .numeric-details .days-remaining>span,
+#redeem-v2 #confirmation .numeric-details .quantity-remaining>span,
+#redeem-v2 #confirmation .numeric-details .days-remaining>span {
+    background-color: #000 !important;
+    font-weight: 700;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button),
+#activity-history .btn.show-more,
+#survey .nav-btns .next-btn,
+#upload-receipt .receipt-preview label,
+#upload-receipt-v2 .receipt-preview label,
+button.btn.btn-secondary[ng-click="doVerification()"] {
+    background-color: #E4E5E6 !important;
+    box-shadow: none !important;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button),
+#activity-history .btn.show-more,
+#survey .nav-btns .next-btn,
+#upload-receipt .receipt-preview label,
+#upload-receipt-v2 .receipt-preview label,
+button.btn.btn-secondary[ng-click="doVerification()"] {
+    color: #000 !important;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):hover,
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):focus,
+#activity-history .btn.show-more:hover,
+#activity-history .btn.show-more:focus,
+#survey .nav-btns .next-btn:hover,
+#survey .nav-btns .next-btn:focus,
+#upload-receipt .receipt-preview label:hover,
+#upload-receipt .receipt-preview label:focus,
+#upload-receipt-v2 .receipt-preview label:hover,
+#upload-receipt-v2 .receipt-preview label:focus,
+button.btn.btn-secondary[ng-click="doVerification()"]:hover,
+button.btn.btn-secondary[ng-click="doVerification()"]:focus {
+    background-color: white !important;
+    box-shadow: none !important;
+    color: #000 !important;
+}
