@@ -1452,6 +1452,10 @@ body {
     color: #fff !important;
 }
 
+#activity-list-v2 ul .activity.locked .points-container .ct-points-color {
+    color: #fff !important;
+}
+
 
 /* Rewards List */
 
