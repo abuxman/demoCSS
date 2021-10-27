@@ -1442,6 +1442,12 @@ body {
     color: #fff !important;
 }
 
+#activity-list-v2 ul .point-value:hover {
+    background-color: #fff !important;
+    box-shadow: 0 0 0 2px #383838 inset !important;
+    color: #7bc614;
+}
+
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
     color: #fff !important;
