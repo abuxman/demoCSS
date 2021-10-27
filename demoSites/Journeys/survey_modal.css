@@ -1162,8 +1162,11 @@ body {
     padding-top: 1.5rem
 }
 
-.header.ct-header-color .ct-header-text-color {
+.ct-header-text-color {
     color: #fff !important;
+}
+
+.header.ct-header-color {
     background-color: #383838 !important;
 }
 
@@ -1204,4 +1207,15 @@ button.btn.btn-secondary[ng-click="doVerification()"] {
     font-size: 1.125rem;
     font-weight: 600;
     margin: 0;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button)[disabled],
+#activity-history .btn.show-more[disabled],
+#survey .nav-btns .next-btn[disabled],
+#upload-receipt .receipt-preview label[disabled],
+#upload-receipt-v2 .receipt-preview label[disabled],
+button.btn.btn-secondary[ng-click="doVerification()"][disabled] {
+    background-color: #383838 !important;
+    box-shadow: 0 0 0 2px #383838 inset, var(--shadow-button) !important;
+    color: #fff;
 }
