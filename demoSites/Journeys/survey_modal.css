@@ -1162,7 +1162,7 @@ body {
     padding-top: 1.5rem
 }
 
-.ct-header-text-color {
+.header.ct-header-color .ct-header-text-color {
     color: #fff !important;
 }
 
@@ -1218,4 +1218,21 @@ button.btn.btn-secondary[ng-click="doVerification()"][disabled] {
     background-color: #383838 !important;
     box-shadow: 0 0 0 2px #383838 inset, var(--shadow-button) !important;
     color: #fff;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):hover,
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):focus,
+#activity-history .btn.show-more:hover,
+#activity-history .btn.show-more:focus,
+#survey .nav-btns .next-btn:hover,
+#survey .nav-btns .next-btn:focus,
+#upload-receipt .receipt-preview label:hover,
+#upload-receipt .receipt-preview label:focus,
+#upload-receipt-v2 .receipt-preview label:hover,
+#upload-receipt-v2 .receipt-preview label:focus,
+button.btn.btn-secondary[ng-click="doVerification()"]:hover,
+button.btn.btn-secondary[ng-click="doVerification()"]:focus {
+    background-color: #fff !important;
+    box-shadow: 0 0 0 2px #383838 inset, var(--shadow-button) !important;
+    color: #7bc614;
 }
