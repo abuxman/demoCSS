@@ -2192,7 +2192,7 @@ body {
 }
 
 .header.ct-header-color {
-    background-color: #383838 !important;
+    background-color: #0e4caa !important;
 }
 
 .header.ct-header-color .ct-header-text-color {
@@ -2222,7 +2222,7 @@ body {
 #upload-receipt .receipt-preview label,
 #upload-receipt-v2 .receipt-preview label,
 button.btn.btn-secondary[ng-click="doVerification()"] {
-    background-color: #0e4caa !important;
+    background-color: #dd2f3d !important;
     box-shadow: none !important;
     color: #fff !important;
 }
