@@ -1445,7 +1445,7 @@ body {
 #activity-list-v2 ul .activity:hover .point-value,
 #activity-list-v2 ul .activity:focus .point-value {
     background-color: #fff !important;
-    box-shadow: 0 0 0 2px #383838 inset !important;
+    box-shadow: 0 0 0 2px #b81321 inset !important;
     color: #b81321 !important;
 }
 
