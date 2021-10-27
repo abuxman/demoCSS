@@ -1167,7 +1167,7 @@ body {
 }
 
 .header.ct-header-color {
-    background-color: #383838 !important;
+    background-color: #0e4caa !important;
 }
 
 .ct-points-color {
@@ -1201,8 +1201,8 @@ body {
 #upload-receipt .receipt-preview label,
 #upload-receipt-v2 .receipt-preview label,
 button.btn.btn-secondary[ng-click="doVerification()"] {
-    background-color: #383838 !important;
-    box-shadow: 0 0 0 2px #383838 inset, var(--shadow-button) !important;
+    background-color: #dd2f3d !important;
+    box-shadow: 0 0 0 2px #b81321 inset, var(--shadow-button) !important;
     color: #fff !important;
     font-size: 1.125rem;
     font-weight: 600;
@@ -1215,8 +1215,8 @@ button.btn.btn-secondary[ng-click="doVerification()"] {
 #upload-receipt .receipt-preview label[disabled],
 #upload-receipt-v2 .receipt-preview label[disabled],
 button.btn.btn-secondary[ng-click="doVerification()"][disabled] {
-    background-color: #383838 !important;
-    box-shadow: 0 0 0 2px #383838 inset, var(--shadow-button) !important;
+    background-color: #dd2f3d !important;
+    box-shadow: 0 0 0 2px #b81321 inset, var(--shadow-button) !important;
     color: #fff;
 }
 
@@ -1232,7 +1232,7 @@ button.btn.btn-secondary[ng-click="doVerification()"][disabled] {
 #upload-receipt-v2 .receipt-preview label:focus,
 button.btn.btn-secondary[ng-click="doVerification()"]:hover,
 button.btn.btn-secondary[ng-click="doVerification()"]:focus {
-    background-color: #fff !important;
-    box-shadow: 0 0 0 2px #383838 inset, var(--shadow-button) !important;
-    color: #7bc614 !important;
+    background-color: #b81321 !important;
+    box-shadow: 0 0 0 2px #b81321 inset, var(--shadow-button) !important;
+    color: #fff !important;
 }
