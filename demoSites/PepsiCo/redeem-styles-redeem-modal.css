@@ -2211,7 +2211,7 @@ body {
 #redeem-v2 #review .numeric-details .days-remaining>span,
 #redeem-v2 #confirmation .numeric-details .quantity-remaining>span,
 #redeem-v2 #confirmation .numeric-details .days-remaining>span {
-    background-color: #000 !important;
+    background-color: #dd2f3d !important;
     font-weight: 700;
     color: #fff !important;
 }
@@ -2222,7 +2222,7 @@ body {
 #upload-receipt .receipt-preview label,
 #upload-receipt-v2 .receipt-preview label,
 button.btn.btn-secondary[ng-click="doVerification()"] {
-    background-color: #383838 !important;
+    background-color: #0e4caa !important;
     box-shadow: none !important;
     color: #fff !important;
 }
@@ -2248,7 +2248,7 @@ button.btn.btn-secondary[ng-click="doVerification()"] {
 #upload-receipt-v2 .receipt-preview label:focus,
 button.btn.btn-secondary[ng-click="doVerification()"]:hover,
 button.btn.btn-secondary[ng-click="doVerification()"]:focus {
-    background-color: white !important;
+    background-color: #b81321 !important;
     box-shadow: none !important;
-    color: #000 !important;
+    color: #fff !important;
 }
