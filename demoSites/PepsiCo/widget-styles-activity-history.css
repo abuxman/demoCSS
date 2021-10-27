@@ -1671,20 +1671,20 @@ body {
 }
 
 #activity-list-v2 ul .activity button.title span {
-    color: #383838 !important;
+    color: #0e4caa !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,
 #activity-list-v2 ul .activity:focus button.title span {
-    color: #7bc614 !important;
+    color: #0e4caa !important;
 }
 
 #activity-list-v2 ul .activity .info-container .description {
-    color: #383838 !important;
+    color: #000 !important;
 }
 
 #activity-list-v2 ul .point-value {
-    background: #383838 !important;
+    background: #dd2f3d !important;
     box-shadow: none;
     color: #fff !important;
 }
@@ -1692,25 +1692,25 @@ body {
 #activity-list-v2 ul .activity:hover .point-value,
 #activity-list-v2 ul .activity:focus .point-value {
     background-color: #fff !important;
-    box-shadow: 0 0 0 2px #383838 inset !important;
-    color: #7bc614 !important;
+    box-shadow: 0 0 0 2px #b81321 inset !important;
+    color: #b81321 !important;
 }
 
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #383838 !important;
+    color: #0e4caa !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title,
 #reward-list-v2 .rewards .reward .content a:focus .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #7bc614 !important;
+    color: #0e4caa !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #383838 !important;
+    background-color: #dd2f3d !important;
     color: #fff !important;
     box-shadow: none;
 }
@@ -1719,15 +1719,15 @@ body {
 #reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #9c9c9c !important;
-    color: #000 !important;
+    background-color: #383838 !important;
+    color: #fff !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:hover,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color:hover {
-    background: #fff !important;
-    box-shadow: 0 0 0 2px #383838 inset !important;
-    color: #7bc614 !important;
+    background: #b81321 !important;
+    box-shadow: 0 0 0 2px #b81321 inset !important;
+    color: #fff !important;
 }
 
 #reward-list-v2 .rewards .reward .content:hover .row p.points.ct-points-color,
@@ -1736,9 +1736,9 @@ body {
 #reward-list-v2 .rewards .reward:nth-child(n) .content:hover .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content:focus .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content:focus-within .row p.points.ct-points-color {
-    background: #fff !important;
-    box-shadow: 0 0 0 2px #383838 inset !important;
-    color: #7bc614 !important;
+    background: #b81321 !important;
+    box-shadow: 0 0 0 2px #b81321 inset !important;
+    color: #fff !important;
 }
 
 #account-overview-two-v2 {
@@ -1748,11 +1748,11 @@ body {
 }
 
 #account-overview-two-v2 .title {
-    color: #000;
+    color: #0e4caa !important;
 }
 
 #account-overview-two-v2 .ct-points-color {
-    color: #7bc614 !important;
+    color: #dd2f3d !important;
 }
 
 #account-overview-two-v2 .logout-link-container {
@@ -1765,6 +1765,10 @@ body {
 
 #account-overview-two-v2 .info-toggle {
     display: none;
+}
+
+#account-overview-two-v2 .name {
+    color: #0e4caa !important;
 }
 
 #activity-history-v2 {
@@ -1816,7 +1820,7 @@ body {
 #purchase-history-v2 .activity-history td.points,
 #purchase-history-v2 .redemption-history td.points,
 #purchase-history-v2 .purchase-history-table td.points {
-    color: #7bc614 !important;
+    color: #dd2f3d !important;
 }
 
 #activity-history-v2 .ct-points-color {
