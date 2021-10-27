@@ -1467,6 +1467,17 @@ body {
     color: #7bc614 !important;
 }
 
+#reward-list-v2 .rewards .reward .content:hover .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward .content:focus .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward .content:focus-within .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:hover .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:focus .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:focus-within .row p.points.ct-points-color {
+    background: #fff !important;
+    box-shadow: 0 0 0 2px #383838 inset !important;
+    color: #7bc614 !important;
+}
+
 #account-overview-two-v2 {
     color: #fff;
     background-color: #1a1a1a;
