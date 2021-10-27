@@ -1424,20 +1424,20 @@ body {
 }
 
 #activity-list-v2 ul .activity button.title span {
-    color: #383838 !important;
+    color: #0e4caa !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,
 #activity-list-v2 ul .activity:focus button.title span {
-    color: #7bc614 !important;
+    color: #0e4caa !important;
 }
 
 #activity-list-v2 ul .activity .info-container .description {
-    color: #383838 !important;
+    color: #000 !important;
 }
 
 #activity-list-v2 ul .point-value {
-    background: #383838 !important;
+    background: #dd2f3d !important;
     box-shadow: none;
     color: #fff !important;
 }
@@ -1446,7 +1446,7 @@ body {
 #activity-list-v2 ul .activity:focus .point-value {
     background-color: #fff !important;
     box-shadow: 0 0 0 2px #383838 inset !important;
-    color: #7bc614 !important;
+    color: #b81321 !important;
 }
 
 #reward-list-v2 .rewards .reward .content .title,
