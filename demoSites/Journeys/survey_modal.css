@@ -1234,5 +1234,5 @@ button.btn.btn-secondary[ng-click="doVerification()"]:hover,
 button.btn.btn-secondary[ng-click="doVerification()"]:focus {
     background-color: #fff !important;
     box-shadow: 0 0 0 2px #383838 inset, var(--shadow-button) !important;
-    color: #7bc614;
+    color: #7bc614 !important;
 }
