@@ -1,0 +1,1057 @@
+:root{
+    --color-shade-100: #FDFFFF;
+    --color-shade-200: #FAFBFB;
+    --color-shade-300: #F4F6F6;
+    --color-shade-400: #E4E5E6;
+    --color-shade-500: #97999A;
+    --color-shade-700: #5b5b5c;
+    --color-shade-900: #2D2D2E;
+    --color-orange-100: #FFF9F2;
+    --color-orange-200: #FFEDD4;
+    --color-orange-250: #ffce8a;
+    --color-orange-300: #FFC26F;
+    --color-orange-500: #eb9f42;
+    --color-orange-700: #c07825;
+    --color-orange-900: #ae6200;
+    --color-blue-100: #e0faff;
+    --color-blue-200: #cff6ff;
+    --color-blue-300: #a3e8f7;
+    --color-blue-400: #50c1e7;
+    --color-blue-500: #029ACB;
+    --color-blue-700: #007095;
+    --color-blue-900: #00445A;
+    --color-green-500: #D3F3AC;
+    --color-green-700: #466126;
+    --color-translucent-20: rgba(255,255,255,.2);
+    --color-transparent-07: rgba(0,0,0,.07);
+    --color-transparent-10: rgba(0,0,0,.1);
+    --color-transparent-20: rgba(0,0,0,.2);
+    --color-transparent-50: rgba(0,0,0,.5);
+    --color-translucent-nav: rgba(241,243,243,.86);
+    --color-translucent-subnav: rgba(249,250,250,.86);
+    --shadow-text: 0 1px 2px var(--color-transparent-20), 0 1px 3px var(--color-transparent-50);
+    --shadow-button: 0 1px 3px var(--color-transparent-20), 0 3px 8px var(--color-transparent-10);
+    --shadow-buttonlight: 0 1px 3px var(--color-transparent-20), 0 3px 8px var(--color-transparent-10), 0 6px 14px var(--color-transparent-07);
+    --shadow-text-transparent: 0 1px 2px transparent, 0 1px 4px transparent;
+    --shadow-subnav: 0 6px 8px 0 rgba(0,0,0,.15), 0 10px 14px rgba(0,0,0,.06);
+    --space-buttons: .375rem;
+    --space-a: .5rem;
+    --space-b: 1rem;
+    --space-c: 1.5rem;
+    --space-d: 2.75rem;
+    --space-e: 3.5rem;
+    --text-nav: 1rem;
+    --text-subnav: .875rem;
+    --text-title: 1.75rem;
+    --text-header: .875rem;
+    --text-widgetheader: 1.5rem;
+    --text-tiermain: 1.875rem;
+    --text-hero: 2.125rem;
+    --text-bigparagraph: 1.125rem;
+    --text-paragraph: 1.125rem;
+    --text-supporting: 1rem;
+    --text-minor: .875rem;
+    --text-button: 1rem;
+    --text-linkblock: 1.5rem;
+    --text-copyright: .5625rem;
+    --height-nav: 3.625rem;
+    --height-subnav: 2.5rem;
+    --width-max-width: 100rem;
+    --width-nav-icon: 1.875rem;
+    --ratio-angle: 17%;
+    --angle-height: 160;
+    --angle-max-width: 1500;
+    --afterangle-min-padding-top: calc((var(--angle-height) * 1px) - (var(--angle-height) / var(--angle-max-width) * 100%));
+    --afterangle-extra-padding-top: calc(var(--angle-height) / var(--angle-max-width) * 60%);
+    --angle-padding-bottom: calc(var(--angle-height) / var(--angle-max-width) * 60%);
+    --angle-padding-bottom-maximum: 5rem;
+    --angle-extra-padding-bottom: calc(var(--angle-height) / var(--angle-max-width) * 80%);
+    --timing-in: .15s;
+    --timing-out: .3s;
+    --z-nav: 90;
+    --z-subnav: 50;
+    --z-subnavmenu: 49;
+    --widget-offset: 20px;
+    --widget-bottom: 5px;
+    --hero-left-scrim: linear-gradient(to right, #eb9f42 0%, rgba(235, 159, 66, 0.98) 3%, rgba(235, 159, 66, 0.91) 5%, rgba(235, 159, 66, 0.82) 8%, rgba(235, 159, 66, 0.7) 11%, rgba(235, 159, 66, 0.57) 15%, rgba(235, 159, 66, 0.43) 21%, rgba(235, 159, 66, 0.3) 29%, rgba(235, 159, 66, 0.18) 41%, rgba(235, 159, 66, 0.09) 56%, rgba(235, 159, 66, 0.02) 75%, rgba(235, 159, 66, 0) 100%)
+}
+@media (min-width: 900px){
+    :root{
+        --space-buttons: .375rem;
+        --space-a: .625rem;
+        --space-b: 1.25rem;
+        --space-c: 2.5rem;
+        --space-d: 3.125rem;
+        --space-e: 3.75rem
+    }
+}
+@media (min-width: 900px){
+    :root{
+        --text-nav: 1.125rem;
+        --text-subnav: 1rem;
+        --text-title: 2.5rem;
+        --text-header: 1rem;
+        --text-widgetheader: 1.5rem;
+        --text-tiermain: 2.25rem;
+        --text-hero: 2.5rem;
+        --text-bigparagraph: 1.25rem;
+        --text-paragraph: 1.125rem;
+        --text-supporting: 1rem;
+        --text-minor: .875rem;
+        --text-button: 1.125rem;
+        --text-linkblock: 1.875rem;
+        --text-copyright: .75rem
+    }
+}
+@media (min-width: 680px){
+    :root{
+        --width-nav-icon: 1.5rem
+    }
+}
+@media (min-width: 900px){
+    :root{
+        --height-nav: 5rem;
+        --height-subnav: 2.5rem;
+        --width-nav-icon: 1.875rem
+    }
+}
+@media (min-width: 900px){
+    :root{
+        --hero-left-scrim: linear-gradient(to right, #eb9f42 0%, rgba(235, 159, 66, 0.98) 1.5%, rgba(235, 159, 66, 0.91) 2.5%, rgba(235, 159, 66, 0.82) 4%, rgba(235, 159, 66, 0.7) 5.5%, rgba(235, 159, 66, 0.57) 7.5%, rgba(235, 159, 66, 0.43) 10.5%, rgba(235, 159, 66, 0.3) 14.5%, rgba(235, 159, 66, 0.18) 20.5%, rgba(235, 159, 66, 0.09) 28%, rgba(235, 159, 66, 0.02) 37.5%, rgba(235, 159, 66, 0) 50%)
+    }
+}
+html,body{
+    -webkit-font-smoothing:subpixel-antialiased;
+    -webkit-text-size-adjust:100%;
+    box-sizing:border-box;
+    font-feature-settings:'pnum' 1, 'kern' 1, 'liga' 1;
+    font-size:16px
+}
+body>.ng-scope{
+    padding:20px
+}
+a,a:link,a:visited{
+    font-size:inherit;
+    font-weight:inherit
+}
+*,*::after,*::after{
+    box-sizing:inherit;
+    font-family:"InterUIWeb","Inter",BlinkMacSystemFont,system-ui,-apple-system,sans-serif
+}
+div[ui-view]{
+    position:relative
+}
+hr{
+    border:0;
+    border-top:1px solid currentColor;
+    height:0
+}
+.header.ct-header-color{
+    background-color:var(--color-orange-200) !important
+}
+.header.ct-header-color .ct-header-text-color{
+    color:var(--color-blue-900) !important
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:inherit
+}
+p,span{
+    font-size:1em
+}
+.ct-points-color{
+    color:var(--color-orange-900) !important;
+    text-transform:none !important
+}
+.ct-link-color{
+    color:var(--color-blue-700) !important;
+    text-decoration:none !important
+}
+.ct-link-color:hover,.ct-link-color:focus{
+    color:var(--color-blue-500) !important
+}
+.ct-link-color:active{
+    color:var(--color-blue-900) !important
+}
+a,a:link,a:visited{
+    color:var(--color-blue-700);
+    text-decoration:none;
+    transition:color .15s,box-shadow .15s,background .15s
+}
+a:hover,a:link:hover,a:visited:hover{
+    color:var(--color-blue-500);
+    text-decoration:underline
+}
+a:active,a:link:active,a:visited:active{
+    color:var(--color-blue-900);
+    text-decoration:underline;
+    transition:none
+}
+a[disabled],a:link[disabled],a:visited[disabled]{
+    pointer-events:none
+}
+a:focus,a:link:focus,a:visited:focus{
+    outline:2px solid var(--color-blue-700);
+    outline-offset:2px
+}
+a:focus:not(:focus-visible),a:link:focus:not(:focus-visible),a:visited:focus:not(:focus-visible){
+    outline:0
+}
+a:focus-visible,a:link:focus-visible,a:visited:focus-visible{
+    outline:2px solid var(--color-blue-700);
+    outline-offset:2px
+}
+button:focus{
+    outline:2px solid var(--color-blue-700);
+    outline-offset:2px
+}
+button:focus:not(:focus-visible){
+    outline:0
+}
+button:focus-visible{
+    outline:2px solid var(--color-blue-700);
+    outline-offset:2px
+}
+a.btn,button,.btn,.btn.btn-danger,a.btn.btn-danger,.btn.btn-secondary,a.btn.btn-secondary,#social-connect-widget button.connect,#survey .nav-btns .prev-btn,button.btn,.btn.btn-small,a.btn.btn-small,#survey .nav-btns .prev-btn,#registration-v2 .container .content .login button,#account-overview-v2 a.logout-link,#sign-up-v2 .sign-up-button,#sign-up-v2 .log-in-button,#sign-up-v2 .back-to-login-button,.btn.btn-email,a.btn.btn-email{
+    background-color:var(--color-shade-400) !important;
+    border:0;
+    border-radius:3px;
+    box-shadow:0 0 0 2px var(--color-shade-400) inset,var(--shadow-button);
+    color:var(--color-shade-900) !important;
+    cursor:pointer;
+    font-family:inherit;
+    font-size:1.125rem;
+    font-weight:400;
+    height:auto;
+    line-height:1.125rem;
+    margin:0;
+    outline:0 !important;
+    padding:.75rem 1.25rem;
+    text-decoration:none;
+    text-transform:none;
+    transition:all .15s,outline 0s,outline-offset 0s;
+    user-select:none;
+    width:auto
+}
+a.btn[disabled],button[disabled],.btn[disabled],.btn.btn-danger[disabled],a.btn.btn-danger[disabled],.btn.btn-secondary[disabled],a.btn.btn-secondary[disabled],#social-connect-widget button.connect[disabled],#survey .nav-btns .prev-btn[disabled],button.btn[disabled],.btn.btn-small[disabled],a.btn.btn-small[disabled],#survey .nav-btns .prev-btn[disabled],#registration-v2 .container .content .login button[disabled],#account-overview-v2 a.logout-link[disabled],#sign-up-v2 .sign-up-button[disabled],#sign-up-v2 .log-in-button[disabled],#sign-up-v2 .back-to-login-button[disabled],.btn.btn-email[disabled],a.btn.btn-email[disabled]{
+    pointer-events:none
+}
+a.btn:hover,a.btn:focus,button:hover,button:focus,.btn:hover,.btn:focus,.btn.btn-danger:hover,.btn.btn-danger:focus,a.btn.btn-danger:hover,a.btn.btn-danger:focus,.btn.btn-secondary:hover,.btn.btn-secondary:focus,a.btn.btn-secondary:hover,a.btn.btn-secondary:focus,#social-connect-widget button.connect:hover,#social-connect-widget button.connect:focus,#survey .nav-btns .prev-btn:hover,#survey .nav-btns .prev-btn:focus,button.btn:hover,button.btn:focus,.btn.btn-small:hover,.btn.btn-small:focus,a.btn.btn-small:hover,a.btn.btn-small:focus,#survey .nav-btns .prev-btn:hover,#survey .nav-btns .prev-btn:focus,#registration-v2 .container .content .login button:hover,#registration-v2 .container .content .login button:focus,#account-overview-v2 a.logout-link:hover,#account-overview-v2 a.logout-link:focus,#sign-up-v2 .sign-up-button:hover,#sign-up-v2 .sign-up-button:focus,#sign-up-v2 .log-in-button:hover,#sign-up-v2 .log-in-button:focus,#sign-up-v2 .back-to-login-button:hover,#sign-up-v2 .back-to-login-button:focus,.btn.btn-email:hover,.btn.btn-email:focus,a.btn.btn-email:hover,a.btn.btn-email:focus{
+    background-color:var(--color-blue-200) !important;
+    box-shadow:0 0 0 2px var(--color-blue-200) inset,var(--shadow-button);
+    color:var(--color-shade-900) !important;
+    text-decoration:none
+}
+a.btn:focus,button:focus,.btn:focus,.btn.btn-danger:focus,a.btn.btn-danger:focus,.btn.btn-secondary:focus,a.btn.btn-secondary:focus,#social-connect-widget button.connect:focus,#survey .nav-btns .prev-btn:focus,button.btn:focus,.btn.btn-small:focus,a.btn.btn-small:focus,#survey .nav-btns .prev-btn:focus,#registration-v2 .container .content .login button:focus,#account-overview-v2 a.logout-link:focus,#sign-up-v2 .sign-up-button:focus,#sign-up-v2 .log-in-button:focus,#sign-up-v2 .back-to-login-button:focus,.btn.btn-email:focus,a.btn.btn-email:focus{
+    box-shadow:0 0 0 2px var(--color-blue-500) inset,var(--shadow-button);
+    outline:0
+}
+a.btn:active,button:active,.btn:active,.btn.btn-danger:active,a.btn.btn-danger:active,.btn.btn-secondary:active,a.btn.btn-secondary:active,#social-connect-widget button.connect:active,#survey .nav-btns .prev-btn:active,button.btn:active,.btn.btn-small:active,a.btn.btn-small:active,#survey .nav-btns .prev-btn:active,#registration-v2 .container .content .login button:active,#account-overview-v2 a.logout-link:active,#sign-up-v2 .sign-up-button:active,#sign-up-v2 .log-in-button:active,#sign-up-v2 .back-to-login-button:active,.btn.btn-email:active,a.btn.btn-email:active{
+    background-color:var(--color-blue-500) !important;
+    box-shadow:0 0 0 2px var(--color-blue-500) inset,var(--shadow-button);
+    color:var(--color-shade-900) !important;
+    text-decoration:none;
+    transition:none
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button),#activity-history .btn.show-more,#survey .nav-btns .next-btn,#upload-receipt .receipt-preview label,#upload-receipt-v2 .receipt-preview label,button.btn.btn-secondary[ng-click="doVerification()"]{
+    background-color:var(--color-orange-300) !important;
+    box-shadow:0 0 0 2px var(--color-orange-300) inset,var(--shadow-button) !important;
+    color:var(--color-shade-900) !important;
+    font-size:1.125rem;
+    font-weight:600;
+    margin:0
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button)[disabled],#activity-history .btn.show-more[disabled],#survey .nav-btns .next-btn[disabled],#upload-receipt .receipt-preview label[disabled],#upload-receipt-v2 .receipt-preview label[disabled],button.btn.btn-secondary[ng-click="doVerification()"][disabled]{
+    box-shadow:0 0 0 2px var(--color-orange-300) inset,var(--shadow-text-transparent) !important
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):hover,.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):focus,#activity-history .btn.show-more:hover,#activity-history .btn.show-more:focus,#survey .nav-btns .next-btn:hover,#survey .nav-btns .next-btn:focus,#upload-receipt .receipt-preview label:hover,#upload-receipt .receipt-preview label:focus,#upload-receipt-v2 .receipt-preview label:hover,#upload-receipt-v2 .receipt-preview label:focus,button.btn.btn-secondary[ng-click="doVerification()"]:hover,button.btn.btn-secondary[ng-click="doVerification()"]:focus{
+    background-color:var(--color-orange-250) !important;
+    box-shadow:0 0 0 2px var(--color-orange-250) inset,var(--shadow-button) !important;
+    color:var(--color-shade-900) !important
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):focus,#activity-history .btn.show-more:focus,#survey .nav-btns .next-btn:focus,#upload-receipt .receipt-preview label:focus,#upload-receipt-v2 .receipt-preview label:focus,button.btn.btn-secondary[ng-click="doVerification()"]:focus{
+    box-shadow:0 0 0 2px var(--color-orange-700) inset,var(--shadow-button) !important
+}
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):active,#activity-history .btn.show-more:active,#survey .nav-btns .next-btn:active,#upload-receipt .receipt-preview label:active,#upload-receipt-v2 .receipt-preview label:active,button.btn.btn-secondary[ng-click="doVerification()"]:active{
+    background-color:var(--color-orange-500) !important;
+    box-shadow:0 0 0 2px var(--color-orange-500) inset,var(--shadow-button) !important;
+    color:var(--color-shade-900) !important
+}
+#account-settings .edit,#account-settings .verify,#account-settings .button-container .btn.btn-secondary{
+    background:transparent !important;
+    border-radius:3px;
+    box-shadow:0 0 0 2px var(--color-orange-300) inset;
+    color:var(--color-shade-900) !important;
+    display:inline-block;
+    font-size:1.125rem;
+    font-weight:400;
+    padding:.75rem 1.25rem;
+    transition:all .15s,outline 0s,outline-offset 0s;
+    user-select:none
+}
+#account-settings .edit:hover,#account-settings .verify:hover,#account-settings .button-container .btn.btn-secondary:hover{
+    background:var(--color-orange-100) !important;
+    box-shadow:0 0 0 2px var(--color-orange-250) inset;
+    color:var(--color-shade-900) !important
+}
+#account-settings .edit:focus,#account-settings .verify:focus,#account-settings .button-container .btn.btn-secondary:focus{
+    background:var(--color-orange-100) !important;
+    box-shadow:0 0 0 2px var(--color-shade-700) inset;
+    color:var(--color-orange-900) !important
+}
+#account-settings .edit:active,#account-settings .verify:active,#account-settings .button-container .btn.btn-secondary:active{
+    background:var(--color-transparent-20) !important;
+    box-shadow:0 0 0 2px var(--color-shade-900) inset;
+    color:var(--color-shade-900) !important;
+    transition:none
+}
+#account-settings .edit:hover,#account-settings .verify:hover,#account-settings .button-container .btn.btn-secondary:hover{
+    background:var(--color-orange-100) !important;
+    box-shadow:0 0 0 2px var(--color-orange-250) inset;
+    color:var(--color-shade-900) !important
+}
+#account-settings .edit:focus,#account-settings .verify:focus,#account-settings .button-container .btn.btn-secondary:focus{
+    background:var(--color-orange-100) !important;
+    box-shadow:0 0 0 2px var(--color-shade-700) inset;
+    color:var(--color-orange-900) !important
+}
+#account-settings .edit:active,#account-settings .verify:active,#account-settings .button-container .btn.btn-secondary:active{
+    background:var(--color-transparent-20) !important;
+    box-shadow:0 0 0 2px var(--color-shade-900) inset;
+    color:var(--color-shade-900) !important;
+    transition:none
+}
+.notification{
+    flex:1 1 100%
+}
+.notification.error,.notification.notification-error{
+    background-color:transparent;
+    border:1px solid var(--color-orange-500);
+    color:var(--color-shade-900)
+}
+.notification.notification-warning,.notification.warning{
+    background-color:transparent;
+    border:1px solid var(--color-orange-300);
+    color:var(--color-shade-900)
+}
+.notification.notification-success,.notification.success{
+    background-color:transparent;
+    border:1px solid var(--color-green-500);
+    color:var(--color-shade-900)
+}
+.notification .fa,.notification .status{
+    display:none
+}
+.notification .msg,.notification .status{
+    font-size:var(--text-supporting)
+}
+#activity-history table,#reward-history table,.purchase-history-table{
+    font-feature-settings:'pnum' 0, 'tnum' 1, 'kern' 1, 'liga' 1
+}
+#activity-history table tr[ng-show='rewards.length == 0'] td,#activity-history table tr[ng-show='orders.length == 0'] td span,#activity-history table span[ng-if='activity.points() < 0'],#reward-history table tr[ng-show='rewards.length == 0'] td,#reward-history table tr[ng-show='orders.length == 0'] td span,#reward-history table span[ng-if='activity.points() < 0'],.purchase-history-table tr[ng-show='rewards.length == 0'] td,.purchase-history-table tr[ng-show='orders.length == 0'] td span,.purchase-history-table span[ng-if='activity.points() < 0']{
+    color:#999 !important
+}
+#activity-history table tbody:before,#reward-history table tbody:before,.purchase-history-table tbody:before{
+    content:''
+}
+#activity-history table td,#activity-history table th,#reward-history table td,#reward-history table th,.purchase-history-table td,.purchase-history-table th{
+    line-height:1.25rem;
+    padding:.25rem 1rem
+}
+#activity-history table td:nth-last-child(1),#activity-history table th:nth-last-child(1),#reward-history table td:nth-last-child(1),#reward-history table th:nth-last-child(1),.purchase-history-table td:nth-last-child(1),.purchase-history-table th:nth-last-child(1){
+    padding-right:0
+}
+input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],.account-settings .input-group input,#check-in .search-wrapper input.venue-search,dl.form dd input[type=email],dl.form dd input[type=number],dl.form dd input[type=password],dl.form dd input[type=tel],dl.form dd input[type=text],#survey-v3 .question-container input[type=text],#sign-up-v2 input[type=email],#sign-up-v2 input[type=password],#sign-up-v2 input[type=text],dl.form dd textarea,.claim-purchase input[type=number],.claim-purchase input[type=text],#redeem-v2 input[type=email],#redeem-v2 #review fieldset.form input[type=date],#redeem-v2 #review fieldset.form input[type=email],#redeem-v2 #review fieldset.form input[type=number],#redeem-v2 #review fieldset.form input[type=password],#redeem-v2 #review fieldset.form input[type=phone],#redeem-v2 #review fieldset.form input[type=tel],#redeem-v2 #review fieldset.form input[type=text],#redeem-v2 #review fieldset.form input[type=url],select,dl.form dd select,.account-settings .input-group select,#redeem #review dl.form.select dd select,#sign-up-v2 select,#redeem-v2 #review fieldset.form select{
+    -webkit-appearance:none;
+    background:unset;
+    background-color:var(--color-shade-100);
+    border:1px solid var(--color-shade-500);
+    border-radius:2px;
+    font-size:16px;
+    height:32px;
+    line-height:30px;
+    margin:0;
+    transition:all .15s
+}
+input[type=email]:focus,input[type=email]:active,input[type=number]:focus,input[type=number]:active,input[type=password]:focus,input[type=password]:active,input[type=tel]:focus,input[type=tel]:active,input[type=text]:focus,input[type=text]:active,.account-settings .input-group input:focus,.account-settings .input-group input:active,#check-in .search-wrapper input.venue-search:focus,#check-in .search-wrapper input.venue-search:active,dl.form dd input[type=email]:focus,dl.form dd input[type=email]:active,dl.form dd input[type=number]:focus,dl.form dd input[type=number]:active,dl.form dd input[type=password]:focus,dl.form dd input[type=password]:active,dl.form dd input[type=tel]:focus,dl.form dd input[type=tel]:active,dl.form dd input[type=text]:focus,dl.form dd input[type=text]:active,#survey-v3 .question-container input[type=text]:focus,#survey-v3 .question-container input[type=text]:active,#sign-up-v2 input[type=email]:focus,#sign-up-v2 input[type=email]:active,#sign-up-v2 input[type=password]:focus,#sign-up-v2 input[type=password]:active,#sign-up-v2 input[type=text]:focus,#sign-up-v2 input[type=text]:active,dl.form dd textarea:focus,dl.form dd textarea:active,.claim-purchase input[type=number]:focus,.claim-purchase input[type=number]:active,.claim-purchase input[type=text]:focus,.claim-purchase input[type=text]:active,#redeem-v2 input[type=email]:focus,#redeem-v2 input[type=email]:active,#redeem-v2 #review fieldset.form input[type=date]:focus,#redeem-v2 #review fieldset.form input[type=date]:active,#redeem-v2 #review fieldset.form input[type=email]:focus,#redeem-v2 #review fieldset.form input[type=email]:active,#redeem-v2 #review fieldset.form input[type=number]:focus,#redeem-v2 #review fieldset.form input[type=number]:active,#redeem-v2 #review fieldset.form input[type=password]:focus,#redeem-v2 #review fieldset.form input[type=password]:active,#redeem-v2 #review fieldset.form input[type=phone]:focus,#redeem-v2 #review fieldset.form input[type=phone]:active,#redeem-v2 #review fieldset.form input[type=tel]:focus,#redeem-v2 #review fieldset.form input[type=tel]:active,#redeem-v2 #review fieldset.form input[type=text]:focus,#redeem-v2 #review fieldset.form input[type=text]:active,#redeem-v2 #review fieldset.form input[type=url]:focus,#redeem-v2 #review fieldset.form input[type=url]:active,select:focus,select:active,dl.form dd select:focus,dl.form dd select:active,.account-settings .input-group select:focus,.account-settings .input-group select:active,#redeem #review dl.form.select dd select:focus,#redeem #review dl.form.select dd select:active,#sign-up-v2 select:focus,#sign-up-v2 select:active,#redeem-v2 #review fieldset.form select:focus,#redeem-v2 #review fieldset.form select:active{
+    background-color:var(--color-shade-100);
+    border:1px solid var(--color-blue-700);
+    box-shadow:0 0 0 1px var(--color-blue-700) inset;
+    outline:0;
+    transition:none
+}
+input[type=email][disabled],input[type=email][disabled]:focus,input[type=email][disabled]:active,input[type=number][disabled],input[type=number][disabled]:focus,input[type=number][disabled]:active,input[type=password][disabled],input[type=password][disabled]:focus,input[type=password][disabled]:active,input[type=tel][disabled],input[type=tel][disabled]:focus,input[type=tel][disabled]:active,input[type=text][disabled],input[type=text][disabled]:focus,input[type=text][disabled]:active,.account-settings .input-group input[disabled],.account-settings .input-group input[disabled]:focus,.account-settings .input-group input[disabled]:active,#check-in .search-wrapper input.venue-search[disabled],#check-in .search-wrapper input.venue-search[disabled]:focus,#check-in .search-wrapper input.venue-search[disabled]:active,dl.form dd input[type=email][disabled],dl.form dd input[type=email][disabled]:focus,dl.form dd input[type=email][disabled]:active,dl.form dd input[type=number][disabled],dl.form dd input[type=number][disabled]:focus,dl.form dd input[type=number][disabled]:active,dl.form dd input[type=password][disabled],dl.form dd input[type=password][disabled]:focus,dl.form dd input[type=password][disabled]:active,dl.form dd input[type=tel][disabled],dl.form dd input[type=tel][disabled]:focus,dl.form dd input[type=tel][disabled]:active,dl.form dd input[type=text][disabled],dl.form dd input[type=text][disabled]:focus,dl.form dd input[type=text][disabled]:active,#survey-v3 .question-container input[type=text][disabled],#survey-v3 .question-container input[type=text][disabled]:focus,#survey-v3 .question-container input[type=text][disabled]:active,#sign-up-v2 input[type=email][disabled],#sign-up-v2 input[type=email][disabled]:focus,#sign-up-v2 input[type=email][disabled]:active,#sign-up-v2 input[type=password][disabled],#sign-up-v2 input[type=password][disabled]:focus,#sign-up-v2 input[type=password][disabled]:active,#sign-up-v2 input[type=text][disabled],#sign-up-v2 input[type=text][disabled]:focus,#sign-up-v2 input[type=text][disabled]:active,dl.form dd textarea[disabled],dl.form dd textarea[disabled]:focus,dl.form dd textarea[disabled]:active,.claim-purchase input[type=number][disabled],.claim-purchase input[type=number][disabled]:focus,.claim-purchase input[type=number][disabled]:active,.claim-purchase input[type=text][disabled],.claim-purchase input[type=text][disabled]:focus,.claim-purchase input[type=text][disabled]:active,#redeem-v2 input[type=email][disabled],#redeem-v2 input[type=email][disabled]:focus,#redeem-v2 input[type=email][disabled]:active,#redeem-v2 #review fieldset.form input[type=date][disabled],#redeem-v2 #review fieldset.form input[type=date][disabled]:focus,#redeem-v2 #review fieldset.form input[type=date][disabled]:active,#redeem-v2 #review fieldset.form input[type=email][disabled],#redeem-v2 #review fieldset.form input[type=email][disabled]:focus,#redeem-v2 #review fieldset.form input[type=email][disabled]:active,#redeem-v2 #review fieldset.form input[type=number][disabled],#redeem-v2 #review fieldset.form input[type=number][disabled]:focus,#redeem-v2 #review fieldset.form input[type=number][disabled]:active,#redeem-v2 #review fieldset.form input[type=password][disabled],#redeem-v2 #review fieldset.form input[type=password][disabled]:focus,#redeem-v2 #review fieldset.form input[type=password][disabled]:active,#redeem-v2 #review fieldset.form input[type=phone][disabled],#redeem-v2 #review fieldset.form input[type=phone][disabled]:focus,#redeem-v2 #review fieldset.form input[type=phone][disabled]:active,#redeem-v2 #review fieldset.form input[type=tel][disabled],#redeem-v2 #review fieldset.form input[type=tel][disabled]:focus,#redeem-v2 #review fieldset.form input[type=tel][disabled]:active,#redeem-v2 #review fieldset.form input[type=text][disabled],#redeem-v2 #review fieldset.form input[type=text][disabled]:focus,#redeem-v2 #review fieldset.form input[type=text][disabled]:active,#redeem-v2 #review fieldset.form input[type=url][disabled],#redeem-v2 #review fieldset.form input[type=url][disabled]:focus,#redeem-v2 #review fieldset.form input[type=url][disabled]:active,select[disabled],select[disabled]:focus,select[disabled]:active,dl.form dd select[disabled],dl.form dd select[disabled]:focus,dl.form dd select[disabled]:active,.account-settings .input-group select[disabled],.account-settings .input-group select[disabled]:focus,.account-settings .input-group select[disabled]:active,#redeem #review dl.form.select dd select[disabled],#redeem #review dl.form.select dd select[disabled]:focus,#redeem #review dl.form.select dd select[disabled]:active,#sign-up-v2 select[disabled],#sign-up-v2 select[disabled]:focus,#sign-up-v2 select[disabled]:active,#redeem-v2 #review fieldset.form select[disabled],#redeem-v2 #review fieldset.form select[disabled]:focus,#redeem-v2 #review fieldset.form select[disabled]:active{
+    background-color:var(--color-shade-100);
+    border:1px solid var(--color-shade-500);
+    border-radius:2px;
+    opacity:.3
+}
+input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],.account-settings .input-group input,#check-in .search-wrapper input.venue-search,dl.form dd input[type=email],dl.form dd input[type=number],dl.form dd input[type=password],dl.form dd input[type=tel],dl.form dd input[type=text],#survey-v3 .question-container input[type=text],#sign-up-v2 input[type=email],#sign-up-v2 input[type=password],#sign-up-v2 input[type=text],dl.form dd textarea,.claim-purchase input[type=number],.claim-purchase input[type=text],#redeem-v2 input[type=email],#redeem-v2 #review fieldset.form input[type=date],#redeem-v2 #review fieldset.form input[type=email],#redeem-v2 #review fieldset.form input[type=number],#redeem-v2 #review fieldset.form input[type=password],#redeem-v2 #review fieldset.form input[type=phone],#redeem-v2 #review fieldset.form input[type=tel],#redeem-v2 #review fieldset.form input[type=text],#redeem-v2 #review fieldset.form input[type=url]{
+    color:var(--color-shade-900);
+    padding:.3125rem
+}
+dl.form dd textarea{
+    height:4rem;
+    min-height:4rem;
+    resize:vertical
+}
+select,dl.form dd select,.account-settings .input-group select,#redeem #review dl.form.select dd select,#sign-up-v2 select,#redeem-v2 #review fieldset.form select{
+    background-image:url("data:image/svg+xml,%3Csvg width='12' height='7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23029acb' fill='none' stroke-width='2' d='M1 1l5 4 5-4'/%3E%3C/svg%3E");
+    background-position:right 5px top 50%;
+    background-repeat:no-repeat;
+    padding:0 1.4375rem 0 .3125rem
+}
+select::-ms-expand,dl.form dd select::-ms-expand,.account-settings .input-group select::-ms-expand,#redeem #review dl.form.select dd select::-ms-expand,#sign-up-v2 select::-ms-expand,#redeem-v2 #review fieldset.form select::-ms-expand{
+    display:none
+}
+ui-view{
+    display:block
+}
+.widget .container{
+    padding:6.875rem 1.25rem 1.25rem
+}
+#dynamic-form .submit-container{
+    display:flex;
+    float:none;
+    justify-content:flex-end;
+    padding:var(--space-c) 0 0
+}
+@keyframes spin-step{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+html,body{
+    -ms-overflow-style:none;
+    background:var(--color-shade-200);
+    overflow-x:hidden;
+    overflow-y:auto
+}
+.widget .header{
+    align-items:flex-start;
+    background:var(--color-shade-100);
+    border-bottom:0;
+    display:flex;
+    height:6.875rem;
+    padding:calc(20px + var(--space-c)) var(--space-b) 0 calc(20px + var(--space-b));
+    clip-path:polygon(-20px -20px, calc(100% + 20px) 0, calc(100% + 20px) 60px, -20px 100%);
+    -webkit-clip-path:polygon(-20px -20px, calc(100% + 20px) 0, calc(100% + 20px) 60px, -20px 100%)
+}
+.widget .header h1,.widget .header h3{
+    align-items:flex-end;
+    color:var(--color-blue-900);
+    display:flex;
+    font-family:"Asul",Georgia,serif;
+    font-weight:300;
+    font-size:var(--text-widgetheader);
+    letter-spacing:-.3px;
+    line-height:.875;
+    margin:0;
+    max-width:75%;
+    padding:0 3.125rem 0 0;
+    text-transform:none;
+    width:100%
+}
+.widget .container{
+    padding:calc(6.875rem + var(--space-a)) var(--space-b) var(--space-b)
+}
+::-webkit-scrollbar{
+    background-color:#f0f0f0
+}
+::-webkit-scrollbar-thumb{
+    background-color:var(--color-shade-300);
+    border:2px solid #f0f0f0;
+    border-radius:999px;
+    transition:background-color .15s
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:var(--color-shade-600)
+}
+#redeem-v2{
+    font-size:var(--text-supporting);
+    overflow:auto;
+    padding-bottom:0
+}
+#redeem-v2 .container{
+    overflow:visible;
+    padding:calc(6.5rem + var(--space-a)) var(--space-b) var(--space-b);
+    width:100%
+}
+#redeem-v2 label,#redeem-v2 #email-address-label{
+    font-size:var(--text-supporting);
+    font-weight:600;
+    margin:var(--space-b) 0 0;
+    padding:0 0 var(--space-a)
+}
+#redeem-v2 label:nth-child(1),#redeem-v2 #email-address-label:nth-child(1){
+    margin-top:0
+}
+#redeem-v2 #email-address-label{
+    display:block
+}
+#redeem-v2,#redeem-v2 #details,#redeem-v2 #review,#redeem-v2 #confirmation{
+    display:flex;
+    flex-wrap:wrap
+}
+#redeem-v2 h2,#redeem-v2 .reward-title,#redeem-v2 #details h2,#redeem-v2 #details .reward-title,#redeem-v2 #review h2,#redeem-v2 #review .reward-title,#redeem-v2 #confirmation h2,#redeem-v2 #confirmation .reward-title{
+    flex:0 0 100%;
+    font-size:var(--text-bigparagraph);
+    font-weight:700;
+    margin:0;
+    padding:0 0 var(--space-b)
+}
+#redeem-v2 .numeric-details .row+.row,#redeem-v2 #details .numeric-details .row+.row,#redeem-v2 #review .numeric-details .row+.row,#redeem-v2 #confirmation .numeric-details .row+.row{
+    margin-top:var(--space-a)
+}
+#redeem-v2 .numeric-details .row label,#redeem-v2 #details .numeric-details .row label,#redeem-v2 #review .numeric-details .row label,#redeem-v2 #confirmation .numeric-details .row label{
+    font-size:var(--text-minor);
+    margin-top:0
+}
+#redeem-v2 .numeric-details .quantity-remaining>span,#redeem-v2 .numeric-details .days-remaining>span,#redeem-v2 #details .numeric-details .quantity-remaining>span,#redeem-v2 #details .numeric-details .days-remaining>span,#redeem-v2 #review .numeric-details .quantity-remaining>span,#redeem-v2 #review .numeric-details .days-remaining>span,#redeem-v2 #confirmation .numeric-details .quantity-remaining>span,#redeem-v2 #confirmation .numeric-details .days-remaining>span{
+    background-color:var(--color-orange-500);
+    border-radius:9999px;
+    color:var(--color-shade-100);
+    display:inline-block;
+    font-size:var(--text-supporting);
+    font-style:normal;
+    font-weight:600;
+    margin:var(--space-a) 0 0;
+    padding:.125rem .375rem;
+    letter-spacing:-.45px;
+    text-transform:none;
+    white-space:nowrap
+}
+#redeem-v2 .left,#redeem-v2 #details .left,#redeem-v2 #review .left,#redeem-v2 #confirmation .left{
+    flex:1 1 100%;
+    float:none;
+    margin:0;
+    padding:0;
+    width:auto;
+    text-align:left
+}
+@media (min-width: 400px){
+    #redeem-v2 .left,#redeem-v2 #details .left,#redeem-v2 #review .left,#redeem-v2 #confirmation .left{
+        border-left:1px solid var(--color-shade-400);
+        flex:0 1 8.75rem;
+        margin:0 0 0 var(--space-b);
+        order:3;
+        padding:0 0 0 var(--space-b)
+    }
+}
+@media (min-width: 680px){
+    #redeem-v2 .left,#redeem-v2 #details .left,#redeem-v2 #review .left,#redeem-v2 #confirmation .left{
+        flex:0 1 8.75rem;
+        float:none;
+        margin:0 0 0 var(--space-b);
+        padding:0 0 0 var(--space-b);
+        width:auto
+    }
+}
+#redeem-v2 .left .reward-image,#redeem-v2 #details .left .reward-image,#redeem-v2 #review .left .reward-image,#redeem-v2 #confirmation .left .reward-image{
+    background:inherit;
+    background-color:transparent;
+    background-position:top center;
+    background-size:contain;
+    bottom:var(--space-b);
+    content:'';
+    cursor:zoom-out;
+    filter:drop-shadow(0 1px 2px rgba(0,0,0,0.1)) drop-shadow(0 3px 8px rgba(0,0,0,0.25));
+    height:auto;
+    left:var(--space-e);
+    margin:20px;
+    max-height:calc(95vh - var(--space-a) - var(--space-b) - 20px - 6.875rem);
+    object-fit:contain;
+    opacity:0;
+    position:absolute;
+    right:var(--space-e);
+    transition:visibility 0s .15s, opacity .15s;
+    top:6.875rem;
+    visibility:hidden;
+    width:calc(100% - var(--space-e) - var(--space-e) - 40px);
+    z-index:1501
+}
+#redeem-v2 .left:focus-within:not(:active) .reward-image,#redeem-v2 #details .left:focus-within:not(:active) .reward-image,#redeem-v2 #review .left:focus-within:not(:active) .reward-image,#redeem-v2 #confirmation .left:focus-within:not(:active) .reward-image{
+    opacity:1;
+    transition:visibility 0s .025s, opacity .15s .025s;
+    visibility:visible
+}
+#redeem-v2 .left .additional-images,#redeem-v2 #details .left .additional-images,#redeem-v2 #review .left .additional-images,#redeem-v2 #confirmation .left .additional-images{
+    display:flex;
+    flex-wrap:wrap;
+    margin:-.625rem -.625rem var(--space-a) -.625rem
+}
+@media (min-width: 400px){
+    #redeem-v2 .left .additional-images,#redeem-v2 #details .left .additional-images,#redeem-v2 #review .left .additional-images,#redeem-v2 #confirmation .left .additional-images{
+        display:block;
+        margin:0
+    }
+}
+#redeem-v2 .left .additional-images .reward-thumb,#redeem-v2 #details .left .additional-images .reward-thumb,#redeem-v2 #review .left .additional-images .reward-thumb,#redeem-v2 #confirmation .left .additional-images .reward-thumb{
+    flex:1 1 calc(50% - 1.25rem);
+    margin:.625rem
+}
+@media (min-width: 400px){
+    #redeem-v2 .left .additional-images .reward-thumb,#redeem-v2 #details .left .additional-images .reward-thumb,#redeem-v2 #review .left .additional-images .reward-thumb,#redeem-v2 #confirmation .left .additional-images .reward-thumb{
+        margin:0
+    }
+}
+#redeem-v2 .left .additional-images .reward-thumb+.reward-thumb,#redeem-v2 #details .left .additional-images .reward-thumb+.reward-thumb,#redeem-v2 #review .left .additional-images .reward-thumb+.reward-thumb,#redeem-v2 #confirmation .left .additional-images .reward-thumb+.reward-thumb{
+    margin-top:var(--space-a)
+}
+#redeem-v2 .left .additional-images .reward-thumb a,#redeem-v2 #details .left .additional-images .reward-thumb a,#redeem-v2 #review .left .additional-images .reward-thumb a,#redeem-v2 #confirmation .left .additional-images .reward-thumb a{
+    cursor:zoom-in;
+    display:block;
+    position:relative
+}
+#redeem-v2 .left .additional-images .reward-thumb a::after,#redeem-v2 #details .left .additional-images .reward-thumb a::after,#redeem-v2 #review .left .additional-images .reward-thumb a::after,#redeem-v2 #confirmation .left .additional-images .reward-thumb a::after{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff");
+    opacity:.93%7D.b%7Bfill:%23231f20%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M20.566 26.737A12.993 12.993 0 1128 15a12.841 12.841 0 01-1.611 6.246l8.853 8.854-5.656 5.656z'/%3E%3Cpath class='a' d='M32.414 30.1l-8.577-8.577a11.02 11.02 0 10-2.921 2.735l8.67 8.67zM6 15a9 9 0 119 9 9.01 9.01 0 01-9-9z'/%3E%3Cpath class='b' d='M32.414 30.1l-8.577-8.577a11.02 11.02 0 10-2.921 2.735l8.67 8.67zM6 15a9 9 0 119 9 9.01 9.01 0 01-9-9z'/%3E%3Cpath class='b' d='M17 13V9h-4v4H9v4h4v4h4v-4h4v-4h-4z'/%3E%3C/svg%3E");
+    background-size:36px 36px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    bottom:0;
+    content:'';
+    display:block;
+    font-size:0;
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+    width:auto
+}
+#redeem-v2 .left .additional-images .image-thumb,#redeem-v2 #details .left .additional-images .image-thumb,#redeem-v2 #review .left .additional-images .image-thumb,#redeem-v2 #confirmation .left .additional-images .image-thumb{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:top center;
+    border:none;
+    border-radius:8px;
+    display:block;
+    height:auto;
+    margin:0;
+    width:100%
+}
+@media (min-width: 400px){
+    #redeem-v2 .left .additional-images .image-thumb ~ .image-thumb,#redeem-v2 #details .left .additional-images .image-thumb ~ .image-thumb,#redeem-v2 #review .left .additional-images .image-thumb ~ .image-thumb,#redeem-v2 #confirmation .left .additional-images .image-thumb ~ .image-thumb{
+        margin-top:var(--space-a)
+    }
+}
+#redeem-v2 .left .ct-points-color,#redeem-v2 #details .left .ct-points-color,#redeem-v2 #review .left .ct-points-color,#redeem-v2 #confirmation .left .ct-points-color{
+    font-size:var(--text-paragraph)
+}
+#redeem-v2 .left .row:nth-child(1),#redeem-v2 #details .left .row:nth-child(1),#redeem-v2 #review .left .row:nth-child(1),#redeem-v2 #confirmation .left .row:nth-child(1){
+    margin:0;
+    padding:0
+}
+#redeem-v2 .left .row:nth-child(2),#redeem-v2 #details .left .row:nth-child(2),#redeem-v2 #review .left .row:nth-child(2),#redeem-v2 #confirmation .left .row:nth-child(2){
+    margin:0;
+    padding-top:var(--space-a)
+}
+#redeem-v2 .right,#redeem-v2 #details .right,#redeem-v2 #review .right,#redeem-v2 #confirmation .right{
+    border-top:1px solid var(--color-shade-400);
+    flex:1 1 100%;
+    margin-top:var(--space-b);
+    padding-top:var(--space-b);
+    width:auto;
+    word-break:break-word
+}
+@media (min-width: 400px){
+    #redeem-v2 .right,#redeem-v2 #details .right,#redeem-v2 #review .right,#redeem-v2 #confirmation .right{
+        border-top:0;
+        flex:1 1 0;
+        margin-top:0;
+        padding-top:0;
+        width:auto
+    }
+}
+@media (min-width: 680px){
+    #redeem-v2 .right,#redeem-v2 #details .right,#redeem-v2 #review .right,#redeem-v2 #confirmation .right{
+        flex:1 1 0;
+        float:none;
+        width:auto
+    }
+}
+#redeem-v2 .right .description,#redeem-v2 #details .right .description,#redeem-v2 #review .right .description,#redeem-v2 #confirmation .right .description{
+    border-bottom:1px solid var(--color-shade-400);
+    border-top:none;
+    font-size:var(--text-supporting);
+    margin-top:0;
+    margin-bottom:var(--space-b);
+    line-height:1.225;
+    padding-top:0;
+    padding-bottom:var(--space-b)
+}
+#redeem-v2 .right .description *,#redeem-v2 #details .right .description *,#redeem-v2 #review .right .description *,#redeem-v2 #confirmation .right .description *{
+    font-size:var(--text-supporting);
+    line-height:1.225
+}
+#redeem-v2 .right .description a,#redeem-v2 #details .right .description a,#redeem-v2 #review .right .description a,#redeem-v2 #confirmation .right .description a{
+    background:transparent;
+    color:var(--color-blue-700) !important;
+    text-decoration:none !important
+}
+#redeem-v2 .right .description a:hover,#redeem-v2 .right .description a:focus,#redeem-v2 #details .right .description a:hover,#redeem-v2 #details .right .description a:focus,#redeem-v2 #review .right .description a:hover,#redeem-v2 #review .right .description a:focus,#redeem-v2 #confirmation .right .description a:hover,#redeem-v2 #confirmation .right .description a:focus{
+    background:transparent;
+    color:var(--color-blue-500) !important
+}
+#redeem-v2 .right .description a:active,#redeem-v2 #details .right .description a:active,#redeem-v2 #review .right .description a:active,#redeem-v2 #confirmation .right .description a:active{
+    background:transparent;
+    color:var(--color-blue-900) !important
+}
+#redeem-v2 .right .redemption-details .redemption-details-for-downloads,#redeem-v2 #details .right .redemption-details .redemption-details-for-downloads,#redeem-v2 #review .right .redemption-details .redemption-details-for-downloads,#redeem-v2 #confirmation .right .redemption-details .redemption-details-for-downloads{
+    color:var(--color-shade-700);
+    font-size:var(--text-minor);
+    font-weight:400;
+    margin:var(--space-a) 0 0
+}
+#redeem-v2 .right .locked-container,#redeem-v2 .right .sold-out,#redeem-v2 .right .not-enough-points-container,#redeem-v2 .right .exceeded-frequency-cap-container,#redeem-v2 .right .underage-explanation,#redeem-v2 .right .exceeded-limit-container,#redeem-v2 .right .verify-email-explanation,#redeem-v2 .right .exceeded-category-cap-container,#redeem-v2 .right .exceeded-category-and-frequency-cap-container,#redeem-v2 #details .right .locked-container,#redeem-v2 #details .right .sold-out,#redeem-v2 #details .right .not-enough-points-container,#redeem-v2 #details .right .exceeded-frequency-cap-container,#redeem-v2 #details .right .underage-explanation,#redeem-v2 #details .right .exceeded-limit-container,#redeem-v2 #details .right .verify-email-explanation,#redeem-v2 #details .right .exceeded-category-cap-container,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container,#redeem-v2 #review .right .locked-container,#redeem-v2 #review .right .sold-out,#redeem-v2 #review .right .not-enough-points-container,#redeem-v2 #review .right .exceeded-frequency-cap-container,#redeem-v2 #review .right .underage-explanation,#redeem-v2 #review .right .exceeded-limit-container,#redeem-v2 #review .right .verify-email-explanation,#redeem-v2 #review .right .exceeded-category-cap-container,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container,#redeem-v2 #confirmation .right .locked-container,#redeem-v2 #confirmation .right .sold-out,#redeem-v2 #confirmation .right .not-enough-points-container,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container,#redeem-v2 #confirmation .right .underage-explanation,#redeem-v2 #confirmation .right .exceeded-limit-container,#redeem-v2 #confirmation .right .verify-email-explanation,#redeem-v2 #confirmation .right .exceeded-category-cap-container,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container{
+    background-color:var(--color-shade-400);
+    border-radius:3px;
+    font-size:var(--text-supporting);
+    font-style:normal;
+    padding:var(--space-b)
+}
+#redeem-v2 .right .locked-container p,#redeem-v2 .right .locked-container .text,#redeem-v2 .right .sold-out p,#redeem-v2 .right .sold-out .text,#redeem-v2 .right .not-enough-points-container p,#redeem-v2 .right .not-enough-points-container .text,#redeem-v2 .right .exceeded-frequency-cap-container p,#redeem-v2 .right .exceeded-frequency-cap-container .text,#redeem-v2 .right .underage-explanation p,#redeem-v2 .right .underage-explanation .text,#redeem-v2 .right .exceeded-limit-container p,#redeem-v2 .right .exceeded-limit-container .text,#redeem-v2 .right .verify-email-explanation p,#redeem-v2 .right .verify-email-explanation .text,#redeem-v2 .right .exceeded-category-cap-container p,#redeem-v2 .right .exceeded-category-cap-container .text,#redeem-v2 .right .exceeded-category-and-frequency-cap-container p,#redeem-v2 .right .exceeded-category-and-frequency-cap-container .text,#redeem-v2 #details .right .locked-container p,#redeem-v2 #details .right .locked-container .text,#redeem-v2 #details .right .sold-out p,#redeem-v2 #details .right .sold-out .text,#redeem-v2 #details .right .not-enough-points-container p,#redeem-v2 #details .right .not-enough-points-container .text,#redeem-v2 #details .right .exceeded-frequency-cap-container p,#redeem-v2 #details .right .exceeded-frequency-cap-container .text,#redeem-v2 #details .right .underage-explanation p,#redeem-v2 #details .right .underage-explanation .text,#redeem-v2 #details .right .exceeded-limit-container p,#redeem-v2 #details .right .exceeded-limit-container .text,#redeem-v2 #details .right .verify-email-explanation p,#redeem-v2 #details .right .verify-email-explanation .text,#redeem-v2 #details .right .exceeded-category-cap-container p,#redeem-v2 #details .right .exceeded-category-cap-container .text,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container p,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container .text,#redeem-v2 #review .right .locked-container p,#redeem-v2 #review .right .locked-container .text,#redeem-v2 #review .right .sold-out p,#redeem-v2 #review .right .sold-out .text,#redeem-v2 #review .right .not-enough-points-container p,#redeem-v2 #review .right .not-enough-points-container .text,#redeem-v2 #review .right .exceeded-frequency-cap-container p,#redeem-v2 #review .right .exceeded-frequency-cap-container .text,#redeem-v2 #review .right .underage-explanation p,#redeem-v2 #review .right .underage-explanation .text,#redeem-v2 #review .right .exceeded-limit-container p,#redeem-v2 #review .right .exceeded-limit-container .text,#redeem-v2 #review .right .verify-email-explanation p,#redeem-v2 #review .right .verify-email-explanation .text,#redeem-v2 #review .right .exceeded-category-cap-container p,#redeem-v2 #review .right .exceeded-category-cap-container .text,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container p,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container .text,#redeem-v2 #confirmation .right .locked-container p,#redeem-v2 #confirmation .right .locked-container .text,#redeem-v2 #confirmation .right .sold-out p,#redeem-v2 #confirmation .right .sold-out .text,#redeem-v2 #confirmation .right .not-enough-points-container p,#redeem-v2 #confirmation .right .not-enough-points-container .text,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container p,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container .text,#redeem-v2 #confirmation .right .underage-explanation p,#redeem-v2 #confirmation .right .underage-explanation .text,#redeem-v2 #confirmation .right .exceeded-limit-container p,#redeem-v2 #confirmation .right .exceeded-limit-container .text,#redeem-v2 #confirmation .right .verify-email-explanation p,#redeem-v2 #confirmation .right .verify-email-explanation .text,#redeem-v2 #confirmation .right .exceeded-category-cap-container p,#redeem-v2 #confirmation .right .exceeded-category-cap-container .text,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container p,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container .text{
+    font-size:var(--text-supporting);
+    font-style:normal;
+    margin:var(--space-a) 0 0
+}
+#redeem-v2 .right .locked-container p:only-child,#redeem-v2 .right .locked-container .text:only-child,#redeem-v2 .right .sold-out p:only-child,#redeem-v2 .right .sold-out .text:only-child,#redeem-v2 .right .not-enough-points-container p:only-child,#redeem-v2 .right .not-enough-points-container .text:only-child,#redeem-v2 .right .exceeded-frequency-cap-container p:only-child,#redeem-v2 .right .exceeded-frequency-cap-container .text:only-child,#redeem-v2 .right .underage-explanation p:only-child,#redeem-v2 .right .underage-explanation .text:only-child,#redeem-v2 .right .exceeded-limit-container p:only-child,#redeem-v2 .right .exceeded-limit-container .text:only-child,#redeem-v2 .right .verify-email-explanation p:only-child,#redeem-v2 .right .verify-email-explanation .text:only-child,#redeem-v2 .right .exceeded-category-cap-container p:only-child,#redeem-v2 .right .exceeded-category-cap-container .text:only-child,#redeem-v2 .right .exceeded-category-and-frequency-cap-container p:only-child,#redeem-v2 .right .exceeded-category-and-frequency-cap-container .text:only-child,#redeem-v2 #details .right .locked-container p:only-child,#redeem-v2 #details .right .locked-container .text:only-child,#redeem-v2 #details .right .sold-out p:only-child,#redeem-v2 #details .right .sold-out .text:only-child,#redeem-v2 #details .right .not-enough-points-container p:only-child,#redeem-v2 #details .right .not-enough-points-container .text:only-child,#redeem-v2 #details .right .exceeded-frequency-cap-container p:only-child,#redeem-v2 #details .right .exceeded-frequency-cap-container .text:only-child,#redeem-v2 #details .right .underage-explanation p:only-child,#redeem-v2 #details .right .underage-explanation .text:only-child,#redeem-v2 #details .right .exceeded-limit-container p:only-child,#redeem-v2 #details .right .exceeded-limit-container .text:only-child,#redeem-v2 #details .right .verify-email-explanation p:only-child,#redeem-v2 #details .right .verify-email-explanation .text:only-child,#redeem-v2 #details .right .exceeded-category-cap-container p:only-child,#redeem-v2 #details .right .exceeded-category-cap-container .text:only-child,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container p:only-child,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container .text:only-child,#redeem-v2 #review .right .locked-container p:only-child,#redeem-v2 #review .right .locked-container .text:only-child,#redeem-v2 #review .right .sold-out p:only-child,#redeem-v2 #review .right .sold-out .text:only-child,#redeem-v2 #review .right .not-enough-points-container p:only-child,#redeem-v2 #review .right .not-enough-points-container .text:only-child,#redeem-v2 #review .right .exceeded-frequency-cap-container p:only-child,#redeem-v2 #review .right .exceeded-frequency-cap-container .text:only-child,#redeem-v2 #review .right .underage-explanation p:only-child,#redeem-v2 #review .right .underage-explanation .text:only-child,#redeem-v2 #review .right .exceeded-limit-container p:only-child,#redeem-v2 #review .right .exceeded-limit-container .text:only-child,#redeem-v2 #review .right .verify-email-explanation p:only-child,#redeem-v2 #review .right .verify-email-explanation .text:only-child,#redeem-v2 #review .right .exceeded-category-cap-container p:only-child,#redeem-v2 #review .right .exceeded-category-cap-container .text:only-child,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container p:only-child,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container .text:only-child,#redeem-v2 #confirmation .right .locked-container p:only-child,#redeem-v2 #confirmation .right .locked-container .text:only-child,#redeem-v2 #confirmation .right .sold-out p:only-child,#redeem-v2 #confirmation .right .sold-out .text:only-child,#redeem-v2 #confirmation .right .not-enough-points-container p:only-child,#redeem-v2 #confirmation .right .not-enough-points-container .text:only-child,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container p:only-child,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container .text:only-child,#redeem-v2 #confirmation .right .underage-explanation p:only-child,#redeem-v2 #confirmation .right .underage-explanation .text:only-child,#redeem-v2 #confirmation .right .exceeded-limit-container p:only-child,#redeem-v2 #confirmation .right .exceeded-limit-container .text:only-child,#redeem-v2 #confirmation .right .verify-email-explanation p:only-child,#redeem-v2 #confirmation .right .verify-email-explanation .text:only-child,#redeem-v2 #confirmation .right .exceeded-category-cap-container p:only-child,#redeem-v2 #confirmation .right .exceeded-category-cap-container .text:only-child,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container p:only-child,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container .text:only-child{
+    margin-top:0
+}
+#redeem-v2 .right .locked-container .exceeded-frequency-cap-heading,#redeem-v2 .right .locked-container .exceeded-category-cap-heading,#redeem-v2 .right .locked-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .locked-container .heading,#redeem-v2 .right .sold-out .exceeded-frequency-cap-heading,#redeem-v2 .right .sold-out .exceeded-category-cap-heading,#redeem-v2 .right .sold-out .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .sold-out .heading,#redeem-v2 .right .not-enough-points-container .exceeded-frequency-cap-heading,#redeem-v2 .right .not-enough-points-container .exceeded-category-cap-heading,#redeem-v2 .right .not-enough-points-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .not-enough-points-container .heading,#redeem-v2 .right .exceeded-frequency-cap-container .exceeded-frequency-cap-heading,#redeem-v2 .right .exceeded-frequency-cap-container .exceeded-category-cap-heading,#redeem-v2 .right .exceeded-frequency-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .exceeded-frequency-cap-container .heading,#redeem-v2 .right .underage-explanation .exceeded-frequency-cap-heading,#redeem-v2 .right .underage-explanation .exceeded-category-cap-heading,#redeem-v2 .right .underage-explanation .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .underage-explanation .heading,#redeem-v2 .right .exceeded-limit-container .exceeded-frequency-cap-heading,#redeem-v2 .right .exceeded-limit-container .exceeded-category-cap-heading,#redeem-v2 .right .exceeded-limit-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .exceeded-limit-container .heading,#redeem-v2 .right .verify-email-explanation .exceeded-frequency-cap-heading,#redeem-v2 .right .verify-email-explanation .exceeded-category-cap-heading,#redeem-v2 .right .verify-email-explanation .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .verify-email-explanation .heading,#redeem-v2 .right .exceeded-category-cap-container .exceeded-frequency-cap-heading,#redeem-v2 .right .exceeded-category-cap-container .exceeded-category-cap-heading,#redeem-v2 .right .exceeded-category-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .exceeded-category-cap-container .heading,#redeem-v2 .right .exceeded-category-and-frequency-cap-container .exceeded-frequency-cap-heading,#redeem-v2 .right .exceeded-category-and-frequency-cap-container .exceeded-category-cap-heading,#redeem-v2 .right .exceeded-category-and-frequency-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 .right .exceeded-category-and-frequency-cap-container .heading,#redeem-v2 #details .right .locked-container .exceeded-frequency-cap-heading,#redeem-v2 #details .right .locked-container .exceeded-category-cap-heading,#redeem-v2 #details .right .locked-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .locked-container .heading,#redeem-v2 #details .right .sold-out .exceeded-frequency-cap-heading,#redeem-v2 #details .right .sold-out .exceeded-category-cap-heading,#redeem-v2 #details .right .sold-out .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .sold-out .heading,#redeem-v2 #details .right .not-enough-points-container .exceeded-frequency-cap-heading,#redeem-v2 #details .right .not-enough-points-container .exceeded-category-cap-heading,#redeem-v2 #details .right .not-enough-points-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .not-enough-points-container .heading,#redeem-v2 #details .right .exceeded-frequency-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #details .right .exceeded-frequency-cap-container .exceeded-category-cap-heading,#redeem-v2 #details .right .exceeded-frequency-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .exceeded-frequency-cap-container .heading,#redeem-v2 #details .right .underage-explanation .exceeded-frequency-cap-heading,#redeem-v2 #details .right .underage-explanation .exceeded-category-cap-heading,#redeem-v2 #details .right .underage-explanation .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .underage-explanation .heading,#redeem-v2 #details .right .exceeded-limit-container .exceeded-frequency-cap-heading,#redeem-v2 #details .right .exceeded-limit-container .exceeded-category-cap-heading,#redeem-v2 #details .right .exceeded-limit-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .exceeded-limit-container .heading,#redeem-v2 #details .right .verify-email-explanation .exceeded-frequency-cap-heading,#redeem-v2 #details .right .verify-email-explanation .exceeded-category-cap-heading,#redeem-v2 #details .right .verify-email-explanation .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .verify-email-explanation .heading,#redeem-v2 #details .right .exceeded-category-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #details .right .exceeded-category-cap-container .exceeded-category-cap-heading,#redeem-v2 #details .right .exceeded-category-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .exceeded-category-cap-container .heading,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container .exceeded-category-cap-heading,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container .heading,#redeem-v2 #review .right .locked-container .exceeded-frequency-cap-heading,#redeem-v2 #review .right .locked-container .exceeded-category-cap-heading,#redeem-v2 #review .right .locked-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .locked-container .heading,#redeem-v2 #review .right .sold-out .exceeded-frequency-cap-heading,#redeem-v2 #review .right .sold-out .exceeded-category-cap-heading,#redeem-v2 #review .right .sold-out .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .sold-out .heading,#redeem-v2 #review .right .not-enough-points-container .exceeded-frequency-cap-heading,#redeem-v2 #review .right .not-enough-points-container .exceeded-category-cap-heading,#redeem-v2 #review .right .not-enough-points-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .not-enough-points-container .heading,#redeem-v2 #review .right .exceeded-frequency-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #review .right .exceeded-frequency-cap-container .exceeded-category-cap-heading,#redeem-v2 #review .right .exceeded-frequency-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .exceeded-frequency-cap-container .heading,#redeem-v2 #review .right .underage-explanation .exceeded-frequency-cap-heading,#redeem-v2 #review .right .underage-explanation .exceeded-category-cap-heading,#redeem-v2 #review .right .underage-explanation .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .underage-explanation .heading,#redeem-v2 #review .right .exceeded-limit-container .exceeded-frequency-cap-heading,#redeem-v2 #review .right .exceeded-limit-container .exceeded-category-cap-heading,#redeem-v2 #review .right .exceeded-limit-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .exceeded-limit-container .heading,#redeem-v2 #review .right .verify-email-explanation .exceeded-frequency-cap-heading,#redeem-v2 #review .right .verify-email-explanation .exceeded-category-cap-heading,#redeem-v2 #review .right .verify-email-explanation .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .verify-email-explanation .heading,#redeem-v2 #review .right .exceeded-category-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #review .right .exceeded-category-cap-container .exceeded-category-cap-heading,#redeem-v2 #review .right .exceeded-category-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .exceeded-category-cap-container .heading,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container .exceeded-category-cap-heading,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container .heading,#redeem-v2 #confirmation .right .locked-container .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .locked-container .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .locked-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .locked-container .heading,#redeem-v2 #confirmation .right .sold-out .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .sold-out .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .sold-out .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .sold-out .heading,#redeem-v2 #confirmation .right .not-enough-points-container .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .not-enough-points-container .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .not-enough-points-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .not-enough-points-container .heading,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container .heading,#redeem-v2 #confirmation .right .underage-explanation .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .underage-explanation .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .underage-explanation .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .underage-explanation .heading,#redeem-v2 #confirmation .right .exceeded-limit-container .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .exceeded-limit-container .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .exceeded-limit-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .exceeded-limit-container .heading,#redeem-v2 #confirmation .right .verify-email-explanation .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .verify-email-explanation .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .verify-email-explanation .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .verify-email-explanation .heading,#redeem-v2 #confirmation .right .exceeded-category-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .exceeded-category-cap-container .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .exceeded-category-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .exceeded-category-cap-container .heading,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container .exceeded-frequency-cap-heading,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container .exceeded-category-cap-heading,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container .exceeded-category-and-frequency-cap-heading,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container .heading{
+    font-weight:700;
+    font-size:var(--text-paragraph);
+    margin-bottom:var(--space-a);
+    padding:0
+}
+#redeem-v2 .right .locked-container .locked-heading,#redeem-v2 .right .sold-out .locked-heading,#redeem-v2 .right .not-enough-points-container .locked-heading,#redeem-v2 .right .exceeded-frequency-cap-container .locked-heading,#redeem-v2 .right .underage-explanation .locked-heading,#redeem-v2 .right .exceeded-limit-container .locked-heading,#redeem-v2 .right .verify-email-explanation .locked-heading,#redeem-v2 .right .exceeded-category-cap-container .locked-heading,#redeem-v2 .right .exceeded-category-and-frequency-cap-container .locked-heading,#redeem-v2 #details .right .locked-container .locked-heading,#redeem-v2 #details .right .sold-out .locked-heading,#redeem-v2 #details .right .not-enough-points-container .locked-heading,#redeem-v2 #details .right .exceeded-frequency-cap-container .locked-heading,#redeem-v2 #details .right .underage-explanation .locked-heading,#redeem-v2 #details .right .exceeded-limit-container .locked-heading,#redeem-v2 #details .right .verify-email-explanation .locked-heading,#redeem-v2 #details .right .exceeded-category-cap-container .locked-heading,#redeem-v2 #details .right .exceeded-category-and-frequency-cap-container .locked-heading,#redeem-v2 #review .right .locked-container .locked-heading,#redeem-v2 #review .right .sold-out .locked-heading,#redeem-v2 #review .right .not-enough-points-container .locked-heading,#redeem-v2 #review .right .exceeded-frequency-cap-container .locked-heading,#redeem-v2 #review .right .underage-explanation .locked-heading,#redeem-v2 #review .right .exceeded-limit-container .locked-heading,#redeem-v2 #review .right .verify-email-explanation .locked-heading,#redeem-v2 #review .right .exceeded-category-cap-container .locked-heading,#redeem-v2 #review .right .exceeded-category-and-frequency-cap-container .locked-heading,#redeem-v2 #confirmation .right .locked-container .locked-heading,#redeem-v2 #confirmation .right .sold-out .locked-heading,#redeem-v2 #confirmation .right .not-enough-points-container .locked-heading,#redeem-v2 #confirmation .right .exceeded-frequency-cap-container .locked-heading,#redeem-v2 #confirmation .right .underage-explanation .locked-heading,#redeem-v2 #confirmation .right .exceeded-limit-container .locked-heading,#redeem-v2 #confirmation .right .verify-email-explanation .locked-heading,#redeem-v2 #confirmation .right .exceeded-category-cap-container .locked-heading,#redeem-v2 #confirmation .right .exceeded-category-and-frequency-cap-container .locked-heading{
+    height:0;
+    overflow:hidden;
+    margin-bottom:calc(-1 * var(--space-a));
+    padding:0
+}
+#redeem-v2 .right .unlock-activities,#redeem-v2 #details .right .unlock-activities,#redeem-v2 #review .right .unlock-activities,#redeem-v2 #confirmation .right .unlock-activities{
+    list-style:none;
+    padding:0;
+    margin:var(--space-a) 0 0
+}
+#redeem-v2 .right .unlock-multiple .unlock-activities,#redeem-v2 #details .right .unlock-multiple .unlock-activities,#redeem-v2 #review .right .unlock-multiple .unlock-activities,#redeem-v2 #confirmation .right .unlock-multiple .unlock-activities{
+    list-style:disc;
+    padding-left:var(--space-c)
+}
+#redeem-v2 .right .locked-container p,#redeem-v2 .right .reward-ended-explanation,#redeem-v2 .right .reward-ended-explanation p,#redeem-v2 .right .unlock-activity,#redeem-v2 #details .right .locked-container p,#redeem-v2 #details .right .reward-ended-explanation,#redeem-v2 #details .right .reward-ended-explanation p,#redeem-v2 #details .right .unlock-activity,#redeem-v2 #review .right .locked-container p,#redeem-v2 #review .right .reward-ended-explanation,#redeem-v2 #review .right .reward-ended-explanation p,#redeem-v2 #review .right .unlock-activity,#redeem-v2 #confirmation .right .locked-container p,#redeem-v2 #confirmation .right .reward-ended-explanation,#redeem-v2 #confirmation .right .reward-ended-explanation p,#redeem-v2 #confirmation .right .unlock-activity{
+    font-size:var(--text-supporting);
+    font-style:normal
+}
+#redeem-v2 .right .locked-container p li,#redeem-v2 .right .reward-ended-explanation li,#redeem-v2 .right .reward-ended-explanation p li,#redeem-v2 .right .unlock-activity li,#redeem-v2 #details .right .locked-container p li,#redeem-v2 #details .right .reward-ended-explanation li,#redeem-v2 #details .right .reward-ended-explanation p li,#redeem-v2 #details .right .unlock-activity li,#redeem-v2 #review .right .locked-container p li,#redeem-v2 #review .right .reward-ended-explanation li,#redeem-v2 #review .right .reward-ended-explanation p li,#redeem-v2 #review .right .unlock-activity li,#redeem-v2 #confirmation .right .locked-container p li,#redeem-v2 #confirmation .right .reward-ended-explanation li,#redeem-v2 #confirmation .right .reward-ended-explanation p li,#redeem-v2 #confirmation .right .unlock-activity li{
+    line-height:1.15
+}
+#redeem-v2 select,#redeem-v2 #details select,#redeem-v2 #review select,#redeem-v2 #confirmation select{
+    min-width:4rem
+}
+#redeem-v2 dl.form,#redeem-v2 #details dl.form,#redeem-v2 #review dl.form,#redeem-v2 #confirmation dl.form{
+    margin-bottom:0
+}
+#redeem-v2 dl.form.checkbox,#redeem-v2 dl.form.radio,#redeem-v2 #details dl.form.checkbox,#redeem-v2 #details dl.form.radio,#redeem-v2 #review dl.form.checkbox,#redeem-v2 #review dl.form.radio,#redeem-v2 #confirmation dl.form.checkbox,#redeem-v2 #confirmation dl.form.radio{
+    margin-top:var(--space-b);
+    padding-bottom:var(--space-a)
+}
+#redeem-v2 .form.submit,#redeem-v2 #details .form.submit,#redeem-v2 #review .form.submit,#redeem-v2 #confirmation .form.submit{
+    border-top:1px solid var(--color-shade-400);
+    display:flex;
+    justify-content:flex-end;
+    margin-top:var(--space-b);
+    padding-top:var(--space-b)
+}
+#redeem-v2 [ng-if='reward.tos_url'] a{
+    background:transparent;
+    color:var(--color-blue-700) !important;
+    text-decoration:none !important
+}
+#redeem-v2 [ng-if='reward.tos_url'] a:hover,#redeem-v2 [ng-if='reward.tos_url'] a:focus{
+    background:transparent;
+    color:var(--color-blue-500) !important
+}
+#redeem-v2 [ng-if='reward.tos_url'] a:active{
+    background:transparent;
+    color:var(--color-blue-900) !important
+}
+#redeem-v2 dl.form.side-by-side,#redeem-v2 fieldset.form.side-by-side{
+    float:none;
+    overflow:visible;
+    padding:0;
+    position:relative;
+    width:100%
+}
+#redeem-v2 dl.form.side-by-side dd,#redeem-v2 dl.form.side-by-side dt,#redeem-v2 fieldset.form.side-by-side dd,#redeem-v2 fieldset.form.side-by-side dt{
+    float:none;
+    left:0;
+    top:0
+}
+#redeem-v2 dl.form.side-by-side dt,#redeem-v2 fieldset.form.side-by-side dt{
+    align-items:baseline;
+    display:flex;
+    justify-contents:flex-start
+}
+#redeem-v2 dl.form.side-by-side dd.error,#redeem-v2 dl.form.side-by-side .error,#redeem-v2 fieldset.form.side-by-side dd.error,#redeem-v2 fieldset.form.side-by-side .error{
+    bottom:0;
+    font-size:var(--text-minor);
+    left:1.25rem;
+    line-height:1;
+    margin:0;
+    position:absolute;
+    top:auto
+}
+#redeem-v2 #review dl.form.select,#redeem-v2 #review fieldset.form.select{
+    padding-right:0
+}
+#redeem-v2 #review dl.form.select select,#redeem-v2 #review fieldset.form.select select{
+    width:100%
+}
+#redeem-v2 #review .numeric-details{
+    padding:0 0 var(--space-b)
+}
+#redeem-v2 #review .shipping-info{
+    margin:var(--space-b) 0 0;
+    padding:0
+}
+#redeem-v2 #review .shipping-info-form{
+    border-bottom:1px solid var(--color-shade-400);
+    padding:0 0 var(--space-b) 0
+}
+#redeem-v2 #review .shipping-info-form label{
+    font-size:var(--text-minor);
+    padding-bottom:.25rem
+}
+#redeem-v2 #review .shipping-info-form input[name="zip"]{
+    max-width:9.375rem
+}
+#redeem-v2 #review .shipping-info-form input[name="state"]{
+    max-width:4.375rem
+}
+#redeem-v2 #review .phone-info{
+    border-bottom:1px solid var(--color-shade-400);
+    margin:var(--space-b) 0 0;
+    padding:0 0 var(--space-b) 0
+}
+#redeem-v2 #review .ship-info-heading{
+    font-size:var(--text-supporting);
+    font-weight:600;
+    padding:0 0 var(--space-a)
+}
+#redeem-v2 #review .ship-info-body{
+    border-bottom:1px solid var(--color-shade-400);
+    padding:var(--space-a) 0 var(--space-b)
+}
+#redeem-v2 #review .shipping-info,#redeem-v2 #review .ship-info-body,#redeem-v2 #review .shipping-info-form{
+    overflow:visible
+}
+#redeem-v2 #review .shipping-info-form,#redeem-v2 #review .phone-info{
+    margin:1.25rem * -1;
+    overflow:visible
+}
+#redeem-v2 #review .shipping-info-form::after,#redeem-v2 #review .phone-info::after{
+    content:"";
+    display:table;
+    clear:both
+}
+#redeem-v2 #review .ship-info-block .ship-info-block-verified>span{
+    margin-right:.625rem
+}
+#redeem-v2 #review .country-link,#redeem-v2 #review .edit-link{
+    background:transparent;
+    color:var(--color-blue-700) !important;
+    text-decoration:none !important;
+    font-size:inherit;
+    margin-right:0;
+    order:2
+}
+#redeem-v2 #review .country-link:hover,#redeem-v2 #review .country-link:focus,#redeem-v2 #review .edit-link:hover,#redeem-v2 #review .edit-link:focus{
+    background:transparent;
+    color:var(--color-blue-500) !important
+}
+#redeem-v2 #review .country-link:active,#redeem-v2 #review .edit-link:active{
+    background:transparent;
+    color:var(--color-blue-900) !important
+}
+#redeem-v2 #review .country-link{
+    margin-left:var(--space-b)
+}
+#redeem-v2 #review .ship-info-block-details p{
+    margin-bottom:0
+}
+#redeem-v2 #review .ship-info-block-details .ct-points-color{
+    color:var(--color-orange-700) !important;
+    font-weight:600
+}
+#redeem-v2 #review .email-address-info{
+    border-bottom:1px solid var(--color-shade-400);
+    border-top:1px solid var(--color-shade-400);
+    padding:var(--space-b) 0
+}
+#redeem-v2 #review .email-address-info label[ng-bind-html="'label.email address' | ctText"]{
+    margin-top:0
+}
+#redeem-v2 #review .email-address-info p[ng-bind-html="'text.redemption confirm email' | ctText"]:empty{
+    display:none
+}
+#redeem-v2 #review label[ng-bind-html="'label.mobile phone number' | ctText"]{
+    margin-top:0
+}
+#redeem-v2 #review .buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    margin:var(--space-b) 0 0 0
+}
+#redeem-v2 #review .buttons button{
+    margin-left:.9375rem
+}
+#redeem-v2 #review .button{
+    display:flex;
+    justify-content:flex-end;
+    margin:var(--space-b) 0 0;
+    text-align:left
+}
+#redeem-v2 #confirmation a.btn{
+    margin-right:.9375rem
+}
+#redeem-v2 .exceeded-limit-container .buttons{
+    margin-top:.9375rem
+}
+#redeem-v2 .fa-spin{
+    align-items:center;
+    align-self:center;
+    animation:spin-step 0.75s steps(8) infinite;
+    display:flex;
+    height:16px;
+    justify-content:center;
+    width:16px
+}
+#redeem-v2 #confirmation .explain-redeem-success{
+    font-style:normal;
+    margin-bottom:var(--space-a);
+    padding:0
+}
+#redeem-v2 #confirmation .explain-redeem-success .emphasis{
+    font-weight:400
+}
+#redeem-v2 #confirmation .explain-redeem-success .no-emphasis{
+    font-weight:700
+}
+#redeem-v2 #confirmation .explain-redeem-success .explain-coupon{
+    margin-bottom:var(--space-a)
+}
+#redeem-v2 #confirmation .explain-redeem-success .jvm-success{
+    animation:jvm-success-pulse 3s;
+    animation-fill-mode:forwards;
+    background:var(--color-yellow-500);
+    border-radius:3px;
+    display:block;
+    margin-bottom:var(--space-a);
+    padding:var(--space-a)
+}
+#redeem-v2 #confirmation .explain-redeem-success strong.jvm-emphasis{
+    display:block;
+    font-size:var(--text-paragraph)
+}
+#redeem-v2 #confirmation .explain-redeem-success [ng-bind-html*='&nbsp;']{
+    margin-left:-3px
+}
+#redeem-v2 #confirmation .coupon-code{
+    font-size:var(--text-herotext);
+    font-weight:400
+}
+#redeem-v2 #confirmation .coupon-code+.coupon-code{
+    margin-top:var(--space-a)
+}
+#redeem-v2 #confirmation .confirmation-sent-to{
+    font-style:normal;
+    margin-top:var(--space-a)
+}
+#redeem-v2 #confirmation .show-ship-info{
+    border-top:1px solid var(--color-shade-400);
+    font-weight:700;
+    padding:var(--space-b) 0
+}
+#redeem-v2 #confirmation .show-ship-info p{
+    font-style:normal;
+    font-weight:400
+}
+#redeem-v2 #confirmation .address{
+    margin:var(--space-a) 0 0;
+    padding:0
+}
+#redeem-v2 #confirmation .numeric-details{
+    border-bottom:1px solid var(--color-shade-400);
+    border-top:1px solid var(--color-shade-400);
+    padding:var(--space-b) 0
+}
+#redeem-v2 #confirmation .close-container{
+    padding:var(--space-b) 0 0
+}
+@keyframes jvm-success-pulse{
+    0%{
+        background-color:var(--color-yellow-500);
+        opacity:0;
+        transform:scale(1)
+    }
+    3%{
+        transform:scale(1)
+    }
+    6%{
+        transform:scale(1.05)
+    }
+    9%{
+        transform:scale(0.975)
+    }
+    12%{
+        opacity:1;
+        transform:scale(1.03)
+    }
+    15%{
+        transform:scale(0.985)
+    }
+    18%{
+        transform:scale(1.01)
+    }
+    22%{
+        transform:scale(1)
+    }
+    100%{
+        background-color:var(--color-shade-300);
+        transform:scale(1)
+    }
+}
+.header.ct-header-color {
+    background-color: #c31010 !important;
+}
+
+.header.ct-header-color .ct-header-text-color {
+    color: #fff !important;
+}
+
+.ct-points-color {
+    color: #c31010 !important;
+}
+
+#redeem-v2 .numeric-details .quantity-remaining > span, #redeem-v2 .numeric-details .days-remaining > span, #redeem-v2 #details .numeric-details .quantity-remaining > span, #redeem-v2 #details .numeric-details .days-remaining > span, #redeem-v2 #review .numeric-details .quantity-remaining > span, #redeem-v2 #review .numeric-details .days-remaining > span, #redeem-v2 #confirmation .numeric-details .quantity-remaining > span, #redeem-v2 #confirmation .numeric-details .days-remaining > span {
+    background-color: #c31010 !important;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button), #activity-history .btn.show-more, #survey .nav-btns .next-btn, #upload-receipt .receipt-preview label, #upload-receipt-v2 .receipt-preview label, button.btn.btn-secondary[ng-click="doVerification()"] {
+    background-color: #c31010 !important;
+    box-shadow: none !important;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button), #activity-history .btn.show-more, #survey .nav-btns .next-btn, #upload-receipt .receipt-preview label, #upload-receipt-v2 .receipt-preview label, button.btn.btn-secondary[ng-click="doVerification()"] {
+    color: #fff !important;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):hover, .ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):focus, #activity-history .btn.show-more:hover, #activity-history .btn.show-more:focus, #survey .nav-btns .next-btn:hover, #survey .nav-btns .next-btn:focus, #upload-receipt .receipt-preview label:hover, #upload-receipt .receipt-preview label:focus, #upload-receipt-v2 .receipt-preview label:hover, #upload-receipt-v2 .receipt-preview label:focus, button.btn.btn-secondary[ng-click="doVerification()"]:hover, button.btn.btn-secondary[ng-click="doVerification()"]:focus {
+    background-color: white !important;
+    box-shadow: none !important;
+    color: #000 !important;
+}
