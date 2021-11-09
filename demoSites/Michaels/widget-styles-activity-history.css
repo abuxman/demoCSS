@@ -693,18 +693,18 @@ body {
 }
 
 #activity-history-v2 {
-    color: #fff;
-    background-color: #1a1a1a;
+    color: #000;
+    background-color: #fff;
     padding: 20px;
     border-radius: 20px;
 }
 
 #activity-history-v2 table th, #activity-history-v2 .activity-history th, #activity-history-v2 .redemption-history th, #activity-history-v2 .purchase-history-table th, #reward-history-v2 table th, #reward-history-v2 .activity-history th, #reward-history-v2 .redemption-history th, #reward-history-v2 .purchase-history-table th, #purchase-history-v2 table th, #purchase-history-v2 .activity-history th, #purchase-history-v2 .redemption-history th, #purchase-history-v2 .purchase-history-table th {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 #activity-history-v2 table td, #activity-history-v2 .activity-history td, #activity-history-v2 .redemption-history td, #activity-history-v2 .purchase-history-table td, #reward-history-v2 table td, #reward-history-v2 .activity-history td, #reward-history-v2 .redemption-history td, #reward-history-v2 .purchase-history-table td, #purchase-history-v2 table td, #purchase-history-v2 .activity-history td, #purchase-history-v2 .redemption-history td, #purchase-history-v2 .purchase-history-table td {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 #activity-history-v2 table td.points, #activity-history-v2 .activity-history td.points, #activity-history-v2 .redemption-history td.points, #activity-history-v2 .purchase-history-table td.points, #reward-history-v2 table td.points, #reward-history-v2 .activity-history td.points, #reward-history-v2 .redemption-history td.points, #reward-history-v2 .purchase-history-table td.points, #purchase-history-v2 table td.points, #purchase-history-v2 .activity-history td.points, #purchase-history-v2 .redemption-history td.points, #purchase-history-v2 .purchase-history-table td.points {
