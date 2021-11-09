@@ -596,9 +596,22 @@ html,body{
 }
  
 .header.ct-header-color .ct-header-text-color {
-    color: black !important;
+    color: #fff !important;
+}
+
+.header.ct-header-color {
+    background-color: #c31010 !important;
 }
 
 .ct-points-color {
-    color: #b62729 !important;
+    color: #c31010 !important;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button), #activity-history .btn.show-more, #survey .nav-btns .next-btn, #upload-receipt .receipt-preview label, #upload-receipt-v2 .receipt-preview label, button.btn.btn-secondary[ng-click="doVerification()"] {
+    background-color: #c31010 !important;
+    box-shadow: 0 0 0 2px #c31010 inset,var(--shadow-button) !important;
+    color: #fff !important;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
 }
