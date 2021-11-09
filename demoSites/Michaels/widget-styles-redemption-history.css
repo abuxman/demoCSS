@@ -646,8 +646,8 @@ body {
 }
 
 #activity-history-v2 {
-    color: #000;
-    background-color: #fff;
+    color: #000 !important;
+    background-color: #fff !important;
     padding: 20px;
     border-radius: 20px;
 }
@@ -669,8 +669,8 @@ body {
 }
 
 #reward-history-v2 {
-    color: #000;
-    background-color: #fff;
+    color: #000 !important;
+    background-color: #fff !important;
     padding: 20px;
     border-radius: 20px;
 }
