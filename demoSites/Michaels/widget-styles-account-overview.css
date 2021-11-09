@@ -577,14 +577,14 @@ body {
 }
 
 #account-overview-two-v2 {
-    color: #000;
+    color: #000 !important;
     background-color: transparent;
     padding: 20px;
     border-radius: 20px;
 }
 
 #account-overview-two-v2 .title {
-    color: #000;
+    color: #000 !important;
 }
 
 #account-overview-two-v2 .ct-points-color {
