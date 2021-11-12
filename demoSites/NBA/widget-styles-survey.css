@@ -2256,3 +2256,7 @@ button.btn.btn-secondary[ng-click="doVerification()"]:focus {
     box-shadow: none !important;
     color: #fff !important;
 }
+
+#quiz-v2>div.container>div>div.points-container.ng-scope>div.points.ng-scope {
+    display: none !important;
+}
