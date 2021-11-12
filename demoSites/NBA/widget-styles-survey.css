@@ -2206,6 +2206,7 @@ body {
 
 .ct-points-color {
     color: #fb48c4 !important;
+    display: none;
 }
 
 #redeem-v2 .numeric-details .quantity-remaining>span,
