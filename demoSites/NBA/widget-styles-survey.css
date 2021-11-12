@@ -2206,7 +2206,11 @@ body {
 
 .ct-points-color {
     color: #fb48c4 !important;
-    display: none;
+    display: none !important;
+}
+
+#survey-v3>div.container>form>fieldset>div>i {
+    display: none !important;
 }
 
 #redeem-v2 .numeric-details .quantity-remaining>span,
