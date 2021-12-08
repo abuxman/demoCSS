@@ -1848,6 +1848,9 @@ body {
     color: #fb48c4 !important;
 }
 
+#activity-history-v2 table td.points, #activity-history-v2 .activity-history td.points, #activity-history-v2 .redemption-history td.points, #activity-history-v2 .purchase-history-table td.points, #reward-history-v2 table td.points, #reward-history-v2 .activity-history td.points, #reward-history-v2 .redemption-history td.points, #reward-history-v2 .purchase-history-table td.points, #purchase-history-v2 table td.points, #purchase-history-v2 .activity-history td.points, #purchase-history-v2 .redemption-history td.points, #purchase-history-v2 .purchase-history-table td.points {
+	color: #fb48c4 !important;
+}
 
 /* Reward History */
 
