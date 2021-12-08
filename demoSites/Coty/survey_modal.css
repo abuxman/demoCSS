@@ -1162,37 +1162,19 @@ body {
     padding-top: 1.5rem
 }
 
+
+/* Additional Styling */
+
 .header.ct-header-color .ct-header-text-color {
     color: #fff !important;
 }
 
 .header.ct-header-color {
-    background-color: #0e4caa !important;
+    background-color: #000 !important;
 }
 
 .ct-points-color {
-    color: #000 !important;
-}
-
-.widget .header h1,
-.widget .header h3 {
-    align-items: flex-end;
-    color: var(--color-blue-900);
-    display: flex;
-    font-family: "Asul", Georgia, serif;
-    font-weight: 300;
-    font-size: 1.4rem !important;
-    letter-spacing: -.3px;
-    line-height: .875;
-    margin: 0;
-    max-width: 75%;
-    padding: 0 3.125rem 0 0;
-    text-transform: none;
-    width: 100%;
-}
-
-.ct-header-text-color.ng-binding {
-    padding-right: 0 !important;
+    color: #f2c6cf !important;
 }
 
 .ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button),
@@ -1201,23 +1183,12 @@ body {
 #upload-receipt .receipt-preview label,
 #upload-receipt-v2 .receipt-preview label,
 button.btn.btn-secondary[ng-click="doVerification()"] {
-    background-color: #dd2f3d !important;
-    box-shadow: 0 0 0 2px #b81321 inset, var(--shadow-button) !important;
+    background-color: #000 !important;
+    box-shadow: 0 0 0 2px #000 inset, var(--shadow-button) !important;
     color: #fff !important;
     font-size: 1.125rem;
     font-weight: 600;
     margin: 0;
-}
-
-.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button)[disabled],
-#activity-history .btn.show-more[disabled],
-#survey .nav-btns .next-btn[disabled],
-#upload-receipt .receipt-preview label[disabled],
-#upload-receipt-v2 .receipt-preview label[disabled],
-button.btn.btn-secondary[ng-click="doVerification()"][disabled] {
-    background-color: #dd2f3d !important;
-    box-shadow: 0 0 0 2px #b81321 inset, var(--shadow-button) !important;
-    color: #fff;
 }
 
 .ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button):hover,
@@ -1232,7 +1203,20 @@ button.btn.btn-secondary[ng-click="doVerification()"][disabled] {
 #upload-receipt-v2 .receipt-preview label:focus,
 button.btn.btn-secondary[ng-click="doVerification()"]:hover,
 button.btn.btn-secondary[ng-click="doVerification()"]:focus {
-    background-color: #b81321 !important;
-    box-shadow: 0 0 0 2px #b81321 inset, var(--shadow-button) !important;
-    color: #fff !important;
+    background-color: #f2c6cf !important;
+    box-shadow: 0 0 0 2px #f2c6cf inset, var(--shadow-button) !important;
+    color: #000 !important;
+}
+
+.ct-button:not([ng-click="logIn()"]):not(.sign-up-button):not(.log-in-button):not(.back-to-login-button)[disabled],
+#activity-history .btn.show-more[disabled],
+#survey .nav-btns .next-btn[disabled],
+#upload-receipt .receipt-preview label[disabled],
+#upload-receipt-v2 .receipt-preview label[disabled],
+button.btn.btn-secondary[ng-click="doVerification()"][disabled] {
+    box-shadow: 0 0 0 2px #000 inset, var(--shadow-text-transparent) !important;
+}
+
+#ct-modal>button:nth-child(1) {
+    color: #000 !important;
 }

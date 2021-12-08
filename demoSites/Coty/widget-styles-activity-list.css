@@ -1446,7 +1446,7 @@ body {
 #activity-list-v2 ul .activity:focus .point-value {
     background-color: #f2c6cf !important;
     box-shadow: 0 0 0 2px #f2c6cf inset !important;
-    color: #000 !important;
+    color: #fff !important;
 }
 
 #reward-list-v2 .rewards .reward .content .title,

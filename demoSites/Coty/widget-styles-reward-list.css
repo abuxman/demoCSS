@@ -1435,19 +1435,19 @@ body {
 
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #0e4caa !important;
+    color: #000 !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title,
 #reward-list-v2 .rewards .reward .content a:focus .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #0e4caa !important;
+    color: #f2c6cf !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #dd2f3d !important;
+    background-color: #000 !important;
     color: #fff !important;
     box-shadow: none;
 }
@@ -1462,8 +1462,8 @@ body {
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:hover,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color:hover {
-    background: #b81321 !important;
-    box-shadow: 0 0 0 2px #b81321 inset !important;
+    background: #f2c6cf !important;
+    box-shadow: 0 0 0 2px #f2c6cf inset !important;
     color: #fff !important;
 }
 
@@ -1473,8 +1473,8 @@ body {
 #reward-list-v2 .rewards .reward:nth-child(n) .content:hover .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content:focus .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content:focus-within .row p.points.ct-points-color {
-    background: #b81321 !important;
-    box-shadow: 0 0 0 2px #b81321 inset !important;
+    background: #f2c6cf !important;
+    box-shadow: 0 0 0 2px #f2c6cf inset !important;
     color: #fff !important;
 }
 
