@@ -999,7 +999,7 @@ body {
 @media (min-width: 680px) {
     #reward-list-v2 .rewards .reward,
     #reward-list-v2 .rewards .reward:nth-child(n) {
-        padding: 1.25rem
+        padding: .25rem
     }
 }
 
@@ -1121,6 +1121,7 @@ body {
     padding: .625rem 0 .375rem;
     transition: color .15s;
     overflow-wrap: break-word;
+    white-space: normal;
 }
 
 #reward-list-v2 .rewards .reward .content .title:hover,
@@ -1443,14 +1444,14 @@ body {
 
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #fb48c4 !important;
+    color: #272c35 !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title,
 #reward-list-v2 .rewards .reward .content a:focus .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #6e6e6e !important;
+    color: #00ED82 !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
@@ -1468,6 +1469,7 @@ body {
     background-color: #FBA834 !important;
     box-shadow: none !important;
     color: #fff !important;
+    display: none !important;
 }
 
 
