@@ -1497,7 +1497,7 @@ body {
     #activity-list ul .activity .info-container,
     #activity-list-v2 ul .activity .info-container {
         margin: 0;
-        padding: var(--space-c) var(--space-b) var(--space-c) 0;
+        padding: var(--space-c) var(--space-b) var(--space-c) 1rem;
         width: 100%
     }
 }
