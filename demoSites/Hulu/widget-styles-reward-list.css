@@ -966,7 +966,7 @@ body {
 #reward-list-v2 .rewards {
     align-items: stretch;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-start;
     margin: -1rem;
     max-width: none
@@ -1460,6 +1460,7 @@ body {
     background-color: #fb48c4 !important;
     color: #fff !important;
     box-shadow: none;
+    display: none !important;
 }
 
 #reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points.ct-points-color,
