@@ -2265,3 +2265,7 @@ button.btn.btn-secondary[ng-click="doVerification()"]:focus {
 #confirmation>div.right>div.numeric-details>div:nth-child(2) {
     display: none !important;
 }
+
+#redeem-v2 #review .numeric-details {
+    display: none !important;
+}
