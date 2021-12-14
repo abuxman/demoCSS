@@ -1585,5 +1585,5 @@ body {
 
 #activity-list ul .activity .info-container,
 #activity-list-v2 ul .activity .info-container {
-    background: url("https://abuxman.github.io/demoCSS/demoSites/Hulu/hulu_content_bg_gray.png");
+    background: url("https://abuxman.github.io/demoCSS/demoSites/Hulu/hulu_content_bg_gray.png") !important;
 }
