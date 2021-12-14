@@ -982,7 +982,7 @@ body {
 #reward-list-v2 .rewards .reward:nth-child(n) {
     border: 0;
     clear: both;
-    flex: 0 1 100%;
+    flex: 0 0 100%;
     margin-left: 0;
     margin-right: 0;
     padding: 1rem;
@@ -992,7 +992,7 @@ body {
 @media (min-width: 400px) {
     #reward-list-v2 .rewards .reward,
     #reward-list-v2 .rewards .reward:nth-child(n) {
-        flex: 0 1 50%
+        flex: 0 0 50%
     }
 }
 
@@ -1006,14 +1006,14 @@ body {
 @media (min-width: 900px) {
     #reward-list-v2 .rewards .reward,
     #reward-list-v2 .rewards .reward:nth-child(n) {
-        flex: 0 1 33.33%;
+        flex: 0 0 33.33%;
     }
 }
 
 @media (min-width: 1500px) {
     #reward-list-v2 .rewards .reward,
     #reward-list-v2 .rewards .reward:nth-child(n) {
-        flex: 0 1 25%;
+        flex: 0 0 25%;
     }
 }
 
