@@ -1428,7 +1428,7 @@ body {
     display: flex;
     flex: 0 1 100%;
     flex-direction: column;
-    margin: 1.25rem;
+    margin: .25rem;
     justify-content: end;
     padding: 0;
     position: relative;
@@ -1564,4 +1564,21 @@ body {
 
 #activity-list-v2 ul .activity .points-container {
     display: none !important;
+}
+
+#activity-list-v2 {
+    font-family: "Brown", sans-serif;
+}
+
+#activity-list-v2 ul .activity button.title span {
+    color: #272c35 !important;
+}
+
+#activity-list-v2 ul .activity:hover button.title span,
+#activity-list-v2 ul .activity:focus button.title span {
+    color: #00ED82 !important;
+}
+
+#activity-list-v2 ul .activity .info-container .description {
+    color: #4a4a4a !important;
 }
