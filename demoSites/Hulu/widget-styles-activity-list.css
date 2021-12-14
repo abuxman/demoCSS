@@ -1571,7 +1571,7 @@ body {
 }
 
 #activity-list-v2 ul .activity button.title span {
-    color: #272c35 !important;
+    color: #fff !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,
@@ -1580,5 +1580,10 @@ body {
 }
 
 #activity-list-v2 ul .activity .info-container .description {
-    color: #4a4a4a !important;
+    color: #fff !important;
+}
+
+#activity-list ul .activity .info-container,
+#activity-list-v2 ul .activity .info-container {
+    background: url("https://abuxman.github.io/demoCSS/demoSites/Hulu/hulu_content_bg_gray.png");
 }
