@@ -1187,6 +1187,10 @@ body {
     color: #000 !important;
 }
 
+#account-overview-two-v2 .profile-info .name {
+	display: none !important;
+}
+
 #activity-history-v2 {
     color: #fff;
     background-color: #1a1a1a;
