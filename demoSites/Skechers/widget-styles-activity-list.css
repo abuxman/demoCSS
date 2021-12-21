@@ -1450,9 +1450,23 @@ body {
 }
 
 #activity-list-v2 ul .activity.locked .points-container .ct-points-color,
-#activity-list-v2 ul .activity.unavailable .info-container .description,
 #activity-list-v2 ul .activity.unavailable .points-container .ct-points-color {
     color: #fff !important;
+}
+
+#activity-list-v2 ul .activity.locked .points-container .ct-points-color,
+#activity-list-v2 ul .activity.unavailable .points-container .ct-points-color {
+    color: #999b9c !important;
+}
+
+#activity-list-v2 ul .activity.locked:hover .point-value,
+#activity-list-v2 ul .activity.locked:focus .point-value,
+#activity-list-v2 ul .activity.locked:active .point-value,
+#activity-list-v2 ul .activity.unavailable:hover .point-value,
+#activity-list-v2 ul .activity.unavailable:focus .point-value,
+#activity-list-v2 ul .activity.unavailable:active .point-value {
+    background: transparent !important;
+    box-shadow: 0 0 0 2px #999b9c inset !important;
 }
 
 #reward-list-v2 .rewards .reward .content .title,
