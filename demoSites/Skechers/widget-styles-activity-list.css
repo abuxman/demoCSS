@@ -1449,6 +1449,10 @@ body {
     color: #fff !important;
 }
 
+.point-value.completed {
+    color: #fff !important;
+}
+
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
     color: #000 !important;
