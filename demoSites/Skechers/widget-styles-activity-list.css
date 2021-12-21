@@ -1449,7 +1449,6 @@ body {
     color: #fff !important;
 }
 
-#activity-list-v2 ul .activity.locked .info-container .description,
 #activity-list-v2 ul .activity.locked .points-container .ct-points-color,
 #activity-list-v2 ul .activity.unavailable .info-container .description,
 #activity-list-v2 ul .activity.unavailable .points-container .ct-points-color {
