@@ -1605,7 +1605,8 @@ body {
     color: #fff !important;
     box-shadow: none;
     overflow: hidden;
-    max-height: 28px;
+    max-height: 38px;
     text-align: center;
-    width: 105px;
+    width: 86px;
+    line-height: 1.25;
 }
