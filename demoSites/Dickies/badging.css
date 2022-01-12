@@ -137,9 +137,9 @@ body .reward .title {
 }
 
 #activity-list-v2 .image-container img {
-    height: 83px;
+    height: 125px;
     padding: 0;
-    width: 83px;
+    width: 125px;
     max-width: 200px
 }
 
