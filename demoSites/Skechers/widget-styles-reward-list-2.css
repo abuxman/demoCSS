@@ -1597,5 +1597,15 @@ body {
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color::before, #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color::before {
-    content: 'Use \a' !important;
+    content: 'Use \a \a' !important;
+}
+
+#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
+    background-color: #227AC4 !important;
+    color: #fff !important;
+    box-shadow: none;
+    overflow: hidden;
+    max-height: 28px;
+    text-align: center;
+    width: 105px;
 }
