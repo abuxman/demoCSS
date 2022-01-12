@@ -1597,7 +1597,7 @@ body {
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color::before, #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color::before {
-    content: 'Use \a \a' !important;
+    content: 'Use   \a \a' !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
