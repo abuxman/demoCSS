@@ -25,7 +25,7 @@
     --color-translucent-20: rgba(255, 255, 255, .2);
     --color-transparent-07: rgba(0, 0, 0, .07);
     --color-transparent-10: rgba(0, 0, 0, .1);
-    --color-transparent-20: rgba(0, 0, 0, .2);
+    --color-transparent-20: rgba(130, 111, 111, 0.2);
     --color-transparent-50: rgba(0, 0, 0, .5);
     --color-translucent-nav: rgba(241, 243, 243, .86);
     --color-translucent-subnav: rgba(249, 250, 250, .86);
@@ -963,83 +963,214 @@ body {
     display: none
 }
 
-#registration-v2 .container .content {
-    align-items: cener;
-    background-color: transparent;
+#reward-list-v2 .rewards {
+    align-items: stretch;
     display: flex;
-    float: none;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0;
+    margin: -1rem;
+    max-width: none
+}
+
+@media (min-width: 680px) {
+    #reward-list-v2 .rewards {
+        margin: -1.25rem
+    }
+}
+
+#reward-list-v2 .rewards .reward,
+#reward-list-v2 .rewards .reward:nth-child(n) {
+    border: 0;
+    clear: both;
+    flex: 0 1 100%;
+    margin-bottom: .625rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem;
+    position: relative
+}
+
+@media (min-width: 400px) {
+    #reward-list-v2 .rewards .reward,
+    #reward-list-v2 .rewards .reward:nth-child(n) {
+        flex: 0 1 50%
+    }
+}
+
+@media (min-width: 680px) {
+    #reward-list-v2 .rewards .reward,
+    #reward-list-v2 .rewards .reward:nth-child(n) {
+        padding: 1.25rem
+    }
+}
+
+@media (min-width: 900px) {
+    #reward-list-v2 .rewards .reward,
+    #reward-list-v2 .rewards .reward:nth-child(n) {
+        flex: 0 1 33.33%;
+        margin-bottom: 1.25rem
+    }
+}
+
+@media (min-width: 1500px) {
+    #reward-list-v2 .rewards .reward,
+    #reward-list-v2 .rewards .reward:nth-child(n) {
+        flex: 0 1 25%;
+        margin-bottom: 1.25rem
+    }
+}
+
+#reward-list-v2 .rewards .reward>img,
+#reward-list-v2 .rewards .reward:nth-child(n)>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    opacity: .9;
+    transition: opacity .15s;
     width: 100%
 }
 
-#registration-v2 .container .content .heading,
-#registration-v2 .container .content .description {
-    display: none
+#reward-list-v2 .rewards .reward:hover>img,
+#reward-list-v2 .rewards .reward:focus>img,
+#reward-list-v2 .rewards .reward:active>img,
+#reward-list-v2 .rewards .reward:nth-child(n):hover>img,
+#reward-list-v2 .rewards .reward:nth-child(n):focus>img,
+#reward-list-v2 .rewards .reward:nth-child(n):active>img {
+    opacity: 1
 }
 
-#registration-v2 .container .content button.sign-up {
-    width: auto
+#reward-list-v2 .rewards .reward>img.disabled,
+#reward-list-v2 .rewards .reward.reward-not-enough-points>img,
+#reward-list-v2 .rewards .reward:nth-child(n)>img.disabled,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points>img {
+    opacity: .75
 }
 
-#registration-v2 .container .content .login {
-    display: inline-block;
-    font-size: 0;
-    margin: 0
+#reward-list-v2 .rewards .reward .content,
+#reward-list-v2 .rewards .reward:nth-child(n) .content {
+    padding: 0 .625rem 0 0
 }
 
-#registration-v2 .container .content .login span {
-    display: none
-}
-
-#registration-v2 .container .content .login button {
-    background: transparent !important;
-    border-radius: 3px;
-    box-shadow: 0 0 0 2px var(--color-orange-300) inset;
-    color: var(--color-shade-900) !important;
-    display: inline-block;
-    font-size: 1.125rem;
-    font-weight: 400;
-    padding: .75rem 1.25rem;
-    transition: all .15s, outline 0s, outline-offset 0s;
-    user-select: none
-}
-
-#registration-v2 .container .content .login button:hover {
+#reward-list-v2 .rewards .reward .content:hover .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward .content:focus .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward .content:focus-within .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:hover .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:focus .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:focus-within .row p.points.ct-points-color {
     background: var(--color-orange-100) !important;
     box-shadow: 0 0 0 2px var(--color-orange-250) inset;
     color: var(--color-shade-900) !important
 }
 
-#registration-v2 .container .content .login button:focus {
-    background: var(--color-orange-100) !important;
-    box-shadow: 0 0 0 2px var(--color-shade-700) inset;
-    color: var(--color-orange-900) !important
-}
-
-#registration-v2 .container .content .login button:active {
+#reward-list-v2 .rewards .reward .content:active .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:active .row p.points.ct-points-color {
     background: var(--color-transparent-20) !important;
     box-shadow: 0 0 0 2px var(--color-shade-900) inset;
     color: var(--color-shade-900) !important;
-    transition: none
+    transition: all 0s
 }
 
-@media (min-width: 200px) {
-    #account-overview-v2 .header {
-        display: none;
+#reward-list-v2 .rewards .reward .content a::after,
+#reward-list-v2 .rewards .reward:nth-child(n) .content a::after {
+    background: transparent;
+    border-radius: 2px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .15s
+}
+
+#reward-list-v2 .rewards .reward .content a:hover,
+#reward-list-v2 .rewards .reward .content a:focus,
+#reward-list-v2 .rewards .reward:nth-child(n) .content a:hover,
+#reward-list-v2 .rewards .reward:nth-child(n) .content a:focus {
+    outline: none;
+    text-decoration: none
+}
+
+#reward-list-v2 .rewards .reward .content a:hover .title,
+#reward-list-v2 .rewards .reward .content a:focus .title,
+#reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
+#reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
+    color: var(--color-blue-500) !important
+}
+
+#reward-list-v2 .rewards .reward .content a:active .title,
+#reward-list-v2 .rewards .reward:nth-child(n) .content a:active .title {
+    color: var(--color-blue-900) !important;
+    transition: all 0s
+}
+
+#reward-list-v2 .rewards .reward .content a:active::after,
+#reward-list-v2 .rewards .reward:nth-child(n) .content a:active::after {
+    background-color: rgba(0, 0, 0, 0.15);
+    transition: all 0s
+}
+
+#reward-list-v2 .rewards .reward .content .title,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .title {
+    background: transparent;
+    color: var(--color-shade-900) !important;
+    text-decoration: none !important;
+    color: var(--color-blue-700) !important;
+    font-size: var(--text-bigparagraph);
+    line-height: 1;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    padding: .625rem 0 .375rem;
+    transition: color .15s
+}
+
+#reward-list-v2 .rewards .reward .content .title:hover,
+#reward-list-v2 .rewards .reward .content .title:focus,
+#reward-list-v2 .rewards .reward .content .title:active,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .title:hover,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .title:focus,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .title:active {
+    background: transparent;
+    color: var(--color-shade-900) !important
+}
+
+@media (min-width: 680px) {
+    #reward-list-v2 .rewards .reward .content .title,
+    #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
+        padding: .75rem 0 .5rem
     }
-    #account-overview-v2 .progress-bar-container {
-        padding: 0
-    }
 }
 
-#account-overview-v2 .container .logout-link-container {
-    display: flex;
-    padding: 0;
-    text-align: left
+#reward-list-v2 .rewards .reward .content .row,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row {
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0
 }
 
-#account-overview-v2 .container .logout-link-container .logout-link {
+#reward-list-v2 .rewards .reward .content .row .frequency-capped,
+#reward-list-v2 .rewards .reward .content .row .locked,
+#reward-list-v2 .rewards .reward .content .row .points,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row .frequency-capped,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row .locked,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row .points {
+    float: none
+}
+
+#reward-list-v2 .rewards .reward .content .row .frequency-capped,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row .frequency-capped {
+    margin-bottom: .625rem
+}
+
+#reward-list-v2 .rewards .reward .content .row .locked,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row .locked {
+    margin-bottom: 0
+}
+
+#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
     background: transparent !important;
     border-radius: 3px;
     box-shadow: 0 0 0 2px var(--color-orange-300) inset;
@@ -1050,27 +1181,225 @@ body {
     padding: .75rem 1.25rem;
     transition: all .15s, outline 0s, outline-offset 0s;
     user-select: none;
+    display: inline-block;
     float: none;
-    margin-left: var(--space-a)
+    line-height: 1rem;
+    text-transform: none;
+    transition: all .15s
 }
 
-#account-overview-v2 .container .logout-link-container .logout-link:hover {
+#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:hover,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color:hover {
     background: var(--color-orange-100) !important;
     box-shadow: 0 0 0 2px var(--color-orange-250) inset;
     color: var(--color-shade-900) !important
 }
 
-#account-overview-v2 .container .logout-link-container .logout-link:focus {
+#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:focus,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color:focus {
     background: var(--color-orange-100) !important;
     box-shadow: 0 0 0 2px var(--color-shade-700) inset;
     color: var(--color-orange-900) !important
 }
 
-#account-overview-v2 .container .logout-link-container .logout-link:active {
+#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:active,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color:active {
     background: var(--color-transparent-20) !important;
     box-shadow: 0 0 0 2px var(--color-shade-900) inset;
     color: var(--color-shade-900) !important;
     transition: none
+}
+
+#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color::before,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color::before {
+    content: 'Use '
+}
+
+#reward-list-v2 .rewards .reward .content .row p.ends,
+#reward-list-v2 .rewards .reward .content .row p.quantity,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.ends,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.quantity {
+    color: var(--color-orange-700);
+    float: none;
+    font-size: var(--text-minor);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.15;
+    padding-bottom: var(--space-a)
+}
+
+#reward-list-v2 .rewards .reward .content .row p.locked,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.locked {
+    float: none;
+    font-size: 0;
+    line-height: 0
+}
+
+#reward-list-v2 .rewards .reward .content .row p.locked i,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.locked i {
+    background-color: var(--color-shade-700);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fdffff%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M36 19h-1v-2a10 10 0 00-20 0v2h-1a3.009 3.009 0 00-3 3v16a3.009 3.009 0 003 3h22a3.009 3.009 0 003-3V22a3.009 3.009 0 00-3-3zm-17-2a6 6 0 0112 0v2H19zm18 21a1.013 1.013 0 01-1 1H14a1.013 1.013 0 01-1-1V22a1.013 1.013 0 011-1h22a1.013 1.013 0 011 1z'/%3E%3Cpath class='a' d='M28 29a3 3 0 10-4 2.816V35h2v-3.184A2.99 2.99 0 0028 29z'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    content: '';
+    height: 3rem;
+    margin: var(--space-a);
+    right: 1rem;
+    pointer-events: none;
+    position: absolute;
+    text-indent: -9999px;
+    top: 1rem;
+    width: 3rem
+}
+
+@media (min-width: 680px) {
+    #reward-list-v2 .rewards .reward .content .row p.locked i,
+    #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.locked i {
+        right: 1.25rem;
+        top: 1.25rem
+    }
+}
+
+#reward-list-v2 .rewards .reward .content .row p.locked i::before,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.locked i::before {
+    display: none
+}
+
+#reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
+    background: transparent !important;
+    box-shadow: 0 0 0 2px var(--color-shade-500) inset;
+    color: var(--color-shade-500) !important
+}
+
+#reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points::before,
+#reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points::before,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points::before,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points::before {
+    content: ''
+}
+
+#reward-list-v2 .rewards .reward.reward-sold-out p.sold-out,
+#reward-list-v2 .rewards .reward.reward-sold-out:nth-child(n) p.sold-out,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out p.sold-out,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out:nth-child(n) p.sold-out {
+    background: linear-gradient(45deg, transparent 0%, transparent 50%, var(--color-shade-700) 50%, var(--color-shade-700) 100%);
+    font-size: 0;
+    height: 4rem;
+    margin: 0;
+    right: 1rem;
+    pointer-events: none;
+    position: absolute;
+    top: 1rem;
+    width: 4rem;
+    z-index: 1
+}
+
+#reward-list-v2 .rewards .reward.reward-sold-out p.sold-out::after,
+#reward-list-v2 .rewards .reward.reward-sold-out:nth-child(n) p.sold-out::after,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out p.sold-out::after,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out:nth-child(n) p.sold-out::after {
+    color: var(--color-shade-100);
+    content: 'Sold Out';
+    display: block;
+    font-size: var(--text-supporting);
+    padding: 0;
+    text-align: center;
+    text-transform: none;
+    transform: rotate(45deg) translateY(-100%);
+    transform-origin: left top;
+    width: 141.42%
+}
+
+@media (min-width: 680px) {
+    #reward-list-v2 .rewards .reward.reward-sold-out p.sold-out,
+    #reward-list-v2 .rewards .reward.reward-sold-out:nth-child(n) p.sold-out,
+    #reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out p.sold-out,
+    #reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out:nth-child(n) p.sold-out {
+        right: 1.25rem;
+        top: 1.25rem
+    }
+}
+
+#reward-list-v2 .rewards .reward.reward-sold-out p.ends,
+#reward-list-v2 .rewards .reward.reward-sold-out:nth-child(n) p.ends,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out p.ends,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out:nth-child(n) p.ends {
+    display: none !important
+}
+
+#reward-list-v2 .rewards .reward.reward-sold-out .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward.reward-sold-out:nth-child(n) .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out:nth-child(n) .row p.points.ct-points-color {
+    background: transparent !important;
+    box-shadow: 0 0 0 2px var(--color-shade-500) inset;
+    color: var(--color-shade-500) !important
+}
+
+#reward-list-v2 .rewards .reward.reward-sold-out .row p.points.ct-points-color::before,
+#reward-list-v2 .rewards .reward.reward-sold-out:nth-child(n) .row p.points.ct-points-color::before,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out .row p.points.ct-points-color::before,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-sold-out:nth-child(n) .row p.points.ct-points-color::before {
+    content: ''
+}
+
+#reward-list-v2 .rewards .reward.reward-max-redemptions.reward-downloaded>img,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-max-redemptions.reward-downloaded>img {
+    opacity: .75
+}
+
+#reward-list-v2 .rewards .reward.reward-max-redemptions.reward-downloaded p.locked,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-max-redemptions.reward-downloaded p.locked {
+    display: none
+}
+
+#reward-list-v2 .rewards .reward.reward-max-redemptions.reward-downloaded::before,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-max-redemptions.reward-downloaded::before {
+    background-color: var(--color-blue-500);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Cpath fill='none' stroke='%23fdffff' stroke-miterlimit='10' stroke-width='4' d='M11 25.5l9 9 19-19'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    content: '';
+    height: 3.125rem;
+    margin: var(--space-a);
+    right: 1rem;
+    position: absolute;
+    text-indent: -9999px;
+    top: 1rem;
+    width: 3.125rem;
+    z-index: 1
+}
+
+@media (min-width: 680px) {
+    #reward-list-v2 .rewards .reward.reward-max-redemptions.reward-downloaded::before,
+    #reward-list-v2 .rewards .reward:nth-child(n).reward-max-redemptions.reward-downloaded::before {
+        right: 1.25rem;
+        top: 1.25rem
+    }
+}
+
+#reward-list-v2 .rewards .reward.reward-max-redemptions.reward-downloaded .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-max-redemptions.reward-downloaded .row p.points.ct-points-color {
+    background: transparent !important;
+    box-shadow: 0 0 0 2px var(--color-shade-500) inset;
+    color: var(--color-shade-500) !important
+}
+
+#reward-list-v2 .rewards .reward.reward-max-redemptions.reward-downloaded .row p.points.ct-points-color::before,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-max-redemptions.reward-downloaded .row p.points.ct-points-color::before {
+    content: ''
+}
+
+#reward-list-v2 .rewards .reward.reward-max-redemptions.reward-downloaded:hover .row p.points::after,
+#reward-list-v2 .rewards .reward.reward-max-redemptions.reward-downloaded:focus .row p.points::after,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-max-redemptions.reward-downloaded:hover .row p.points::after,
+#reward-list-v2 .rewards .reward:nth-child(n).reward-max-redemptions.reward-downloaded:focus .row p.points::after {
+    transform: translateX(0)
 }
 
 body {
@@ -1079,63 +1408,89 @@ body {
 }
 
 #activity-list-v2 ul .activity button.title span {
-    color: #fff !important;
+    color: #0e4caa !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,
 #activity-list-v2 ul .activity:focus button.title span {
-    color: #c31010 !important;
+    color: #0e4caa !important;
 }
 
 #activity-list-v2 ul .activity .info-container .description {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 #activity-list-v2 ul .point-value {
-    background: #c31010 !important;
+    background: #dd2f3d !important;
     box-shadow: none;
     color: #fff !important;
 }
 
+#activity-list-v2 ul .activity:hover .point-value,
+#activity-list-v2 ul .activity:focus .point-value {
+    background-color: #fff !important;
+    box-shadow: 0 0 0 2px #b81321 inset !important;
+    color: #b81321 !important;
+}
+
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #fff !important;
+    color: #19193d !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title,
 #reward-list-v2 .rewards .reward .content a:focus .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #c31010 !important;
+    color: #000 !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #c31010 !important;
-    color: #fff !important;
-    box-shadow: none;
+    background: #fff !important;
+    box-shadow: 0 0 0 2px #19193d inset !important;
+    color: #19193d !important;
 }
 
 #reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #c31010 !important;
+    background-color: #444444 !important;
+    color: #fff !important;
+}
+
+#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:hover,
+#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color:hover {
+    background: #19193d !important;
+    box-shadow: 0 0 0 2px #19193d inset !important;
+    color: #fff !important;
+}
+
+#reward-list-v2 .rewards .reward .content:hover .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward .content:focus .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward .content:focus-within .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:hover .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:focus .row p.points.ct-points-color,
+#reward-list-v2 .rewards .reward:nth-child(n) .content:focus-within .row p.points.ct-points-color {
+    background: #19193d !important;
+    box-shadow: 0 0 0 2px #19193d inset !important;
+    color: #fff !important;
 }
 
 #account-overview-two-v2 {
-    color: #19193d !important;
-    background-color: transparent;
+    color: #fff;
+    background-color: #1a1a1a;
     padding: 20px;
     border-radius: 20px;
 }
 
 #account-overview-two-v2 .title {
-    color: #19193d !important;
+    color: #fff;
 }
 
 #account-overview-two-v2 .ct-points-color {
-    color: #e00183 !important;
+    color: #c31010 !important;
 }
 
 #account-overview-two-v2 .logout-link-container {
