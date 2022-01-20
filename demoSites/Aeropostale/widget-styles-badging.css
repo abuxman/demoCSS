@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Avenir LT W01 45 Book';
+    src: url(../fonts/avenir-45-book.eot?#iefix);
+    src: url(../fonts/avenir-45-book.eot?#iefix) format("eot"), url(../fonts/avenir-45-book.woff2) format("woff2"), url(../fonts/avenir-45-book.woff) format("woff"), url(../fonts/avenir-45-book.ttf) format("truetype"), url(/dist/images/avenir-45-book-00af74e6398df518a600217d88ffd2a0.svg#f67fa3b5-c1d1-488f-8e60-a828b9ad56a4) format("svg");
+    unicode-range: U+000-5FF;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Avenir LT W01 95 Black';
+    src: url(../fonts/avenir-95-black.eot?#iefix);
+    src: url(../fonts/avenir-95-black.eot?#iefix) format("eot"), url(../fonts/avenir-95-black.woff2) format("woff2"), url(../fonts/avenir-95-black.woff) format("woff"), url(../fonts/avenir-95-black.ttf) format("truetype"), url(/dist/images/avenir-95-black-85cdc97339f84fb4912cd17b96b8d80d.svg#7bdad4a5-289b-42f9-b6fa-c5883b9e9f23) format("svg");
+    unicode-range: U+000-5FF;
+    font-display: swap
+}
+
+html.no-js {
+    overflow: hidden
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.001);
+    font-family: "Avenir LT W01 45 Book", Helvetica, Arial, sans-serif !important
+}
+
+body .activity .description,
+body .activity .title,
+body .reward .title {
+    font-size: 14px !important;
+    line-height: 1.67 !important
+}
+
+body .activity .title,
+body .reward .title {
+    font-family: "Avenir LT W01 95 Black", Helvetica, Arial, sans-serif !important
+}
+
+.widget .container {
+    min-width: 290px;
+    padding: 0 3px
+}
+
+#activity-list-v2 .header {
+    display: none
+}
+
+#activity-list-v2 .activity {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0 0 10px 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+    border-bottom: none !important
+}
+
+#activity-list-v2 .activity:hover {
+    background-color: white
+}
+
+#activity-list-v2 .activity+.activity {
+    margin-top: 0
+}
+
+#activity-list-v2 .activity .info-container {
+    position: relative
+}
+
+#activity-list-v2 .activity .info-container:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%
+}
+
+@media (max-width: 548px) {
+    #activity-list-v2 .activity {
+        max-width: calc(50% - 7px);
+    }
+    /* #activity-list-v2 .activity:nth-child(odd) {
+        margin-right: 14px
+    } */
+    /* #activity-list-v2 .container {
+        margin-top: 5px;
+        padding-bottom: 5px
+    } */
+}
+
+@media (min-width: 548px) {
+    #activity-list-v2 .activity {
+        margin-bottom: 15px !important;
+        max-width: calc(33.3333% - 10px)
+    }
+    #activity-list-v2 .activity:nth-child(3n+2) {
+        margin-right: 15px;
+        margin-left: 15px
+    }
+    /* #activity-list-v2 .container {
+        margin-top: 15px;
+        padding-bottom: 10px
+    } */
+}
+
+@media (min-width: 997px) {
+    #activity-list-v2 .activity:nth-child(3n+2) {
+        margin-right: 0px;
+        margin-left: 0px
+    }
+    #activity-list-v2 .activity {
+        margin-bottom: 30px !important;
+        max-width: calc(25% - 14px)
+    }
+    #activity-list-v2 .activity:nth-child(4n+2) {
+        margin-right: 7px;
+        margin-left: 14px
+    }
+    #activity-list-v2 .activity:nth-child(4n+3) {
+        margin-right: 14px;
+        margin-left: 7px
+    }
+    #activity-list-v2 .container {
+        padding-bottom: 0
+    }
+}
+
+#activity-list-v2 .image-container {
+    background-color: rgba(255, 255, 255, 0.001) !important;
+    border-radius: 0;
+    display: block;
+    float: none;
+    height: auto;
+    width: 100%;
+    text-align: center
+}
+
+#activity-list-v2 .image-container img {
+    height: 83px;
+    padding: 0;
+    width: 83px;
+    max-width: 200px
+}
+
+#activity-list-v2 .info-container {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0px;
+    width: 100%;
+    text-align: center
+}
+
+#activity-list-v2 .points-container {
+    display: none !important
+}
+
+#activity-list-v2 .title {
+    text-transform: uppercase
+}
+
+#activity-list-v2 .title span {
+    color: #223D5C !important;
+}
+
+#activity-list-v2 .description {
+    display: none
+}
+
+#activity-list-v2 .activity.locked .title span:before {
+    content: 'Locked: '
+}
+
+#activity-list-v2>div.container>ul {
+    display: flex;
+}
+
+.container>ul:nth-child(1) {
+    justify-content: center;
+}
+
+*,
+*::after,
+*::after {
+    font-family: "Proxima Nova SemiBold", sans-serif;
+}
