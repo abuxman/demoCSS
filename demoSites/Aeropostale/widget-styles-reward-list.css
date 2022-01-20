@@ -1219,7 +1219,7 @@ body {
 #reward-list-v2 .rewards .reward .content .row p.quantity,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.ends,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.quantity {
-    color: var(--color-orange-700);
+    color: #ee2e88;
     float: none;
     font-size: var(--text-minor);
     font-style: normal;
