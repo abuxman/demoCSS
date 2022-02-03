@@ -1424,12 +1424,12 @@ body {
 }
 
 #activity-list-v2 ul .activity button.title span {
-    color: #2b3848 !important;
+    color: #e31837 !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,
 #activity-list-v2 ul .activity:focus button.title span {
-    color: #79bde9 !important;
+    color: #9c1026 !important;
 }
 
 #activity-list-v2 ul .activity .info-container .description {
@@ -1437,8 +1437,15 @@ body {
 }
 
 #activity-list-v2 ul .point-value {
-    background: #2b3848 !important;
+    background: #e31837 !important;
     box-shadow: none;
+    color: #fff !important;
+}
+
+#activity-list-v2 ul .activity:hover .point-value,
+#activity-list-v2 ul .activity:focus .point-value {
+    background-color: #9c1026 !important;
+    box-shadow: 0 0 0 2px #9c1026 !important;
     color: #fff !important;
 }
 
