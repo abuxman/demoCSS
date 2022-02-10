@@ -1057,9 +1057,9 @@ body {
 #reward-list-v2 .rewards .reward:nth-child(n) .content:hover .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content:focus .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content:focus-within .row p.points.ct-points-color {
-    background: var(--color-orange-100) !important;
-    box-shadow: 0 0 0 2px var(--color-orange-250) inset;
-    color: var(--color-shade-900) !important
+    background: #fff !important;
+    box-shadow: 0 0 0 2px #000 inset;
+    color: #000 !important;
 }
 
 #reward-list-v2 .rewards .reward .content:active .row p.points.ct-points-color,
@@ -1190,9 +1190,9 @@ body {
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:hover,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color:hover {
-    background: var(--color-orange-100) !important;
-    box-shadow: 0 0 0 2px var(--color-orange-250) inset;
-    color: var(--color-shade-900) !important
+    background: #fff !important;
+    box-shadow: 0 0 0 2px #000 inset;
+    color: #000 !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:focus,
@@ -1440,9 +1440,10 @@ body {
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #d2d2d2 !important;
-    color: #000 !important;
+    background-color: #000 !important;
+    color: #fff !important;
     box-shadow: none;
+    border-radius: 25px;
 }
 
 #reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points.ct-points-color,
