@@ -1604,7 +1604,7 @@ body {
 #activity-history-v2 table th p.points .bonus,
 #activity-history-v2 table td.points .bonus,
 #activity-history-v2 table td p.points .bonus {
-    background-color: var(--color-orange-500);
+    background-color: #000;
     border-radius: 9999px;
     color: var(--color-shade-100);
     display: none;
