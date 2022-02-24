@@ -159,7 +159,7 @@ p,span{
     font-size:1em
 }
 .ct-points-color{
-    color:var(--color-orange-900) !important;
+    color: #ec1a31 !important;
     text-transform:none !important
 }
 .ct-link-color{
@@ -498,12 +498,13 @@ html,body{
     }
 }
 #account-overview-v2 .container .header,#account-overview-v2 .container .user-container,#account-overview-v2 .container .lifetime-points,#account-overview-v2 .container ct-progress-bar,#account-overview-v2 .container .fan-level-progress-details{
-    display:none
+    /* display:none */
 }
 #account-overview-v2 .container .logout-link-container{
     display:flex;
     padding:0;
-    text-align:left
+    text-align:left;
+    display: none;
 }
 #account-overview-v2 .container .logout-link-container .logout-link{
     background:transparent !important;
@@ -652,4 +653,8 @@ body {
     box-shadow: none;
     left: 175px !important;
     bottom: 37px;
+}
+
+#account-overview-v2 > div.container > section.progress-bar-container > ct-progress-bar > span > span {
+    background-color: #ec1a31 !important;
 }
