@@ -761,7 +761,7 @@ body {
 }
 
 #reward-list-v2 .rewards .reward .content .title, #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #c31010 !important;
+    color: #ec1a31 !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title, #reward-list-v2 .rewards .reward .content a:focus .title, #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title, #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
@@ -769,7 +769,7 @@ body {
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color, #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #c31010 !important;
+    background-color: #ec1a31 !important;
     color: #fff !important;
     box-shadow: none;
 }
