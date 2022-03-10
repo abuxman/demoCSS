@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Chipotle Internal</title>
+		<link>https://www.chipotle.com/</link>
+		<description>Internal news letter for the Chipotle team</description>
+		<language>en-us</language>
+		<item>
+			<title>Chipotle is Opening Over 100 New Drive-Thru Lnaes At Restaurant Locations So You Can Get Guac On-The-Go</title>
+			<link>https://www.delish.com/food-news/a35598202/chipotle-drive-thru-locations-2021/</link>
+			<guid>https://www.delish.com/food-news/a35598202/chipotle-drive-thru-locations-2021/</guid>
+			<pubDate>Tues, 23 Feb 2021 16:22:48 GMT</pubDate>
+			<description>Dreams really do come true!!</description>
+		</item>
+		<item>
+			<title>Chipotle CEO believes digital growth will continue even after pandemic</title>
+			<link>https://www.cnbc.com/video/2021/02/23/chipotle-ceo-believes-digital-growth-will-continue-even-after-pandemic.html</link>
+			<guid>https://www.cnbc.com/video/2021/02/23/chipotle-ceo-believes-digital-growth-will-continue-even-after-pandemic.html</guid>
+			<pubDate>Tues, 23 Feb 2021 21:34:48 GMT</pubDate>
+			<description>CEO Brian Niccol says he is very optimistic on the digital growth of its business, which has boomed during the pandemic. He says prior to the pandemic 80 percent of its business was in-store while 20 percent was digital. Now, that number is close to a 50-50 split. He joins ‘Closing Bell’ to discuss his outlook on the restaurant industry.</description>
+		</item>
+		<item>
+			<title>Chipotle’s New Protein Is a Twist on an Old Favorite</title>
+			<link>https://thetakeout.com/chipotle-pollo-asado-chicken-burrito-bowl-review-1848624221</link>
+			<guid>https://thetakeout.com/chipotle-pollo-asado-chicken-burrito-bowl-review-1848624221</guid>
+			<pubDate>Thurs, 10 Mar 2022 14:00:00 GMT</pubDate>
+			<description>Chipotle excels at chicken, and the new pollo asado is no exception.</description>
+		</item>
+	</channel>
+</rss>
