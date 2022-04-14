@@ -159,7 +159,7 @@ p,span{
     font-size:1em
 }
 .ct-points-color{
-    color: #1125B4 !important;
+    color: #BBCDC1 !important;
     text-transform:none !important
 }
 .ct-link-color{
@@ -656,5 +656,5 @@ body {
 }
 
 #account-overview-v2 > div.container > section.progress-bar-container > ct-progress-bar > span > span {
-    background-color: #1125B4 !important;
+    background-color: #BBCDC1 !important;
 }
