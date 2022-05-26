@@ -807,7 +807,7 @@ body {
 }
 
 #activity-list-v2 ul .activity .info-container .description {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 #activity-list-v2 ul .point-value {
