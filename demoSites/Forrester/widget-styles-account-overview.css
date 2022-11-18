@@ -1086,47 +1086,46 @@ body {
     font-family: "Foco";
 }
 
+body>.ng-scope {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+
 #activity-list-v2 ul .activity button.title span {
-    color: #383838 !important;
+    color: #fff !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,
 #activity-list-v2 ul .activity:focus button.title span {
-    color: #7bc614 !important;
+    color: #c31010 !important;
 }
 
 #activity-list-v2 ul .activity .info-container .description {
-    color: #383838 !important;
+    color: #fff !important;
 }
 
 #activity-list-v2 ul .point-value {
-    background: #383838 !important;
+    background: #c31010 !important;
     box-shadow: none;
     color: #fff !important;
 }
 
-#activity-list-v2 ul .activity:hover .point-value,
-#activity-list-v2 ul .activity:focus .point-value {
-    background-color: #fff !important;
-    box-shadow: 0 0 0 2px #383838 inset !important;
-    color: #7bc614 !important;
-}
-
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #383838 !important;
+    color: #fff !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title,
 #reward-list-v2 .rewards .reward .content a:focus .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #7bc614 !important;
+    color: #c31010 !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #383838 !important;
+    background-color: #c31010 !important;
     color: #fff !important;
     box-shadow: none;
 }
@@ -1135,40 +1134,26 @@ body {
 #reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #9c9c9c !important;
-    color: #000 !important;
-}
-
-#reward-list-v2 .rewards .reward .content .row p.points.ct-points-color:hover,
-#reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color:hover {
-    background: #fff !important;
-    box-shadow: 0 0 0 2px #383838 inset !important;
-    color: #7bc614 !important;
-}
-
-#reward-list-v2 .rewards .reward .content:hover .row p.points.ct-points-color,
-#reward-list-v2 .rewards .reward .content:focus .row p.points.ct-points-color,
-#reward-list-v2 .rewards .reward .content:focus-within .row p.points.ct-points-color,
-#reward-list-v2 .rewards .reward:nth-child(n) .content:hover .row p.points.ct-points-color,
-#reward-list-v2 .rewards .reward:nth-child(n) .content:focus .row p.points.ct-points-color,
-#reward-list-v2 .rewards .reward:nth-child(n) .content:focus-within .row p.points.ct-points-color {
-    background: #fff !important;
-    box-shadow: 0 0 0 2px #383838 inset !important;
-    color: #7bc614 !important;
+    background-color: #c31010 !important;
 }
 
 #account-overview-two-v2 {
     color: #000;
-    padding: 20px;
+    padding: none !important;
     border-radius: 20px;
+    margin: 0 auto;
+}
+
+#account-overview-two-v2>div.container>div.point-container>section.timeframe-score.ng-scope>span.total-score.ct-points-color.ng-binding {
+    display: none;
 }
 
 #account-overview-two-v2 .title {
-    color: #0e4caa !important;
+    color: #000;
 }
 
 #account-overview-two-v2 .ct-points-color {
-    color: #dd2f3d !important;
+    color: #000 !important;
 }
 
 #account-overview-two-v2 .logout-link-container {
@@ -1181,10 +1166,6 @@ body {
 
 #account-overview-two-v2 .info-toggle {
     display: none;
-}
-
-#account-overview-two-v2 .name {
-    color: #0e4caa !important;
 }
 
 #activity-history-v2 {
