@@ -1164,11 +1164,11 @@ body {
 }
 
 #account-overview-two-v2 .title {
-    color: #000;
+    color: #0e4caa !important;
 }
 
 #account-overview-two-v2 .ct-points-color {
-    color: #7bc614 !important;
+    color: #dd2f3d !important;
 }
 
 #account-overview-two-v2 .logout-link-container {
@@ -1181,6 +1181,10 @@ body {
 
 #account-overview-two-v2 .info-toggle {
     display: none;
+}
+
+#account-overview-two-v2 .name {
+    color: #0e4caa !important;
 }
 
 #activity-history-v2 {
