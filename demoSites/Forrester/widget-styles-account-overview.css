@@ -1086,46 +1086,57 @@ body {
     font-family: "Foco";
 }
 
-body>.ng-scope {
-    padding: 0 !important;
-    display: flex;
-    justify-content: center;
+
+/* ***************** Additional CSS ***************** */
+
+
+/* Activity List */
+
+#activity-list-v2 {
+    font-family: "Brown", sans-serif;
 }
 
 #activity-list-v2 ul .activity button.title span {
-    color: #fff !important;
+    color: #fb48c4 !important;
 }
 
 #activity-list-v2 ul .activity:hover button.title span,
 #activity-list-v2 ul .activity:focus button.title span {
-    color: #c31010 !important;
+    color: #6e6e6e !important;
 }
 
 #activity-list-v2 ul .activity .info-container .description {
-    color: #fff !important;
+    color: #4a4a4a !important;
 }
 
 #activity-list-v2 ul .point-value {
-    background: #c31010 !important;
+    background: #fb48c4 !important;
     box-shadow: none;
     color: #fff !important;
 }
 
+#activity-list-v2 ul .activity.locked .points-container .ct-points-color {
+    color: #fff !important;
+}
+
+
+/* Rewards List */
+
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #fff !important;
+    color: #fb48c4 !important;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title,
 #reward-list-v2 .rewards .reward .content a:focus .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #c31010 !important;
+    color: #6e6e6e !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #c31010 !important;
+    background-color: #fb48c4 !important;
     color: #fff !important;
     box-shadow: none;
 }
@@ -1134,26 +1145,52 @@ body>.ng-scope {
 #reward-list-v2 .rewards .reward.reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n).reward-not-enough-points:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #c31010 !important;
+    background-color: #fb48c4 !important;
 }
+
+
+/* Account Overview */
 
 #account-overview-two-v2 {
-    color: #000;
-    padding: none !important;
+    background-color: white;
+    font-family: "Brown", sans-serif !important;
+    font-size: 1.6rem;
+    color: #4a4a4a !important;
+    line-height: 1.4375;
+    letter-spacing: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    padding: 20px;
     border-radius: 20px;
-    margin: 0 auto;
-}
-
-#account-overview-two-v2>div.container>div.point-container>section.timeframe-score.ng-scope>span.total-score.ct-points-color.ng-binding {
-    display: none;
 }
 
 #account-overview-two-v2 .title {
     color: #000;
 }
 
+#account-overview-two-v2 .user-info {
+    width: 80px;
+    background-image: url(https://s3-eu-west-1.amazonaws.com/tpd/logos/5a31e259b894c909d077758f/0x0.png);
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#account-overview-two-v2 .profile-pic {
+    display: none;
+}
+
 #account-overview-two-v2 .ct-points-color {
-    color: #000 !important;
+    font-size: 1.8rem;
+    color: #fb48c4 !important;
+    letter-spacing: -.011rem;
+    font-family: "Brown", sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+#account-overview-two-v2 .description {
+    font-family: "Brown", sans-serif !important;
 }
 
 #account-overview-two-v2 .logout-link-container {
@@ -1168,9 +1205,12 @@ body>.ng-scope {
     display: none;
 }
 
+
+/* Activity and Reward History */
+
 #activity-history-v2 {
-    color: #fff;
-    background-color: #1a1a1a;
+    color: #4a4a4a;
+    background-color: #fff;
     padding: 20px;
     border-radius: 20px;
 }
@@ -1187,7 +1227,7 @@ body>.ng-scope {
 #purchase-history-v2 .activity-history th,
 #purchase-history-v2 .redemption-history th,
 #purchase-history-v2 .purchase-history-table th {
-    color: #fff !important;
+    color: #4a4a4a !important;
 }
 
 #activity-history-v2 table td,
@@ -1202,7 +1242,7 @@ body>.ng-scope {
 #purchase-history-v2 .activity-history td,
 #purchase-history-v2 .redemption-history td,
 #purchase-history-v2 .purchase-history-table td {
-    color: #fff !important;
+    color: #4a4a4a !important;
 }
 
 #activity-history-v2 table td.points,
@@ -1217,12 +1257,15 @@ body>.ng-scope {
 #purchase-history-v2 .activity-history td.points,
 #purchase-history-v2 .redemption-history td.points,
 #purchase-history-v2 .purchase-history-table td.points {
-    color: #c31010 !important;
+    color: #fb48c4 !important;
 }
 
 #activity-history-v2 .ct-points-color {
-    color: #c31010 !important;
+    color: #fb48c4 !important;
 }
+
+
+/* Reward History */
 
 #reward-history-v2 {
     color: #fff;
@@ -1230,6 +1273,9 @@ body>.ng-scope {
     padding: 20px;
     border-radius: 20px;
 }
+
+
+/* Account Settings */
 
 #account-settings {
     color: #fff !important;
@@ -1250,4 +1296,45 @@ body>.ng-scope {
     box-shadow: none;
     left: 175px !important;
     bottom: 37px;
+}
+
+
+/* Fonts */
+
+body {
+    background-color: white;
+    font-family: "Brown", sans-serif;
+    font-size: 1.6rem;
+    color: #4a4a4a;
+    line-height: 1.4375;
+    letter-spacing: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #fb48c4;
+    margin-bottom: 2rem;
+    letter-spacing: -.011rem;
+    font-family: "Brown", sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.116rem;
+    font-family: "Brown", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
