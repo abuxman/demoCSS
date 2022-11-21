@@ -1278,21 +1278,21 @@ body {
 /* Account Settings */
 
 #account-settings {
-    color: #fff !important;
-    background-color: #1a1a1a;
+    color: #000 !important;
+    background-color: #fff;
     padding: 20px;
     border-radius: 20px;
 }
 
 #account-settings .primary-settings button.edit {
     color: #fff !important;
-    background-color: #c31010 !important;
+    background-color: #37a9ff !important;
     box-shadow: none;
 }
 
 #account-settings .secondary-settings button.edit {
     color: #fff !important;
-    background-color: #c31010 !important;
+    background-color: #37a9ff !important;
     box-shadow: none;
     left: 175px !important;
     bottom: 37px;
@@ -1334,7 +1334,7 @@ p {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 72% !important;
     font: inherit;
     vertical-align: baseline;
 }
