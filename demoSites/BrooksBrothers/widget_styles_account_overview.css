@@ -1159,7 +1159,7 @@ body {
 
 #account-overview-two-v2 .ct-progress-bar {
     border-radius: 15px;
-    background-color: rgb(245 245 245);
+    background-color: rgb(245 245 245) !important;
     display: inline-block;
     clear: left;
     padding: 0;
@@ -1169,7 +1169,7 @@ body {
 
 #account-overview-two-v2 .ct-progress-bar .bar {
     border-radius: 15px;
-    background: #000;
+    background: #000 !important;
     display: block;
     color: #fff;
     float: left;
