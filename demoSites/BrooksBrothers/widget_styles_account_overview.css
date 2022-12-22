@@ -1150,11 +1150,19 @@ body {
 }
 
 #account-overview-two-v2 .profile-info .tier .icon {
-    display: none;
+    /* display: none; */
 }
 
 #account-overview-two-v2 .info-toggle {
     display: none;
+}
+
+#accout-overview-two-v2 .ct-progress-bar .bar {
+    color: #000
+}
+
+#accout-overview-two-v2 .ct-progress-bar {
+    color: rgb(245 245 245)
 }
 
 #activity-history-v2 {
