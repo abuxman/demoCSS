@@ -1150,19 +1150,36 @@ body {
 }
 
 #account-overview-two-v2 .profile-info .tier .icon {
-    /* display: none; */
+    display: none;
 }
 
 #account-overview-two-v2 .info-toggle {
     display: none;
 }
 
-#accout-overview-two-v2 .ct-progress-bar .bar {
-    color: #000
+#account-overview-two-v2 .ct-progress-bar {
+    border-radius: 15px;
+    background-color: rgb(245 245 245);
+    display: inline-block;
+    clear: left;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1px;
 }
 
-#accout-overview-two-v2 .ct-progress-bar {
-    color: rgb(245 245 245)
+#account-overview-two-v2 .ct-progress-bar .bar {
+    border-radius: 15px;
+    background: #000;
+    display: block;
+    color: #fff;
+    float: left;
+    font-size: .6875rem;
+    font-weight: 700;
+    text-align: right;
+    line-height: 12px;
+    padding: 1px 7px 1px;
+    margin-bottom: 0;
+    transition: min-width 1.5s ease;
 }
 
 #activity-history-v2 {
