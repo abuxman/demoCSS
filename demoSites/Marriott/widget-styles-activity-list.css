@@ -985,7 +985,6 @@ body {
     border: 0;
     /* flex: 0 1 100%; */
     margin-bottom: .625rem;
-    padding: 1rem;
     position: relative
 }
 
@@ -996,9 +995,7 @@ body {
 }
 
 @media (min-width: 680px) {
-    #activity-list-v2 ul .activity {
-        padding: 1.25rem
-    }
+    #activity-list-v2 ul .activity {}
 }
 
 @media (min-width: 900px) {
@@ -1016,6 +1013,7 @@ body {
         0,
         0,
         0.1) 1px 1px 1px 1px;
+        padding: 0;
     }
 }
 
