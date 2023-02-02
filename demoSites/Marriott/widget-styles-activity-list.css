@@ -1048,7 +1048,10 @@ body {
 #activity-list-v2 ul .activity:hover .point-value,
 #activity-list-v2 ul .activity:focus .point-value {
     background: #fff !important;
-    box-shadow: 0 0 0 2px #000 inset;
+    box-shadow: none;
+    text-transform: uppercase !important;
+    font-family: proxima-nova, Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
 
 #activity-list-v2 ul .activity:hover .image-container,
@@ -1464,6 +1467,8 @@ span.ct-link-color.ng-binding {}
     box-shadow: none;
     color: #b84c16 !important;
     border-radius: 25px;
+    text-transform: uppercase !important;
+    font-weight: 600;
 }
 
 #activity-list-v2 .activity:hover {
