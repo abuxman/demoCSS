@@ -136,7 +136,7 @@ body {
 }
 
 body>.ng-scope {
-    padding: 20px
+    /* padding: 20px; */
 }
 
 a,
@@ -182,7 +182,7 @@ h6 {
 
 p,
 span {
-    font-size: 1em
+    font-size: 1em;
 }
 
 .ct-points-color {
@@ -209,7 +209,7 @@ a:link,
 a:visited {
     color: var(--color-blue-700);
     text-decoration: none;
-    transition: color .15s, box-shadow .15s, background .15s
+    transition: color .15s, box-shadow .15s, background .15s;
 }
 
 a:hover,
@@ -1480,21 +1480,26 @@ span.ct-link-color.ng-binding {}
 
 #reward-list-v2 .rewards .reward .content .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .title {
-    color: #fff !important;
+    color: #1c1c1c !important;
+    padding: 0 20px;
 }
 
 #reward-list-v2 .rewards .reward .content a:hover .title,
 #reward-list-v2 .rewards .reward .content a:focus .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:hover .title,
 #reward-list-v2 .rewards .reward:nth-child(n) .content a:focus .title {
-    color: #c31010 !important;
+    color: #1c1c1c !important;
 }
 
 #reward-list-v2 .rewards .reward .content .row p.points.ct-points-color,
 #reward-list-v2 .rewards .reward:nth-child(n) .content .row p.points.ct-points-color {
-    background-color: #c31010 !important;
-    color: #fff !important;
+    color: #b84c17 !important;
     box-shadow: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+    text-transform: uppercase !important;
+    margin-top: 10px;
 }
 
 #reward-list-v2 .rewards .reward.reward-not-enough-points .content .row p.points.ct-points-color,
@@ -1506,6 +1511,21 @@ span.ct-link-color.ng-binding {}
 
 .reward.ng-scope.reward-almost-ended.reward-allow-redemption {
     width: calc(99.9% * 3/12 - 0.9375rem) !important;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px 1px;
+}
+
+#reward-list-v2 .rewards .reward .content .title {
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+#reward-list-v2 .rewards .reward .content .row p.ends {
+    margin: 0 20px;
+    float: left;
 }
 
 #account-overview-two-v2 {
